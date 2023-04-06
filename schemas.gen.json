@@ -1581,6 +1581,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9NYWluVGVzdGltb25pYWwudHN4": {
+      "title": "deco-sites/portlabs/sections/MainTestimonial.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/MainTestimonial.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/MainTestimonial.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbi50c3g=": {
       "title": "deco-sites/portlabs/sections/Solution.tsx",
       "type": "object",
@@ -1998,6 +2019,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9NYWluVGVzdGltb25pYWwudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbi50c3g="
