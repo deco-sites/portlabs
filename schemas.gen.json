@@ -415,6 +415,13 @@
             "null"
           ],
           "title": "Theme Color"
+        },
+        "includeNoIndex": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Include No Index"
         }
       },
       "required": [

@@ -8,6 +8,7 @@ export interface Props {
   faviconUrl?: string;
   styleUrls: string[];
   themeColor?: string;
+  includeNoIndex?: boolean;
 }
 
 export default function HeadComponent({
@@ -19,6 +20,7 @@ export default function HeadComponent({
   faviconUrl = "https://www.labcodes.com.br/static/core/imgs/favicon.ico",
   styleUrls = [],
   themeColor = "#003232",
+  includeNoIndex = true,
 }: Props) {
   return (
     <Head>
@@ -51,6 +53,8 @@ export default function HeadComponent({
       </link>
       <meta name="theme-color" content="#003232"></meta>
       <meta name="msapplication-TileColor" content="#003232"></meta>
+
+      {includeNoIndex && <meta name="robots" content="noindex" />}
       {styleUrls?.map((styleUrl: string) => (
         <link rel="stylesheet" href={asset(styleUrl)}></link>
       ))}
