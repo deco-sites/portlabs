@@ -19,11 +19,12 @@ import * as $$$$$$$$6 from "./sections/Head.tsx";
 import * as $$$$$$$$7 from "./sections/Testimonial1.tsx";
 import * as $$$$$$$$8 from "./sections/Challenge.tsx";
 import * as $$$$$$$$9 from "./sections/Photo.tsx";
-import * as $$$$$$$$10 from "./sections/ScrollTop.tsx";
-import * as $$$$$$$$11 from "./sections/Solution.tsx";
-import * as $$$$$$$$12 from "./sections/Solution3.tsx";
-import * as $$$$$$$$13 from "./sections/About.tsx";
-import * as $$$$$$$$14 from "./sections/Summary.tsx";
+import * as $$$$$$$$10 from "./sections/CTA.tsx";
+import * as $$$$$$$$11 from "./sections/ScrollTop.tsx";
+import * as $$$$$$$$12 from "./sections/Solution.tsx";
+import * as $$$$$$$$13 from "./sections/Solution3.tsx";
+import * as $$$$$$$$14 from "./sections/About.tsx";
+import * as $$$$$$$$15 from "./sections/Summary.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -76,11 +77,12 @@ const manifest: DecoManifest = {
     "deco-sites/portlabs/sections/Testimonial1.tsx": $$$$$$$$7,
     "deco-sites/portlabs/sections/Challenge.tsx": $$$$$$$$8,
     "deco-sites/portlabs/sections/Photo.tsx": $$$$$$$$9,
-    "deco-sites/portlabs/sections/ScrollTop.tsx": $$$$$$$$10,
-    "deco-sites/portlabs/sections/Solution.tsx": $$$$$$$$11,
-    "deco-sites/portlabs/sections/Solution3.tsx": $$$$$$$$12,
-    "deco-sites/portlabs/sections/About.tsx": $$$$$$$$13,
-    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$14,
+    "deco-sites/portlabs/sections/CTA.tsx": $$$$$$$$10,
+    "deco-sites/portlabs/sections/ScrollTop.tsx": $$$$$$$$11,
+    "deco-sites/portlabs/sections/Solution.tsx": $$$$$$$$12,
+    "deco-sites/portlabs/sections/Solution3.tsx": $$$$$$$$13,
+    "deco-sites/portlabs/sections/About.tsx": $$$$$$$$14,
+    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$15,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {

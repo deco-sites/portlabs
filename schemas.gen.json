@@ -612,6 +612,76 @@
       "required": [],
       "title": "deco-sites/portlabs/components/Photo.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NUQS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "includesCta": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Cta"
+        },
+        "ctaText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Text"
+        },
+        "ctaTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Title"
+        },
+        "ctaLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Link"
+        },
+        "ctaColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Color"
+        },
+        "ctaTargetBlank": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Cta Target Blank"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/CTA.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -664,6 +734,42 @@
       },
       "required": [],
       "title": "deco-sites/portlabs/components/Solution.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uMy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "column1Text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Column1 Text"
+        },
+        "column2Text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Column2 Text"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Solution3.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props": {
       "type": "object",
@@ -1433,6 +1539,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DVEEudHN4": {
+      "title": "deco-sites/portlabs/sections/CTA.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NUQS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/CTA.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/CTA.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4": {
       "title": "deco-sites/portlabs/sections/ScrollTop.tsx",
       "type": "object",
@@ -1480,7 +1607,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uMy50c3g=@Props"
         }
       ],
       "required": [
@@ -1865,6 +1992,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9QaG90by50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DVEEudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4"
