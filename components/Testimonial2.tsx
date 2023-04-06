@@ -23,7 +23,7 @@ export default function ({
   return (
     <div
       class="solution-splendid-spoon__testimonial"
-      style={{ backgroundColor: foregroundColor }}
+      style={{ backgroundColor: foregroundColor, top: 0 }}
     >
       <div class="testimonial-detail">
         <div class="testimonial-detail__content" style={{ backgroundColor }}>

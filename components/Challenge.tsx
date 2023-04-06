@@ -10,7 +10,7 @@ export interface Props {
 
 export default function ({
   backgroundColor = "#FFFFFF",
-  title = "Challenge",
+  title = "Outcome",
   titleColor = "#007B7D",
   text = `
     <p>Mete a Colher already had the whole design and UX ready for the product, but no back or front-end to make the product available for the large companies and their employees. So we began working together with their team to build their product within the deadlines that they already had.</p>
