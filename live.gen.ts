@@ -16,7 +16,8 @@ import * as $$$$$$$$3 from "./sections/HighlightsWithNumbers.tsx";
 import * as $$$$$$$$4 from "./sections/Footer.tsx";
 import * as $$$$$$$$5 from "./sections/Head.tsx";
 import * as $$$$$$$$6 from "./sections/ScrollTop.tsx";
-import * as $$$$$$$$7 from "./sections/Summary.tsx";
+import * as $$$$$$$$7 from "./sections/About.tsx";
+import * as $$$$$$$$8 from "./sections/Summary.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -66,7 +67,8 @@ const manifest: DecoManifest = {
     "deco-sites/portlabs/sections/Footer.tsx": $$$$$$$$4,
     "deco-sites/portlabs/sections/Head.tsx": $$$$$$$$5,
     "deco-sites/portlabs/sections/ScrollTop.tsx": $$$$$$$$6,
-    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$7,
+    "deco-sites/portlabs/sections/About.tsx": $$$$$$$$7,
+    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$8,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {
