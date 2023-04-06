@@ -429,9 +429,139 @@
       ],
       "title": "deco-sites/portlabs/sections/Head.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "foregroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Foreground Color"
+        },
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "testimonial": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial"
+        },
+        "testimonialColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial Color"
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author"
+        },
+        "authorColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Color"
+        },
+        "authorPosition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position"
+        },
+        "authorPositionColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Testimonial1.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Bob3RvLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Photo.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
       "type": "string",
       "format": "html"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "subtitleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle Color"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Solution.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props": {
       "type": "object",
@@ -474,6 +604,80 @@
             "null"
           ],
           "title": "Text Color"
+        },
+        "includesLink": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Link"
+        },
+        "linkText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Link Text"
+        },
+        "linkColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "teal"
+            },
+            {
+              "type": "string",
+              "const": "purple"
+            },
+            {
+              "type": "string",
+              "const": "header-coral"
+            },
+            {
+              "type": "string",
+              "const": "header-teal"
+            },
+            {
+              "type": "string",
+              "const": "header-mustard"
+            },
+            {
+              "type": "string",
+              "const": "header-purple"
+            },
+            {
+              "type": "string",
+              "const": "header-coral-sec"
+            },
+            {
+              "type": "string",
+              "const": "header-teal-sec"
+            },
+            {
+              "type": "string",
+              "const": "header-mustard-sec"
+            },
+            {
+              "type": "string",
+              "const": "header-purple-sec"
+            }
+          ],
+          "type": "string",
+          "title": "Link Color"
+        },
+        "linkHref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Link Href"
+        },
+        "linkOpensInANewTab": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Link Opens In A New Tab"
         }
       },
       "required": [],
@@ -1043,6 +1247,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4": {
+      "title": "deco-sites/portlabs/sections/Testimonial1.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Testimonial1.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Testimonial1.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9QaG90by50c3g=": {
+      "title": "deco-sites/portlabs/sections/Photo.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Bob3RvLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Photo.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Photo.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4": {
       "title": "deco-sites/portlabs/sections/ScrollTop.tsx",
       "type": "object",
@@ -1061,6 +1307,27 @@
             "deco-sites/portlabs/sections/ScrollTop.tsx"
           ],
           "default": "deco-sites/portlabs/sections/ScrollTop.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbi50c3g=": {
+      "title": "deco-sites/portlabs/sections/Solution.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Solution.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Solution.tsx"
         }
       }
     },
@@ -1423,7 +1690,16 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9QaG90by50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbi50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9BYm91dC50c3g="

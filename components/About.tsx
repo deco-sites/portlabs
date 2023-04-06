@@ -25,24 +25,14 @@ export interface Props {
 }
 
 export default function ({
-  backgroundColor = "#FFFFFF",
-  title = "About Splendid Spoon",
+  backgroundColor = "#E8EFF3",
+  title = "About [company]",
   titleColor = "#009699",
   image =
     "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/about-photo.png",
   text = `
     <p>
-      Splendid Spoon is a plant-based wellness brand, delivering
-      ready-to-eat, nutrient-dense meals. Founded in 2013 to help the 91%
-      of Americans who don’t eat their recommended daily servings of
-      veggies, this New York-based company makes meals healthier during
-      busy days.
-    </p>
-    <p>
-      With an already established business model and client base, they
-      were looking to grow their product from end-to-end (from
-      subscription’s payment to the meal’s preparation and delivery), in a
-      healthy way, of course.
+      Explicação do que é o projeto e quem é o cliente. E se essas poucas mulheres existem é porque, segundo alguns criativos homens, é importante ter uma visão feminina. Óbvio, quem iria pensar em campanhas de Dia das Mães ou de empoderamento feminino? Criativa só serve para pensar nisso mesmo. Ah, e para outras coisas também: como deixar a criação “mais bonita”, ouvir piadinha sobre feminismo e ser subestimada.
     </p>
   `,
   includesLink = true,
