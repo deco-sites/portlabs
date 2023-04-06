@@ -798,6 +798,59 @@
       "required": [],
       "title": "deco-sites/portlabs/components/Solution.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uMi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "subtitleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle Color"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Solution2.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uMy50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -1691,7 +1744,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uMi50c3g=@Props"
         }
       ],
       "required": [

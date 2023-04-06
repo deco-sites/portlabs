@@ -25,8 +25,11 @@ export default function ({
       class="solution-splendid-spoon__testimonial"
       style={{ backgroundColor: foregroundColor, top: 0 }}
     >
-      <div class="testimonial-detail">
-        <div class="testimonial-detail__content" style={{ backgroundColor }}>
+      <div class="testimonial-detail" style={{ marginBottom: "-40px" }}>
+        <div
+          class="testimonial-detail__content"
+          style={{ backgroundColor, transform: "translateY(-40px)" }}
+        >
           <div class="testimonial-detail__text">
             <p style={{ color: testimonialColor }}>{testimonial}</p>
             <p style={{ color: authorColor }} class="topic-heading">{author}</p>
