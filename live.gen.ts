@@ -7,9 +7,16 @@ import { DecoManifest } from "$live/types.ts";
 
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/LiveControls.tsx";
-import * as $$$$$$$$0 from "./sections/Head.tsx";
-import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
+import * as $$$$$0 from "./islands/ui/ScrollTop.tsx";
+import * as $$$$$1 from "./islands/ui/ScrollBottom.tsx";
+import * as $$$$$$$$0 from "./sections/Hero.tsx";
+import * as $$$$$$$$1 from "./sections/Navbar.tsx";
+import * as $$$$$$$$2 from "./sections/HighlightsWithIcons.tsx";
+import * as $$$$$$$$3 from "./sections/HighlightsWithNumbers.tsx";
+import * as $$$$$$$$4 from "./sections/Footer.tsx";
+import * as $$$$$$$$5 from "./sections/Head.tsx";
+import * as $$$$$$$$6 from "./sections/ScrollTop.tsx";
+import * as $$$$$$$$7 from "./sections/Summary.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -48,11 +55,18 @@ const manifest: DecoManifest = {
     "./routes/[...catchall].tsx": $live_catchall,
   },
   "islands": {
-    "./islands/LiveControls.tsx": $$$$$0,
+    "./islands/ui/ScrollTop.tsx": $$$$$0,
+    "./islands/ui/ScrollBottom.tsx": $$$$$1,
   },
   "sections": {
-    "deco-sites/portlabs/sections/Head.tsx": $$$$$$$$0,
-    "deco-sites/portlabs/sections/GetStarted.tsx": $$$$$$$$1,
+    "deco-sites/portlabs/sections/Hero.tsx": $$$$$$$$0,
+    "deco-sites/portlabs/sections/Navbar.tsx": $$$$$$$$1,
+    "deco-sites/portlabs/sections/HighlightsWithIcons.tsx": $$$$$$$$2,
+    "deco-sites/portlabs/sections/HighlightsWithNumbers.tsx": $$$$$$$$3,
+    "deco-sites/portlabs/sections/Footer.tsx": $$$$$$$$4,
+    "deco-sites/portlabs/sections/Head.tsx": $$$$$$$$5,
+    "deco-sites/portlabs/sections/ScrollTop.tsx": $$$$$$$$6,
+    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$7,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {

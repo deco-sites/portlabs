@@ -13,7 +13,7 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props": {
       "type": "object",
       "properties": {
         "repo": {
@@ -37,7 +37,21 @@
         "branch",
         "path"
       ],
-      "title": "deco-sites/start/functions/LoadGitHubRaw.ts@Props"
+      "title": "deco-sites/portlabs/functions/LoadGitHubRaw.ts@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "isActive": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Is Active"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/ui/ScrollTop.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags"
@@ -147,27 +161,245 @@
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0hlcm8udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "mainColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Main Color"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "includesScrollToBottom": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Scroll To Bottom"
+        },
+        "includesCta": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Cta"
+        },
+        "ctaText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Text"
+        },
+        "ctaLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Link"
+        },
+        "ctaColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Color"
+        },
+        "ctaTargetBlank": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Cta Target Blank"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/ui/Hero.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL05hdmJhci50c3g=@Props": {
       "type": "object",
       "properties": {
         "title": {
           "type": "string",
           "title": "Title"
         },
-        "description": {
+        "color": {
           "type": "string",
+          "title": "Color",
+          "description": "Options: coral, teal, mustard, purple, coral-sec, teal-sec, mustard-sec, purple-sec"
+        },
+        "secondary_color": {
+          "type": "string",
+          "title": "Secondary_color",
+          "description": "Options: coral, teal, mustard, purple, coral-sec, teal-sec, mustard-sec, purple-sec"
+        }
+      },
+      "required": [
+        "title",
+        "color",
+        "secondary_color"
+      ],
+      "title": "deco-sites/portlabs/components/ui/Navbar.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoSWNvbnMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "subtitleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle Color"
+        },
+        "highlights": {
+          "type": "array",
+          "items": {},
+          "title": "Highlights"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/HighlightsWithIcons.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoTnVtYmVycy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "subtitleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle Color"
+        },
+        "highlights": {
+          "type": "array",
+          "items": {},
+          "title": "Highlights"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/HighlightsWithNumbers.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0Zvb3Rlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "ctaText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Text"
+        },
+        "ctaLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Link"
+        },
+        "includesScrollTop": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Scroll Top"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/ui/Footer.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Description"
         },
         "url": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Url"
         },
         "imageUrl": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Image Url"
         },
         "faviconUrl": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Favicon Url"
         },
         "styleUrls": {
@@ -178,34 +410,101 @@
           "title": "Style Urls"
         },
         "themeColor": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Theme Color"
         }
       },
       "required": [
-        "title",
-        "description",
-        "url",
-        "imageUrl",
-        "faviconUrl",
-        "styleUrls",
-        "themeColor"
+        "styleUrls"
       ],
-      "title": "deco-sites/start/sections/Head.tsx@Props"
+      "title": "deco-sites/portlabs/sections/Head.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1N1bW1hcnkudHN4@Props": {
       "type": "object",
       "properties": {
-        "enableInspectVSCode": {
+        "text": {
           "type": [
-            "boolean",
+            "string",
             "null"
           ],
-          "title": "Enable Inspect V S Code"
+          "title": "Text"
+        },
+        "foregroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Foreground Color"
+        },
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "servicesTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Services Title"
+        },
+        "servicesColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Services Color"
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Services"
+        },
+        "technologiesTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Technologies Title"
+        },
+        "technologiesTitleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Technologies Title Color"
+        },
+        "technologiesIconsColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Technologies Icons Color"
+        },
+        "technologies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Technologies"
+        },
+        "iconsColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Icons Color"
         }
       },
       "required": [],
-      "title": "deco-sites/start/sections/GetStarted.tsx@Props"
+      "title": "deco-sites/portlabs/components/Summary.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
       "type": "object",
@@ -300,6 +599,7 @@
               "const": "and"
             }
           ],
+          "type": "string",
           "title": "Op"
         },
         "matchers": {
@@ -340,6 +640,7 @@
               "const": "development"
             }
           ],
+          "type": "string",
           "title": "Environment"
         }
       },
@@ -396,12 +697,12 @@
       "required": [],
       "title": "deco-cx/live/flags/everyone.ts@EveryoneConfig"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==": {
-      "title": "deco-sites/start/functions/LoadGitHubRaw.ts",
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==": {
+      "title": "deco-sites/portlabs/functions/LoadGitHubRaw.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props"
         }
       ],
       "required": [
@@ -411,9 +712,46 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/functions/LoadGitHubRaw.ts"
+            "deco-sites/portlabs/functions/LoadGitHubRaw.ts"
           ],
-          "default": "deco-sites/start/functions/LoadGitHubRaw.ts"
+          "default": "deco-sites/portlabs/functions/LoadGitHubRaw.ts"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g=": {
+      "title": "./islands/ui/ScrollTop.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ui/ScrollTop.tsx"
+          ],
+          "default": "./islands/ui/ScrollTop.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g=": {
+      "title": "./islands/ui/ScrollBottom.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ui/ScrollBottom.tsx"
+          ],
+          "default": "./islands/ui/ScrollBottom.tsx"
         }
       }
     },
@@ -522,12 +860,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==": {
-      "title": "deco-sites/start/sections/Head.tsx",
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvLnRzeA==": {
+      "title": "deco-sites/portlabs/sections/Hero.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0hlcm8udHN4@Props"
         }
       ],
       "required": [
@@ -537,18 +875,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/sections/Head.tsx"
+            "deco-sites/portlabs/sections/Hero.tsx"
           ],
-          "default": "deco-sites/start/sections/Head.tsx"
+          "default": "deco-sites/portlabs/sections/Hero.tsx"
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==": {
-      "title": "deco-sites/start/sections/GetStarted.tsx",
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9OYXZiYXIudHN4": {
+      "title": "deco-sites/portlabs/sections/Navbar.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL05hdmJhci50c3g=@Props"
         }
       ],
       "required": [
@@ -558,9 +896,135 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/sections/GetStarted.tsx"
+            "deco-sites/portlabs/sections/Navbar.tsx"
           ],
-          "default": "deco-sites/start/sections/GetStarted.tsx"
+          "default": "deco-sites/portlabs/sections/Navbar.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IaWdobGlnaHRzV2l0aEljb25zLnRzeA==": {
+      "title": "deco-sites/portlabs/sections/HighlightsWithIcons.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoSWNvbnMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/HighlightsWithIcons.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/HighlightsWithIcons.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IaWdobGlnaHRzV2l0aE51bWJlcnMudHN4": {
+      "title": "deco-sites/portlabs/sections/HighlightsWithNumbers.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoTnVtYmVycy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/HighlightsWithNumbers.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/HighlightsWithNumbers.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Gb290ZXIudHN4": {
+      "title": "deco-sites/portlabs/sections/Footer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0Zvb3Rlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Footer.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Footer.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==": {
+      "title": "deco-sites/portlabs/sections/Head.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Head.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Head.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4": {
+      "title": "deco-sites/portlabs/sections/ScrollTop.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/ScrollTop.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/ScrollTop.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TdW1tYXJ5LnRzeA==": {
+      "title": "deco-sites/portlabs/sections/Summary.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1N1bW1hcnkudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Summary.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Summary.tsx"
         }
       }
     },
@@ -807,7 +1271,21 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw=="
+        }
+      ]
+    },
+    "islands": {
+      "title": "islands",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g="
         }
       ]
     },
@@ -849,10 +1327,28 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvLnRzeA=="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9OYXZiYXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IaWdobGlnaHRzV2l0aEljb25zLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IaWdobGlnaHRzV2l0aE51bWJlcnMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Gb290ZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TdW1tYXJ5LnRzeA=="
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
@@ -928,6 +1424,9 @@
         "anyOf": [
           {
             "$ref": "#/root/functions"
+          },
+          {
+            "$ref": "#/root/islands"
           },
           {
             "$ref": "#/root/handlers"

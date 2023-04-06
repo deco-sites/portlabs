@@ -1,21 +1,22 @@
 import { asset, Head } from "$fresh/runtime.ts";
 
 export interface Props {
-  title: string;
-  description: string;
-  url: string;
-  imageUrl: string;
-  faviconUrl: string;
+  title?: string;
+  description?: string;
+  url?: string;
+  imageUrl?: string;
+  faviconUrl?: string;
   styleUrls: string[];
-  themeColor: string;
+  themeColor?: string;
 }
 
 export default function HeadComponent({
-  title = "deco.cx — starter site",
-  description = "Deliver complete commerce experiences — start here!",
+  title = "Custom software development & product design | Labcodes",
+  description =
+    "Labcodes is a full-stack software company that builds web applications. Our team contains experts in Python, Django, React, and Product Design who specializes in developing the product your business needs.",
   url = "https://start.deco.site",
-  imageUrl = "https://deco.cx/images/deco-logo-light.png",
-  faviconUrl = "",
+  imageUrl = "https://www.labcodes.com.br/static/core/imgs/Labcodes_logo.png",
+  faviconUrl = "https://www.labcodes.com.br/static/core/imgs/favicon.ico",
   styleUrls = [],
   themeColor = "#003232",
 }: Props) {
@@ -105,6 +106,14 @@ export default function HeadComponent({
         }}
       >
       </script>
+
+      {
+        /*
+        TODO: Wrong but it works for now.
+        Eventually we will convert this to preact.
+      */
+      }
+      <script async src="js/header.js" />
     </Head>
   );
 }

@@ -11,6 +11,7 @@ export default function App(props: AppProps) {
       {!!context.deploymentId && trackingId && (
         <GoogleTagManager trackingId={trackingId} />
       )}
+
       <props.Component />
     </>
   );
