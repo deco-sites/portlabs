@@ -682,6 +682,69 @@
       "required": [],
       "title": "deco-sites/portlabs/components/CTA.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL01haW5UZXN0aW1vbmlhbC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "foregroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Foreground Color"
+        },
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "testimonial": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial"
+        },
+        "testimonialColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial Color"
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author"
+        },
+        "authorColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Color"
+        },
+        "authorPosition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position"
+        },
+        "authorPositionColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/MainTestimonial.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -1586,7 +1649,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL01haW5UZXN0aW1vbmlhbC50c3g=@Props"
         }
       ],
       "required": [
@@ -1620,6 +1683,27 @@
             "deco-sites/portlabs/sections/Solution.tsx"
           ],
           "default": "deco-sites/portlabs/sections/Solution.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbjIudHN4": {
+      "title": "deco-sites/portlabs/sections/Solution2.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Solution2.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Solution2.tsx"
         }
       }
     },
@@ -2025,6 +2109,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbjIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbjMudHN4"

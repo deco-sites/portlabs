@@ -23,9 +23,10 @@ import * as $$$$$$$$10 from "./sections/CTA.tsx";
 import * as $$$$$$$$11 from "./sections/ScrollTop.tsx";
 import * as $$$$$$$$12 from "./sections/MainTestimonial.tsx";
 import * as $$$$$$$$13 from "./sections/Solution.tsx";
-import * as $$$$$$$$14 from "./sections/Solution3.tsx";
-import * as $$$$$$$$15 from "./sections/About.tsx";
-import * as $$$$$$$$16 from "./sections/Summary.tsx";
+import * as $$$$$$$$14 from "./sections/Solution2.tsx";
+import * as $$$$$$$$15 from "./sections/Solution3.tsx";
+import * as $$$$$$$$16 from "./sections/About.tsx";
+import * as $$$$$$$$17 from "./sections/Summary.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -82,9 +83,10 @@ const manifest: DecoManifest = {
     "deco-sites/portlabs/sections/ScrollTop.tsx": $$$$$$$$11,
     "deco-sites/portlabs/sections/MainTestimonial.tsx": $$$$$$$$12,
     "deco-sites/portlabs/sections/Solution.tsx": $$$$$$$$13,
-    "deco-sites/portlabs/sections/Solution3.tsx": $$$$$$$$14,
-    "deco-sites/portlabs/sections/About.tsx": $$$$$$$$15,
-    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$16,
+    "deco-sites/portlabs/sections/Solution2.tsx": $$$$$$$$14,
+    "deco-sites/portlabs/sections/Solution3.tsx": $$$$$$$$15,
+    "deco-sites/portlabs/sections/About.tsx": $$$$$$$$16,
+    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$17,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {
