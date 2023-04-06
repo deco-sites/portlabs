@@ -364,6 +364,69 @@
       "required": [],
       "title": "deco-sites/portlabs/components/ui/Footer.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "foregroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Foreground Color"
+        },
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "testimonial": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial"
+        },
+        "testimonialColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial Color"
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author"
+        },
+        "authorColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Color"
+        },
+        "authorPosition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position"
+        },
+        "authorPositionColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Testimonial2.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -496,6 +559,112 @@
       "type": "string",
       "format": "html"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NoYWxsZW5nZS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "textColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Text Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Challenge.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Bob3RvLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Photo.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Background Color"
+        },
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "subtitleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle Color"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Solution.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -615,73 +784,6 @@
       },
       "required": [],
       "title": "deco-sites/portlabs/components/About.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Bob3RvLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "image": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Image"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/Photo.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Background Color"
-        },
-        "image": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Image"
-        },
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "titleColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title Color"
-        },
-        "subtitle": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Subtitle"
-        },
-        "subtitleColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Subtitle Color"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/Solution.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1N1bW1hcnkudHN4@Props": {
       "type": "object",
@@ -1226,6 +1328,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDIudHN4": {
+      "title": "deco-sites/portlabs/sections/Testimonial2.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Testimonial2.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Testimonial2.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==": {
       "title": "deco-sites/portlabs/sections/Head.tsx",
       "type": "object",
@@ -1273,7 +1396,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NoYWxsZW5nZS50c3g=@Props"
         }
       ],
       "required": [
@@ -1706,6 +1829,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Gb290ZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA=="
