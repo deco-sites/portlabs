@@ -1,4 +1,4 @@
-import Hero, { Props } from "$start/components/ui/Hero.tsx";
+import Hero, { Props } from "$start/components/Hero.tsx";
 
 function HeroSection(props: Props) {
   return <Hero {...props} />;
