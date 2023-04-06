@@ -11,10 +11,10 @@ export interface Props {
 }
 
 export default function ({
-  backgroundColor = "#FFFFFF",
+  backgroundColor = "#414F58",
   title = "Do you want to achieve incredible results?",
-  titleColor = "#007B7D",
-  includesCta = false,
+  titleColor = "#FFFFFF",
+  includesCta = true,
   ctaText = "Let's talk",
   ctaTitle = "Go to contact page.",
   ctaLink = "https://labcodes.com.br/contact",
