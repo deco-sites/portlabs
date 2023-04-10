@@ -22,7 +22,7 @@ export default function ({
   ctaTargetBlank = false,
 }: Props) {
   return (
-    <section class="cta-splendid-spoon" style={{ backgroundColor }}>
+    <section class="cta-loadsmart" style={{ backgroundColor }}>
       <div class="cta-splendid-spoon__content">
         <h3>
           <span style={{ color: titleColor }}>{title}</span>
