@@ -25,7 +25,10 @@ export default function ({
       class="hero-cases"
       style={{ backgroundColor: mainColor, maxHeight: "800px" }}
     >
-      <div class="hero-cases__content" style={{ maxWidth: "573px" }}>
+      <div
+        class="hero-cases__content"
+        style={{ maxWidth: "573px", zIndex: "3" }}
+      >
         <p
           class="topic-heading hero-cases__title"
           style={{ color: preTextColor }}
