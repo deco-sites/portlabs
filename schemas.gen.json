@@ -161,7 +161,7 @@
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0hlcm8udHN4@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm8udHN4@Props": {
       "type": "object",
       "properties": {
         "mainColor": {
@@ -229,7 +229,7 @@
         }
       },
       "required": [],
-      "title": "deco-sites/portlabs/components/ui/Hero.tsx@Props"
+      "title": "deco-sites/portlabs/components/Hero.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL05hdmJhci50c3g=@Props": {
       "type": "object",
@@ -1450,7 +1450,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0hlcm8udHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm8udHN4@Props"
         }
       ],
       "required": [
