@@ -21,7 +21,10 @@ export default function ({
     "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
 }: Props) {
   return (
-    <section class="hero-cases" style={{ backgroundColor: mainColor }}>
+    <section
+      class="hero-cases"
+      style={{ backgroundColor: mainColor, maxHeight: "800px" }}
+    >
       <div class="hero-cases__content" style={{ maxWidth: "573px" }}>
         <p
           class="topic-heading hero-cases__title"
