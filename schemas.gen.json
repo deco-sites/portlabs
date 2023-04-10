@@ -492,6 +492,48 @@
       ],
       "title": "deco-sites/portlabs/sections/Head.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm9XaXRoSW1hZ2UudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "mainColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Main Color"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "preText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Pre Text"
+        },
+        "includesScrollToBottom": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Scroll To Bottom"
+        },
+        "image": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/HeroWithImage.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMS50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -1592,6 +1634,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvV2l0aEltYWdlLnRzeA==": {
+      "title": "deco-sites/portlabs/sections/HeroWithImage.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm9XaXRoSW1hZ2UudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/HeroWithImage.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/HeroWithImage.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4": {
       "title": "deco-sites/portlabs/sections/Testimonial1.tsx",
       "type": "object",
@@ -2141,6 +2204,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvV2l0aEltYWdlLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4"
