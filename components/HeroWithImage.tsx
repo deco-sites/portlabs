@@ -23,7 +23,11 @@ export default function ({
   return (
     <section
       class="hero-cases"
-      style={{ backgroundColor: mainColor, maxHeight: "800px" }}
+      style={{
+        backgroundColor: mainColor,
+        maxHeight: "800px",
+        position: "relative",
+      }}
     >
       <div
         class="hero-cases__content"

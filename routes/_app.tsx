@@ -12,7 +12,7 @@ export default function App(props: AppProps) {
         <GoogleTagManager trackingId={trackingId} />
       )}
 
-      <props.Component />
+      {props.Component && <props.Component />}
     </>
   );
 }

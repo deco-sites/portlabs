@@ -509,12 +509,26 @@
           ],
           "title": "Title"
         },
+        "titleColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title Color"
+        },
         "preText": {
           "type": [
             "string",
             "null"
           ],
           "title": "Pre Text"
+        },
+        "preTextColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Pre Text Color"
         },
         "includesScrollToBottom": {
           "type": [
