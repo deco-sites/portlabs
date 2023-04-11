@@ -43,7 +43,16 @@ export default function ({
           {title}
         </h1>
       </div>
-      {image && <img class="hero-cases__img" src={image} />}
+      {image && (
+        <img
+          class="hero-cases__img"
+          src={image}
+          style={{
+            width: "auto",
+            height: "100%",
+          }}
+        />
+      )}
       {includesScrollToBottom && <ScrollBottom />}
     </section>
   );
