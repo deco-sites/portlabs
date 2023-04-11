@@ -26,7 +26,7 @@ export default function ({
     >
       <div
         class="solution-splendid-spoon__row"
-        style={{ paddingTop: 0, paddingBottom: 0 }}
+        style={{ paddingBottom: 0 }}
       >
         <div class="solution-splendid-spoon__content">
           <div class="solution-splendid-spoon__text solution-splendid-spoon__text--marketing-team">
@@ -36,7 +36,12 @@ export default function ({
           </div>
         </div>
         <div class="solution-splendid-spoon__image">
-          <span class="solution-splendid-spoon__second-img">&nbsp;</span>
+          <span
+            class="solution-splendid-spoon__second-img"
+            style={{ backgroundImage: `url(${image})` }}
+          >
+            &nbsp;
+          </span>
         </div>
       </div>
     </section>

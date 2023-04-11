@@ -9,7 +9,6 @@ export interface Props {
   technologiesTitleColor?: string;
   technologiesIconsColor?: string;
   technologies?: string[];
-  iconsColor?: string;
 }
 
 export default function ({
@@ -49,19 +48,27 @@ export default function ({
           </div>
           <div class="summary-splendid-spoon__group">
             <div class="summary-splendid-spoon__services">
-              <p class="topic-heading">{servicesTitle}</p>
+              <p class="topic-heading" style={{ color: servicesColor }}>
+                {servicesTitle}
+              </p>
               <ul>
                 {services.map((service) => <li>{service}</li>)}
               </ul>
             </div>
             <div class="summary-splendid-spoon__technologies">
-              <p class="topic-heading">{technologiesTitle}</p>
+              <p
+                class="topic-heading"
+                style={{ color: technologiesTitleColor }}
+              >
+                {technologiesTitle}
+              </p>
               <div class="summary-splendid-spoon__tech-icons flex-wrap">
                 {technologies.map((technology) => (
                   <div class="custom-tooltip">
                     <img
                       src={`img/${technology.toLocaleLowerCase()}.svg`}
                       alt={technology}
+                      style={{ color: technologiesIconsColor }}
                     />
                     <span>{technology}</span>
                   </div>

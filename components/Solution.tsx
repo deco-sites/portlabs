@@ -24,11 +24,13 @@ export default function ({
   return (
     <section class="solution-splendid-spoon" style={{ backgroundColor }}>
       <div class="solution-splendid-spoon__row">
-        <div
-          class="solution-splendid-spoon__image"
-          style={{ backgroundImage: image }}
-        >
-          <span class="solution-splendid-spoon__first-img">&nbsp;</span>
+        <div class="solution-splendid-spoon__image">
+          <span
+            class="solution-splendid-spoon__first-img"
+            style={{ backgroundImage: `url(${image})` }}
+          >
+            &nbsp;
+          </span>
         </div>
         <div class="solution-splendid-spoon__content">
           <div class="solution-splendid-spoon__text solution-splendid-spoon__text--solution">

@@ -10,7 +10,7 @@ export default function ({
     <section class="challenge-splendid-spoon">
       <span
         class="challenge-splendid-spoon__img"
-        style={{ backgroundImage: image }}
+        style={{ backgroundImage: `url(${image})` }}
       >
         &nbsp;
       </span>

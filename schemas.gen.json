@@ -280,10 +280,19 @@
           ],
           "title": "Subtitle Color"
         },
-        "highlights": {
+        "highlightsTexts": {
           "type": "array",
-          "items": {},
-          "title": "Highlights"
+          "items": {
+            "type": "string"
+          },
+          "title": "Highlights Texts"
+        },
+        "highlightsIcons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Highlights Icons"
         }
       },
       "required": [],
@@ -1135,13 +1144,6 @@
             "type": "string"
           },
           "title": "Technologies"
-        },
-        "iconsColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Icons Color"
         }
       },
       "required": [],

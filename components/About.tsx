@@ -46,7 +46,7 @@ export default function ({
       <div class="about-splendid-spoon__img-wrapper">
         <span
           class="about-splendid-spoon__img"
-          style={{ backgroundImage: image }}
+          style={{ backgroundImage: `url(${image})` }}
         >
           &nbsp;
         </span>
