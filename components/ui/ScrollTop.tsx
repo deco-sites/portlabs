@@ -48,7 +48,7 @@ export default function (props: Props) {
       onClick={onClick}
     >
       <button class="button_scroll" onClick={onClick}>
-        <img src="img/arrow.svg" alt="Arrow Illustration" />
+        <img src="/img/arrow.svg" alt="Arrow Illustration" />
       </button>
     </div>
   );

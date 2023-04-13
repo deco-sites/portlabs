@@ -39,6 +39,31 @@
       ],
       "title": "deco-sites/portlabs/functions/LoadGitHubRaw.ts@Props"
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "color": {
+          "type": "string",
+          "title": "Color",
+          "description": "Options: coral, teal, mustard, purple, coral-sec, teal-sec, mustard-sec, purple-sec"
+        },
+        "secondary_color": {
+          "type": "string",
+          "title": "Secondary_color",
+          "description": "Options: coral, teal, mustard, purple, coral-sec, teal-sec, mustard-sec, purple-sec"
+        }
+      },
+      "required": [
+        "title",
+        "color",
+        "secondary_color"
+      ],
+      "title": "deco-sites/portlabs/islands/ui/Navbar.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -230,31 +255,6 @@
       },
       "required": [],
       "title": "deco-sites/portlabs/components/Hero.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL05hdmJhci50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "color": {
-          "type": "string",
-          "title": "Color",
-          "description": "Options: coral, teal, mustard, purple, coral-sec, teal-sec, mustard-sec, purple-sec"
-        },
-        "secondary_color": {
-          "type": "string",
-          "title": "Secondary_color",
-          "description": "Options: coral, teal, mustard, purple, coral-sec, teal-sec, mustard-sec, purple-sec"
-        }
-      },
-      "required": [
-        "title",
-        "color",
-        "secondary_color"
-      ],
-      "title": "deco-sites/portlabs/components/ui/Navbar.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoSWNvbnMudHN4@Props": {
       "type": "object",
@@ -1361,6 +1361,59 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=": {
+      "title": "./islands/ui/Navbar.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ui/Navbar.tsx"
+          ],
+          "default": "./islands/ui/Navbar.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL0xpbmsudHN4": {
+      "title": "./islands/ui/Link.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ui/Link.tsx"
+          ],
+          "default": "./islands/ui/Link.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL0xpbmtUb0hvbWUudHN4": {
+      "title": "./islands/ui/LinkToHome.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ui/LinkToHome.tsx"
+          ],
+          "default": "./islands/ui/LinkToHome.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g=": {
       "title": "./islands/ui/ScrollTop.tsx",
       "type": "object",
@@ -1529,7 +1582,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL05hdmJhci50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props"
         }
       ],
       "required": [
@@ -2154,6 +2207,15 @@
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL0xpbmsudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL0xpbmtUb0hvbWUudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g="

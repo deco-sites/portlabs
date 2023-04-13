@@ -66,7 +66,7 @@ export default function ({
                 {technologies.map((technology) => (
                   <div class="custom-tooltip">
                     <img
-                      src={`img/${technology.toLocaleLowerCase()}.svg`}
+                      src={`/img/${technology.toLocaleLowerCase()}.svg`}
                       alt={technology}
                       style={{ color: technologiesIconsColor }}
                     />

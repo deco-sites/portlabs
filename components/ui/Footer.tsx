@@ -1,4 +1,5 @@
 import ScrollTop from "$start/islands/ui/ScrollTop.tsx";
+import Link from "$start/islands/ui/Link.tsx";
 import MailchimpForm from "./MailchimpForm.tsx";
 
 export interface Props {
@@ -34,13 +35,13 @@ export default function Footer(props: Props) {
               {subtitle}
             </p>
             <div class="footer-header__form">
-              <a
+              <Link
                 id="footer-cta-button"
                 href={ctaLink}
                 class="button button--coral"
               >
                 {ctaText}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -48,7 +49,7 @@ export default function Footer(props: Props) {
         <section class="footer-illustration">
           <figure>
             <img
-              src="img/ilus-footer.svg"
+              src="/img/ilus-footer.svg"
               alt="Arrow Illustration"
             />
           </figure>
@@ -108,58 +109,58 @@ export default function Footer(props: Props) {
           <div class="footer-pages">
             <ul>
               <li>
-                <a
+                <Link
                   class="link-nav link-nav--teal"
-                  href="https://labcodes.com.br/services"
+                  href="/services"
                   title="Go to Services page"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   class="link-nav link-nav--teal"
-                  href="https://labcodes.com.br/process"
+                  href="/process"
                   title="Go to How we work page"
                 >
                   How we work
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   class="link-nav link-nav--teal"
-                  href="https://labcodes.com.br/about"
+                  href="/about"
                   title="Go to About Us page"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   class="link-nav link-nav--teal"
-                  href="https://labcodes.com.br/contact"
+                  href="/contact"
                   title="Go to Contact page"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   class="link-nav link-nav--teal"
-                  href="https://labcodes.com.br/careers"
+                  href="/careers"
                   title="Go to Careers page"
                 >
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   class="link-nav link-nav--teal"
-                  href="https://labcodes.com.br/blog"
+                  href="/blog"
                   title="Go to our Blog page"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -169,13 +170,13 @@ export default function Footer(props: Props) {
       <div class="footer-signature">
         <div class="footer-signature__item">
           <div class="footer-signature__icons">
-            <img src="img/cc.svg" alt="cc" />
+            <img src="/img/cc.svg" alt="cc" />
             <img
-              src="img/group.svg"
+              src="/img/group.svg"
               alt="by"
             />
             <img
-              src="img/logo-footer-icon.svg"
+              src="/img/logo-footer-icon.svg"
               alt="Labcodes logo mark"
             />
           </div>
@@ -201,7 +202,7 @@ export default function Footer(props: Props) {
                   title="Go to Manguezal page"
                 >
                   <img
-                    src="img/logo-manguezal.svg"
+                    src="/img/logo-manguezal.svg"
                     alt="Manguezal logo"
                   />
                 </a>

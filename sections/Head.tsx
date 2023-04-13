@@ -211,7 +211,7 @@ export default function HeadComponent({
         Eventually we will convert this to preact.
       */
       }
-      <script async src="js/header.js" />
+      <script async src="/js/header.js" />
     </Head>
   );
 }

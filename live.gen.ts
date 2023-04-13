@@ -7,8 +7,11 @@ import { DecoManifest } from "$live/types.ts";
 
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/ui/ScrollTop.tsx";
-import * as $$$$$1 from "./islands/ui/ScrollBottom.tsx";
+import * as $$$$$0 from "./islands/ui/Navbar.tsx";
+import * as $$$$$1 from "./islands/ui/Link.tsx";
+import * as $$$$$2 from "./islands/ui/LinkToHome.tsx";
+import * as $$$$$3 from "./islands/ui/ScrollTop.tsx";
+import * as $$$$$4 from "./islands/ui/ScrollBottom.tsx";
 import * as $$$$$$$$0 from "./sections/Hero.tsx";
 import * as $$$$$$$$1 from "./sections/Navbar.tsx";
 import * as $$$$$$$$2 from "./sections/HighlightsWithIcons.tsx";
@@ -66,8 +69,11 @@ const manifest: DecoManifest = {
     "./routes/[...catchall].tsx": $live_catchall,
   },
   "islands": {
-    "./islands/ui/ScrollTop.tsx": $$$$$0,
-    "./islands/ui/ScrollBottom.tsx": $$$$$1,
+    "./islands/ui/Navbar.tsx": $$$$$0,
+    "./islands/ui/Link.tsx": $$$$$1,
+    "./islands/ui/LinkToHome.tsx": $$$$$2,
+    "./islands/ui/ScrollTop.tsx": $$$$$3,
+    "./islands/ui/ScrollBottom.tsx": $$$$$4,
   },
   "sections": {
     "deco-sites/portlabs/sections/Hero.tsx": $$$$$$$$0,
