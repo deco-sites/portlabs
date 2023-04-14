@@ -10,16 +10,10 @@ export interface Props {
   includesLink?: boolean;
   linkText?: string;
   linkColor?:
-    | "teal"
-    | "purple"
-    | "header-coral"
-    | "header-teal"
-    | "header-mustard"
-    | "header-purple"
-    | "header-coral-sec"
-    | "header-teal-sec"
-    | "header-mustard-sec"
-    | "header-purple-sec";
+    | "teal-40"
+    | "purple-40"
+    | "coral-40"
+    | "mustard-40";
   linkHref?: string;
   linkOpensInANewTab?: boolean;
 }
@@ -37,7 +31,7 @@ export default function ({
   `,
   includesLink = true,
   linkText = "Visit [company name] Website",
-  linkColor = "teal",
+  linkColor = "teal-40",
   linkHref = "#",
   linkOpensInANewTab = false,
 }: Props) {
@@ -59,7 +53,7 @@ export default function ({
           {/* TODO: Refactor the links */}
           {includesLink && (
             <a
-              class={`link-nav link-nav--${linkColor}`}
+              class={`link-nav !text-mineral-80 after:!bg-${linkColor} hover:!text-mustard-10`}
               style={{ marginTop: "2rem" }}
               href={linkHref}
               target={linkOpensInANewTab ? "_blank" : "_self"}

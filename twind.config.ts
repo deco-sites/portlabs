@@ -14,10 +14,34 @@ export default {
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         transparent: "transparent",
+        // Mineral
+        "mineral-80": "#2E3942",
+        // "mineral-40": "#009699",
+        // "mineral-60": "#007B7D",
+        // "mineral-70": "#005F61",
+        // Teal
+        "teal-10": "#DEF7F7",
+        "teal-40": "#009699",
+        "teal-60": "#007B7D",
+        "teal-70": "#005F61",
+        // Purple
+        "purple-40": "#935FD3",
+        "purple-60": "#5A3489",
+        "purple-70": "#3D235C",
+        // Coral
+        "coral-10": "#FFF1F0",
+        "coral-40": "#EC6056",
+        "coral-60": "#BC442F",
+        "coral-70": "#EC6056",
+        // Mustard
+        "mustard-10": "#FDF8ED",
+        "mustard-40": "#E9A449",
+        "mustard-60": "#935E25",
+        "mustard-70": "#663F19",
       },
       fontFamily: {
-        sans: ["Albert Sans", "sans-serif"],
-        serif: ["serif"],
+        sans: ["freight-sans-pro", "sans-serif"],
+        serif: ["ff-meta-serif-web-pro", "serif"],
       },
     },
   },
