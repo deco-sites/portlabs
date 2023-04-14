@@ -24,7 +24,7 @@ export default function ({
         <div class="summary-loadsmart__numbers-group">
           {[...Array(highlightsCount).keys()].map((index) => (
             <div
-              class="summary-loadsmart__numbers-item"
+              class="summary-loadsmart__numbers-item items-center	"
               style={{
                 paddingTop: "1rem",
                 paddingRight: "0.5rem",

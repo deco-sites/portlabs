@@ -25,18 +25,18 @@ export default function ({
       class="solution-splendid-spoon__testimonial"
       style={{ backgroundColor: foregroundColor, top: 0 }}
     >
-      <div class="testimonial-detail" style={{ marginBottom: "-40px" }}>
+      <div class="testimonial-detail" style={{ marginBottom: 0 }}>
         <div
           class="testimonial-detail__content"
           style={{
             backgroundColor,
             marginRight: 0,
             borderBottomRightRadius: 0,
-            transform: "translateY(-40px)",
+            // transform: "translateY(-40px)",
             maxWidth: "100%",
           }}
         >
-          <div class="testimonial-detail__text">
+          <div class="testimonial-detail__text xl:!max-w-[66%] 2xl:!max-w-[50%]">
             <p style={{ color: testimonialColor }}>{testimonial}</p>
             <p style={{ color: authorColor }} class="topic-heading">{author}</p>
             <p

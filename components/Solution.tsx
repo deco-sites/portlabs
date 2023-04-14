@@ -23,7 +23,7 @@ export default function ({
 }) {
   return (
     <section class="solution-splendid-spoon" style={{ backgroundColor }}>
-      <div class="solution-splendid-spoon__row">
+      <div class="solution-splendid-spoon__row pt-0">
         <div class="solution-splendid-spoon__image">
           <span
             class="solution-splendid-spoon__first-img"
@@ -32,7 +32,7 @@ export default function ({
             &nbsp;
           </span>
         </div>
-        <div class="solution-splendid-spoon__content">
+        <div class="solution-splendid-spoon__content pt-12">
           <div class="solution-splendid-spoon__text solution-splendid-spoon__text--solution">
             <h2 style={{ color: titleColor }}>{title}</h2>
             <p class="topic-heading" style={{ color: subtitleColor }}>
