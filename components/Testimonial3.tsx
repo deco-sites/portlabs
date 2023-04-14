@@ -21,21 +21,23 @@ export default function ({
   authorPositionColor = "#FFFFFF",
 }: Props) {
   return (
-    <div
-      class="solution-splendid-spoon__testimonial"
-      style={{ backgroundColor: foregroundColor, top: 0 }}
+    <section
+      style={{ marginBottom: "-140px" }}
     >
-      <div class="testimonial-detail" style={{ marginBottom: "-40px" }}>
-        <div
-          class="testimonial-detail__content"
-          style={{
-            backgroundColor,
-            marginRight: 0,
-            borderBottomRightRadius: 0,
-            transform: "translateY(-40px)",
-            maxWidth: "100%",
-          }}
-        >
+      <div
+        style={{
+          height: "140px",
+          backgroundColor: foregroundColor,
+          position: "relative",
+          transform: "none",
+        }}
+      >
+      </div>
+      <div
+        class="testimonial-detail"
+        style={{ position: "relative", transform: "translateY(-140px)" }}
+      >
+        <div class="testimonial-detail__content" style={{ backgroundColor }}>
           <div class="testimonial-detail__text">
             <p style={{ color: testimonialColor }}>{testimonial}</p>
             <p style={{ color: authorColor }} class="topic-heading">{author}</p>
@@ -48,6 +50,6 @@ export default function ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
