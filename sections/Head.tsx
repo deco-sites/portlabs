@@ -58,6 +58,7 @@ export default function HeadComponent({
       {styleUrls?.map((styleUrl: string) => (
         <link rel="stylesheet" href={asset(styleUrl)}></link>
       ))}
+
       <style
         dangerouslySetInnerHTML={{
           __html: `

@@ -1,30 +1,36 @@
 import ScrollBottom from "$start/islands/ui/ScrollBottom.tsx";
+import {
+  Color,
+  PrimaryColor,
+  PrimarySecondaryAndTertiaryColor,
+} from "$start/utils/types.ts";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 
 export interface Props {
-  mainColor?: string;
+  backgroundColor?: Color;
   title?: string;
-  titleColor?: string;
+  titleColor?: PrimaryColor;
   preText?: string;
-  preTextColor?: string;
+  preTextColor?: PrimarySecondaryAndTertiaryColor;
   includesScrollToBottom?: boolean;
-  image?: string;
+  image?: LiveImage;
 }
 
 export default function ({
-  mainColor = "coral",
+  backgroundColor = "coral-40",
   title = "Healthy software for a healthy business model",
-  titleColor = "#ffffff",
+  titleColor = "white-100",
   preText = "Splendid Spoon",
-  preTextColor = "#ffffff",
+  preTextColor = "white-100",
   includesScrollToBottom = true,
   image =
     "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
 }: Props) {
   return (
     <section
-      class="hero-cases"
+      class={`hero-cases bg-${backgroundColor}`}
       style={{
-        backgroundColor: mainColor,
         maxHeight: "800px",
         position: "relative",
       }}
@@ -34,24 +40,41 @@ export default function ({
         style={{ maxWidth: "573px", zIndex: "3" }}
       >
         <p
-          class="topic-heading hero-cases__title"
+          class={`topic-heading hero-cases__title text-${preTextColor}`}
           style={{ color: preTextColor }}
         >
           {preText}
         </p>
-        <h1 class="hero-cases__subtitle" style={{ color: titleColor }}>
+        <h1 class={`hero-cases__subtitle text-${titleColor}`}>
           {title}
         </h1>
       </div>
+
       {image && (
-        <img
-          class="hero-cases__img"
-          src={image}
-          style={{
-            width: "auto",
-            height: "100%",
-          }}
-        />
+        <Picture
+          class="d-block h-[650px] 2xl:h-[800px] position-absolute right-0 bottom-0"
+          preload
+        >
+          <Source
+            media="(min-width: 1200px)"
+            fetchPriority="high"
+            src={image}
+            width={650}
+            height={650}
+          />
+          <Source
+            media="(min-width: 1920px)"
+            fetchPriority="high"
+            src={image}
+            width={800}
+            height={800}
+          />
+          <img
+            class="d-none d-xl-block object-cover h-full w-full"
+            loading="lazy"
+            src={image}
+          />
+        </Picture>
       )}
       {includesScrollToBottom && <ScrollBottom />}
     </section>

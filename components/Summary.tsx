@@ -1,23 +1,32 @@
+import {
+  Color,
+  Icon,
+  PrimarySecondaryAndTertiaryColor,
+} from "../utils/types.ts";
+import { GenericIcon } from "$start/components/ui/Icons.tsx";
+
 export interface Props {
   text?: string;
-  foregroundColor?: string;
-  backgroundColor?: string;
+  foregroundColor?: Color;
+  backgroundColor?: Color;
   servicesTitle?: string;
-  servicesColor?: string;
+  servicesTitleColor?: PrimarySecondaryAndTertiaryColor;
   services?: string[];
+  servicesColor?: PrimarySecondaryAndTertiaryColor;
   technologiesTitle?: string;
-  technologiesTitleColor?: string;
-  technologiesIconsColor?: string;
-  technologies?: string[];
+  technologiesTitleColor?: Color;
+  technologiesIconsColor?: Color;
+  technologies?: Icon[];
 }
 
 export default function ({
-  backgroundColor = "#FFFFFF",
-  foregroundColor = "#FFACA4",
+  backgroundColor = "white-100",
+  foregroundColor = "coral-70",
   text =
     "Our challenge was to scale and optimize Splendid Spoon’s core e-commerce platform to uphold more users and allow greater flexibility in offering new products. Besides, we also implemented the demands of the marketing team to increase the conversion of new users.",
   servicesTitle = "what we did",
-  servicesColor = "",
+  servicesTitleColor = "mineral-80",
+  servicesColor = "coral-60",
   services = [
     "Project scoping and specification",
     "Python and React development",
@@ -26,51 +35,44 @@ export default function ({
     "7-days-a-week support",
   ],
   technologiesTitle = "technologies",
-  technologiesTitleColor = "",
-  technologiesIconsColor = "",
+  technologiesTitleColor = "coral-60",
+  technologiesIconsColor = "coral-40",
   technologies = [
-    "React",
-    "Python",
-    "Django",
-    "React",
-    "Python",
+    "ReactIcon",
+    "PythonIcon",
+    "DjangoIcon",
+    "JavascriptIcon",
   ],
 }: Props) {
   return (
     <section
-      class="summary-splendid-spoon"
-      style={{ backgroundColor: foregroundColor }}
+      class={`summary-splendid-spoon bg-${foregroundColor}`}
     >
-      <div class="summary-splendid-spoon__text">
+      <div class={`summary-splendid-spoon__text ${backgroundColor}`}>
         <div class="summary-splendid-spoon__wrapper">
-          <div class="summary-splendid-spoon__challenge-text">
+          <div
+            class={`summary-splendid-spoon__challenge-text text-${servicesTitleColor}`}
+          >
             <p>{text}</p>
           </div>
           <div class="summary-splendid-spoon__group">
             <div class="summary-splendid-spoon__services">
-              <p class="topic-heading" style={{ color: servicesColor }}>
+              <p class={`topic-heading text-${servicesTitleColor}`}>
                 {servicesTitle}
               </p>
-              <ul>
+              <ul class={`list-disc text-${servicesColor}`}>
                 {services.map((service) => <li>{service}</li>)}
               </ul>
             </div>
             <div class="summary-splendid-spoon__technologies">
-              <p
-                class="topic-heading"
-                style={{ color: technologiesTitleColor }}
-              >
+              <p class={`topic-heading text-${technologiesTitleColor}`}>
                 {technologiesTitle}
               </p>
               <div class="summary-splendid-spoon__tech-icons flex-wrap">
                 {technologies.map((technology) => (
                   <div class="custom-tooltip">
-                    <img
-                      src={`/img/${technology.toLocaleLowerCase()}.svg`}
-                      alt={technology}
-                      style={{ color: technologiesIconsColor }}
-                    />
-                    <span>{technology}</span>
+                    {GenericIcon(technology, technologiesIconsColor)}
+                    <span>{technology.replace("Icon", "")}</span>
                   </div>
                 ))}
               </div>

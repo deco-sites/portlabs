@@ -1,33 +1,35 @@
+import { Color, PrimarySecondaryAndTertiaryColor } from "$start/utils/types.ts";
+
 export interface Props {
-  foregroundColor?: string;
-  backgroundColor?: string;
+  foregroundColor?: Color;
+  backgroundColor?: Color;
   testimonial?: string;
-  testimonialColor?: string;
+  testimonialColor?: PrimarySecondaryAndTertiaryColor;
   author?: string;
-  authorColor?: string;
+  authorColor?: PrimarySecondaryAndTertiaryColor;
   authorPosition?: string;
-  authorPositionColor?: string;
+  authorPositionColor?: PrimarySecondaryAndTertiaryColor;
 }
 
 export default function ({
-  foregroundColor = "#E8EFF3",
-  backgroundColor = "#8095A3",
+  foregroundColor = "coral-40",
+  backgroundColor = "mustard-10",
   testimonial =
     "“This was our first time working with an outside company, and we liked the experience and learned a lot from it. They have more experience than us, so we’ve learned how to work in sprints and organize a project. I don’t have anything negative to say.”",
-  testimonialColor = "#FFFFFF",
+  testimonialColor = "white-100",
   author = "NOME DA PESSOA",
-  authorColor = "#FFFFFF",
+  authorColor = "white-100",
   authorPosition = "Cargo da pessoa",
-  authorPositionColor = "#FFFFFF",
+  authorPositionColor = "white-100",
 }: Props) {
   return (
     <section
       style={{ marginBottom: "-140px" }}
+      class={`bg-${foregroundColor}`}
     >
       <div
         style={{
           height: "140px",
-          backgroundColor: foregroundColor,
           position: "relative",
           transform: "none",
         }}
@@ -35,15 +37,14 @@ export default function ({
       </div>
       <div
         class="testimonial-detail"
-        style={{ position: "relative", transform: "translateY(-140px)" }}
+        style={{ position: "relative", transform: "translateY(-180px)" }}
       >
-        <div class="testimonial-detail__content" style={{ backgroundColor }}>
+        <div class={`testimonial-detail__content bg-${backgroundColor}`}>
           <div class="testimonial-detail__text">
-            <p style={{ color: testimonialColor }}>{testimonial}</p>
-            <p style={{ color: authorColor }} class="topic-heading">{author}</p>
+            <p class={`text-${testimonialColor}`}>{testimonial}</p>
+            <p class={`topic-heading text-${authorColor}`}>{author}</p>
             <p
-              style={{ color: authorPositionColor }}
-              class="smallest-paragraph"
+              class={`smallest-paragraph text-${authorPositionColor}`}
             >
               {authorPosition}
             </p>

@@ -1,37 +1,39 @@
+import { Color, PrimarySecondaryAndTertiaryColor } from "$start/utils/types.ts";
+
 export interface Props {
-  foregroundColor?: string;
-  backgroundColor?: string;
+  foregroundColor?: Color;
+  backgroundColor?: Color;
   testimonial?: string;
-  testimonialColor?: string;
+  testimonialColor?: PrimarySecondaryAndTertiaryColor;
   author?: string;
-  authorColor?: string;
+  authorColor?: PrimarySecondaryAndTertiaryColor;
   authorPosition?: string;
-  authorPositionColor?: string;
+  authorPositionColor?: PrimarySecondaryAndTertiaryColor;
 }
 
 export default function ({
-  foregroundColor = "#FFFFFF",
-  backgroundColor = "#FDF8ED",
+  foregroundColor = "white-100",
+  backgroundColor = "mustard-10",
   testimonial =
     "“When companies signup for Tina, they have no doubt that we are a company that knows what we’re doing, that we are experts in dealing with domestic violence against women. Furthermore, that we are able to deliver solutions through technology.”",
-  testimonialColor = "#000000bf",
+  testimonialColor = "mineral-80",
   author = "NOME DA PESSOA",
-  authorColor = "#576975",
+  authorColor = "mineral-80",
   authorPosition = "Cargo da pessoa",
-  authorPositionColor = "#576975",
+  authorPositionColor = "mineral-80",
 }: Props) {
   return (
     <section
-      class="outcomes-splendid-spoon"
-      style={{ backgroundColor: foregroundColor, paddingTop: 0 }}
+      class={`outcomes-splendid-spoon bg-${foregroundColor}`}
+      style={{ paddingTop: 0 }}
     >
-      <div class="outcomes-testimonial" style={{ backgroundColor }}>
+      <div class={`outcomes-testimonial bg-${backgroundColor}`}>
         <div class="outcomes-testimonial__content">
-          <p style={{ color: testimonialColor }}>
+          <p class={`text-${testimonialColor}`}>
             {testimonial}
           </p>
-          <p class="topic-heading" style={{ color: authorColor }}>{author}</p>
-          <p class="smallest-paragraph" style={{ color: authorPositionColor }}>
+          <p class={`topic-heading text-${authorColor}`}>{author}</p>
+          <p class={`smallest-paragraph text-${authorPositionColor}`}>
             {authorPosition}
           </p>
         </div>

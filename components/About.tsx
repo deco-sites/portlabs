@@ -1,27 +1,31 @@
 import type { HTML } from "deco-sites/std/components/types.ts";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+
+import {
+  Color,
+  PrimaryColor,
+  PrimarySecondaryAndTertiaryColor,
+} from "$start/utils/types.ts";
 
 export interface Props {
-  backgroundColor?: string;
-  image?: string;
+  backgroundColor?: Color;
+  image?: LiveImage;
   title?: string;
-  titleColor?: string;
+  titleColor?: PrimarySecondaryAndTertiaryColor;
   text?: HTML;
   textColor?: string;
   includesLink?: boolean;
   linkText?: string;
-  linkColor?:
-    | "teal-40"
-    | "purple-40"
-    | "coral-40"
-    | "mustard-40";
+  linkColor?: PrimaryColor;
   linkHref?: string;
   linkOpensInANewTab?: boolean;
 }
 
 export default function ({
-  backgroundColor = "#E8EFF3",
+  backgroundColor = "mustard-10",
   title = "About [company]",
-  titleColor = "#009699",
+  titleColor = "teal-40",
   image =
     "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/about-photo.png",
   text = `
@@ -36,18 +40,43 @@ export default function ({
   linkOpensInANewTab = false,
 }: Props) {
   return (
-    <section class="about-splendid-spoon" style={{ backgroundColor }}>
-      <div class="about-splendid-spoon__img-wrapper">
+    <section
+      class={`about-splendid-spoon lg:justify-between	 lg:flex-row-reverse bg-${backgroundColor}`}
+    >
+      <div class="h-[350px] md:h-[600px] pl-7">
+        <Picture>
+          <Source
+            src={image}
+            width={375}
+            height={350}
+          />
+          <Source
+            media="(min-width: 768px)"
+            src={image}
+            width={768}
+            height={600}
+          />
+          <img
+            class="object-cover h-full w-full rounded-bl-[80px]"
+            loading="lazy"
+            src={image}
+          />
+        </Picture>
+      </div>
+      {
+        /*<div class="about-splendid-spoon__img-wrapper md:h-[600px]">
         <span
-          class="about-splendid-spoon__img"
+          class="about-splendid-spoon__img bg-bottom md:bg-bottom"
           style={{ backgroundImage: `url(${image})` }}
         >
           &nbsp;
         </span>
-      </div>
+        </div>
+       */
+      }
       <div class="about-splendid-spoon__content">
         <div class="about-splendid-spoon__text">
-          <h2 style={{ color: titleColor }}>{title}</h2>
+          <h2 class={`text-${titleColor}`}>{title}</h2>
           <div dangerouslySetInnerHTML={{ __html: text }} />
 
           {/* TODO: Refactor the links */}

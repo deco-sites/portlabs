@@ -1,20 +1,27 @@
 import ScrollBottom from "$start/islands/ui/ScrollBottom.tsx";
+import {
+  Color,
+  PrimaryColor,
+  PrimarySecondaryAndTertiaryColor,
+} from "$start/utils/types.ts";
 
 export interface Props {
-  mainColor?: string;
+  backgroundColor?: Color;
   title?: string;
+  titleColor?: PrimarySecondaryAndTertiaryColor;
   description?: string;
+  descriptionColor?: PrimarySecondaryAndTertiaryColor;
   includesScrollToBottom?: boolean;
   includesCta?: boolean;
   ctaText?: string;
   ctaLink?: string;
-  ctaColor?: string;
+  ctaColor?: PrimaryColor;
   ctaTargetBlank?: boolean;
 }
 
 const Hero = (props: Props) => {
   const {
-    mainColor = "coral",
+    backgroundColor = "coral-40",
     title = "We create custom digital experiences",
     description =
       "With a human-centered and holistic approach, we design and code web products that fit your needs",
@@ -26,7 +33,7 @@ const Hero = (props: Props) => {
     ctaTargetBlank = false,
   } = props;
   return (
-    <section class={`hero section ${mainColor}`}>
+    <section class={`hero section bg-${backgroundColor}`}>
       <div class="hero__content">
         <h1>{title}</h1>
         {description && <h5 class="hero__text">{description}</h5>}
