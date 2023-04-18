@@ -1,7 +1,7 @@
 import { Plugin } from "$fresh/server.ts";
 
 const STYLE_ELEMENT_ID = "__FRSH_LEGACY_CSS";
-const LEGACY_CSS_PATH = "static/css/legacy.min.css";
+const LEGACY_CSS_PATH = "./static/css/legacy.min.css";
 
 export default function legacyCss(options?: { selfURL: string }): Plugin {
   const main = `data:application/javascript,import hydrate from "${
