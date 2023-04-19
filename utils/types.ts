@@ -48,7 +48,7 @@ export type PrimarySecondaryAndTertiaryColor =
   | "teal-40"
   | "teal-60"
   | "teal-70"
-  | "mineral-80"
+  | "mineral-60"
   | "mineral-80"
   | "white-100";
 

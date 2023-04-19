@@ -41,20 +41,27 @@ export default function ({
 }: Props) {
   return (
     <section
-      class={`about-splendid-spoon lg:justify-between	 lg:flex-row-reverse bg-${backgroundColor}`}
+      class={`about-splendid-spoon lg:justify-between	lg:flex-row-reverse bg-${backgroundColor}`}
     >
-      <div class="h-[350px] md:h-[600px] pl-7">
+      <div class="h-[280px] sm:h-[450px] md:h-[520px] pl-7 xl:pl-32">
         <Picture>
           <Source
+            media="(max-width: 768px)"
             src={image}
-            width={375}
-            height={350}
+            width={1000}
+            height={700}
           />
           <Source
-            media="(min-width: 768px)"
+            media="(max-width: 1440px)"
             src={image}
-            width={768}
-            height={600}
+            width={1440}
+            height={700}
+          />
+          <Source
+            media="(min-width: 1440px)"
+            src={image}
+            width={1000}
+            height={500}
           />
           <img
             class="object-cover h-full w-full rounded-bl-[80px]"

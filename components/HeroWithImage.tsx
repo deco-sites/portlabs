@@ -15,6 +15,7 @@ export interface Props {
   preTextColor?: PrimarySecondaryAndTertiaryColor;
   includesScrollToBottom?: boolean;
   image?: LiveImage;
+  retinaImage?: LiveImage;
 }
 
 export default function ({
@@ -25,6 +26,8 @@ export default function ({
   preTextColor = "white-100",
   includesScrollToBottom = true,
   image =
+    "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
+  retinaImage =
     "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
 }: Props) {
   return (
@@ -50,13 +53,13 @@ export default function ({
         </h1>
       </div>
 
-      {image && (
+      {(image && retinaImage) && (
         <Picture
-          class="d-block h-[650px] 2xl:h-[800px] position-absolute right-0 bottom-0"
+          class="hero-cases__img h-[650px] position-absolute right-0 bottom-0 w-100 max-w-[50%] 2xl:h-[700px]"
           preload
         >
           <Source
-            media="(min-width: 1200px)"
+            media="(max-width: 1920px)"
             fetchPriority="high"
             src={image}
             width={650}
@@ -65,9 +68,9 @@ export default function ({
           <Source
             media="(min-width: 1920px)"
             fetchPriority="high"
-            src={image}
-            width={800}
-            height={800}
+            src={retinaImage}
+            width={1200}
+            height={700}
           />
           <img
             class="d-none d-xl-block object-cover h-full w-full"

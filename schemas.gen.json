@@ -78,29 +78,35 @@
       "required": [],
       "title": "deco-sites/portlabs/components/ui/ScrollTop.tsx@Props"
     },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
-      "$ref": "#/root/flags",
-      "title": "Flag"
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
+      "$ref": "#/root/pages",
+      "title": "Page"
     },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag"
-      },
-      "title": "Flag[]"
-    },
-    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig": {
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig": {
       "type": "object",
       "properties": {
-        "flags": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]",
-          "title": "Flags"
+        "page": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
+          "title": "Page"
         }
       },
       "required": [
-        "flags"
+        "page"
       ],
-      "title": "deco-cx/live/handlers/routesSelection.ts@SelectionConfig"
+      "title": "deco-cx/live/handlers/devPage.ts@DevConfig"
+    },
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2ZyZXNoLnRz@FreshConfig": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
+          "title": "Page"
+        }
+      },
+      "required": [
+        "page"
+      ],
+      "title": "deco-cx/live/handlers/fresh.ts@FreshConfig"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler": {
       "$ref": "#/root/handlers",
@@ -133,35 +139,29 @@
       ],
       "title": "deco-cx/live/handlers/router.ts@RouterConfig"
     },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
-      "$ref": "#/root/pages",
-      "title": "Page"
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
+      "$ref": "#/root/flags",
+      "title": "Flag"
     },
-    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig": {
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag"
+      },
+      "title": "Flag[]"
+    },
+    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig": {
       "type": "object",
       "properties": {
-        "page": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
-          "title": "Page"
+        "flags": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]",
+          "title": "Flags"
         }
       },
       "required": [
-        "page"
+        "flags"
       ],
-      "title": "deco-cx/live/handlers/devPage.ts@DevConfig"
-    },
-    "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2ZyZXNoLnRz@FreshConfig": {
-      "type": "object",
-      "properties": {
-        "page": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
-          "title": "Page"
-        }
-      },
-      "required": [
-        "page"
-      ],
-      "title": "deco-cx/live/handlers/fresh.ts@FreshConfig"
+      "title": "deco-cx/live/handlers/routesSelection.ts@SelectionConfig"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section": {
       "$ref": "#/root/sections",
@@ -191,6 +191,984 @@
         "sections"
       ],
       "title": "deco-cx/live/pages/LivePage.tsx@Props"
+    },
+    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
+          "title": "Page"
+        }
+      },
+      "required": [
+        "page"
+      ],
+      "title": "deco-cx/live/sections/PageInclude.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
+      "type": "string",
+      "format": "html",
+      "title": "HTML"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Background Color"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Title Color"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "textColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Text Color"
+        },
+        "includesLink": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Link"
+        },
+        "linkText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Link Text"
+        },
+        "linkColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Link Color"
+        },
+        "linkHref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Link Href"
+        },
+        "linkOpensInANewTab": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Link Opens In A New Tab"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/About.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NoYWxsZW5nZS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Background Color"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Title Color"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "textColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Text Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Challenge.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NUQS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Background Color"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "titleColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Title Color"
+        },
+        "includesCta": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Cta"
+        },
+        "ctaText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Text"
+        },
+        "ctaTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Title"
+        },
+        "ctaLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Link"
+        },
+        "ctaColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Cta Color"
+        },
+        "ctaTransitionBorderColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Cta Transition Border Color"
+        },
+        "ctaTargetBlank": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Cta Target Blank"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/CTA.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0Zvb3Rlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "ctaText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Text"
+        },
+        "ctaLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Cta Link"
+        },
+        "includesScrollTop": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Includes Scroll Top"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/ui/Footer.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Url"
+        },
+        "imageUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image Url"
+        },
+        "faviconUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Favicon Url"
+        },
+        "styleUrls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Style Urls"
+        },
+        "themeColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Theme Color"
+        },
+        "includeNoIndex": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Include No Index"
+        }
+      },
+      "required": [
+        "styleUrls"
+      ],
+      "title": "deco-sites/portlabs/sections/Head.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm8udHN4@Props": {
       "type": "object",
@@ -352,7 +1330,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -429,7 +1407,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -515,1494 +1493,6 @@
       },
       "required": [],
       "title": "deco-sites/portlabs/components/Hero.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoSWNvbnMudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Background Color"
-        },
-        "highlightsTextsColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Highlights Texts Color"
-        },
-        "highlightsTexts": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Highlights Texts"
-        },
-        "highlightsIcons": {
-          "type": "array",
-          "items": {
-            "anyOf": [
-              {
-                "type": "string",
-                "const": "receipt_sparkles"
-              },
-              {
-                "type": "string",
-                "const": "clock"
-              },
-              {
-                "type": "string",
-                "const": "inprivate_account"
-              }
-            ],
-            "type": "string"
-          },
-          "title": "Highlights Icons"
-        },
-        "highlightsIconsColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Highlights Icons Color"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/HighlightsWithIcons.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoTnVtYmVycy50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Background Color"
-        },
-        "highlights": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Highlights"
-        },
-        "highlightsColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Highlights Color"
-        },
-        "highlightsSubtitles": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Highlights Subtitles"
-        },
-        "highlightsSubtitlesColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Highlights Subtitles Color"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/HighlightsWithNumbers.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0Zvb3Rlci50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "subtitle": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Subtitle"
-        },
-        "ctaText": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Cta Text"
-        },
-        "ctaLink": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Cta Link"
-        },
-        "includesScrollTop": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Includes Scroll Top"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/ui/Footer.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "foregroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Foreground Color"
-        },
-        "backgroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Background Color"
-        },
-        "testimonial": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Testimonial"
-        },
-        "testimonialColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Testimonial Color"
-        },
-        "author": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Author"
-        },
-        "authorColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Author Color"
-        },
-        "authorPosition": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Author Position"
-        },
-        "authorPositionColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Author Position Color"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/Testimonial2.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Description"
-        },
-        "url": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Url"
-        },
-        "imageUrl": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Image Url"
-        },
-        "faviconUrl": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Favicon Url"
-        },
-        "styleUrls": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Style Urls"
-        },
-        "themeColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Theme Color"
-        },
-        "includeNoIndex": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Include No Index"
-        }
-      },
-      "required": [
-        "styleUrls"
-      ],
-      "title": "deco-sites/portlabs/sections/Head.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMy50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "foregroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Foreground Color"
-        },
-        "backgroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Background Color"
-        },
-        "testimonial": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Testimonial"
-        },
-        "testimonialColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Testimonial Color"
-        },
-        "author": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Author"
-        },
-        "authorColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Author Color"
-        },
-        "authorPosition": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Author Position"
-        },
-        "authorPositionColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Author Position Color"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/Testimonial3.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm9XaXRoSW1hZ2UudHN4@Props": {
       "type": "object",
@@ -2205,7 +1695,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -2229,443 +1719,16 @@
         "image": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
+        },
+        "retinaImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Retina Image"
         }
       },
       "required": [],
       "title": "deco-sites/portlabs/components/HeroWithImage.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMS50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "foregroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Foreground Color"
-        },
-        "backgroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Background Color"
-        },
-        "testimonial": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Testimonial"
-        },
-        "testimonialColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Testimonial Color"
-        },
-        "author": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Author"
-        },
-        "authorColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Author Color"
-        },
-        "authorPosition": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Author Position"
-        },
-        "authorPositionColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Author Position Color"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/Testimonial1.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
-      "type": "string",
-      "format": "html",
-      "title": "HTML"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NoYWxsZW5nZS50c3g=@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoSWNvbnMudHN4@Props": {
       "type": "object",
       "properties": {
         "backgroundColor": {
@@ -2762,14 +1825,7 @@
           "type": "string",
           "title": "Background Color"
         },
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "titleColor": {
+        "highlightsTextsColor": {
           "anyOf": [
             {
               "type": "string",
@@ -2825,7 +1881,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -2837,13 +1893,37 @@
             }
           ],
           "type": "string",
-          "title": "Title Color"
+          "title": "Highlights Texts Color"
         },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
+        "highlightsTexts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Highlights Texts"
         },
-        "textColor": {
+        "highlightsIcons": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "const": "receipt_sparkles"
+              },
+              {
+                "type": "string",
+                "const": "clock"
+              },
+              {
+                "type": "string",
+                "const": "inprivate_account"
+              }
+            ],
+            "type": "string"
+          },
+          "title": "Highlights Icons"
+        },
+        "highlightsIconsColor": {
           "anyOf": [
             {
               "type": "string",
@@ -2899,7 +1979,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -2911,32 +1991,13 @@
             }
           ],
           "type": "string",
-          "title": "Text Color"
+          "title": "Highlights Icons Color"
         }
       },
       "required": [],
-      "title": "deco-sites/portlabs/components/Challenge.tsx@Props"
+      "title": "deco-sites/portlabs/components/HighlightsWithIcons.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Bob3RvLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "mobileImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Mobile Image"
-        },
-        "tabletImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Tablet Image"
-        },
-        "desktopImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Desktop Image"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/Photo.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NUQS50c3g=@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hpZ2hsaWdodHNXaXRoTnVtYmVycy50c3g=@Props": {
       "type": "object",
       "properties": {
         "backgroundColor": {
@@ -3033,14 +2094,14 @@
           "type": "string",
           "title": "Background Color"
         },
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
+        "highlights": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Highlights"
         },
-        "titleColor": {
+        "highlightsColor": {
           "anyOf": [
             {
               "type": "string",
@@ -3096,7 +2157,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -3108,80 +2169,17 @@
             }
           ],
           "type": "string",
-          "title": "Title Color"
+          "title": "Highlights Color"
         },
-        "includesCta": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Includes Cta"
+        "highlightsSubtitles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Highlights Subtitles"
         },
-        "ctaText": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Cta Text"
-        },
-        "ctaTitle": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Cta Title"
-        },
-        "ctaLink": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Cta Link"
-        },
-        "ctaColor": {
+        "highlightsSubtitlesColor": {
           "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Cta Color"
-        },
-        "ctaTransitionBorderColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
             {
               "type": "string",
               "const": "coral-40"
@@ -3196,15 +2194,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
               "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
             },
             {
               "type": "string",
@@ -3220,10 +2210,6 @@
             },
             {
               "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
               "const": "purple-40"
             },
             {
@@ -3233,18 +2219,6 @@
             {
               "type": "string",
               "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
             },
             {
               "type": "string",
@@ -3260,22 +2234,23 @@
             },
             {
               "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
               "const": "white-100"
             }
           ],
           "type": "string",
-          "title": "Cta Transition Border Color"
-        },
-        "ctaTargetBlank": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Cta Target Blank"
+          "title": "Highlights Subtitles Color"
         }
       },
       "required": [],
-      "title": "deco-sites/portlabs/components/CTA.tsx@Props"
+      "title": "deco-sites/portlabs/components/HighlightsWithNumbers.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL01haW5UZXN0aW1vbmlhbC50c3g=@Props": {
       "type": "object",
@@ -3531,7 +2506,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -3608,7 +2583,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -3685,7 +2660,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -3702,6 +2677,17 @@
       },
       "required": [],
       "title": "deco-sites/portlabs/components/MainTestimonial.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Bob3RvLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Photo.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1NvbHV0aW9uLnRzeA==@Props": {
       "type": "object",
@@ -3800,12 +2786,13 @@
           "type": "string",
           "title": "Background Color"
         },
-        "image": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Image"
+        "mobileImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile Image"
+        },
+        "desktopImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop Image"
         },
         "title": {
           "type": [
@@ -3870,7 +2857,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -3947,7 +2934,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -4136,7 +3123,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -4318,7 +3305,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -4343,261 +3330,6 @@
       },
       "required": [],
       "title": "deco-sites/portlabs/components/Solution3.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-10"
-            },
-            {
-              "type": "string",
-              "const": "coral-30"
-            },
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-10"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-80"
-            },
-            {
-              "type": "string",
-              "const": "teal-10"
-            },
-            {
-              "type": "string",
-              "const": "teal-30"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Background Color"
-        },
-        "image": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Image"
-        },
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "titleColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Title Color"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        },
-        "textColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Text Color"
-        },
-        "includesLink": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Includes Link"
-        },
-        "linkText": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Link Text"
-        },
-        "linkColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "mustard-30"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Link Color"
-        },
-        "linkHref": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Link Href"
-        },
-        "linkOpensInANewTab": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Link Opens In A New Tab"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/portlabs/components/About.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1N1bW1hcnkudHN4@Props": {
       "type": "object",
@@ -4860,7 +3592,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -4937,7 +3669,7 @@
             },
             {
               "type": "string",
-              "const": "mineral-80"
+              "const": "mineral-60"
             },
             {
               "type": "string",
@@ -5175,18 +3907,1283 @@
       "required": [],
       "title": "deco-sites/portlabs/components/Summary.tsx@Props"
     },
-    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMS50c3g=@Props": {
       "type": "object",
       "properties": {
-        "page": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
-          "title": "Page"
+        "foregroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Foreground Color"
+        },
+        "backgroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Background Color"
+        },
+        "testimonial": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial"
+        },
+        "testimonialColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Testimonial Color"
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author"
+        },
+        "authorColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Author Color"
+        },
+        "authorPosition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position"
+        },
+        "authorPositionColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Author Position Color"
         }
       },
-      "required": [
-        "page"
-      ],
-      "title": "deco-cx/live/sections/PageInclude.tsx@Props"
+      "required": [],
+      "title": "deco-sites/portlabs/components/Testimonial1.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "foregroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Foreground Color"
+        },
+        "backgroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Background Color"
+        },
+        "testimonial": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial"
+        },
+        "testimonialColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Testimonial Color"
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author"
+        },
+        "authorColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Author Color"
+        },
+        "authorPosition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position"
+        },
+        "authorPositionColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Author Position Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Testimonial2.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "foregroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Foreground Color"
+        },
+        "backgroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Background Color"
+        },
+        "testimonial": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Testimonial"
+        },
+        "testimonialColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Testimonial Color"
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author"
+        },
+        "authorColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Author Color"
+        },
+        "authorPosition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Author Position"
+        },
+        "authorPositionColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Author Position Color"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/portlabs/components/Testimonial3.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -5211,39 +5208,28 @@
       "required": [],
       "title": "deco-cx/live/matchers/MatchDate.ts@Props"
     },
-    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props": {
+    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props": {
       "type": "object",
       "properties": {
-        "includes": {
-          "type": [
-            "string",
-            "null"
+        "environment": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "production"
+            },
+            {
+              "type": "string",
+              "const": "development"
+            }
           ],
-          "title": "Includes"
-        },
-        "match": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Match"
-        }
-      },
-      "required": [],
-      "title": "deco-cx/live/matchers/MatchUserAgent.ts@Props"
-    },
-    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props": {
-      "type": "object",
-      "properties": {
-        "siteId": {
-          "type": "number",
-          "title": "Site Id"
+          "type": "string",
+          "title": "Environment"
         }
       },
       "required": [
-        "siteId"
+        "environment"
       ],
-      "title": "deco-cx/live/matchers/MatchSite.ts@Props"
+      "title": "deco-cx/live/matchers/MatchEnvironment.ts@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher": {
       "$ref": "#/root/matchers",
@@ -5297,28 +5283,39 @@
       ],
       "title": "deco-cx/live/matchers/MatchRandom.ts@Props"
     },
-    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props": {
+    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props": {
       "type": "object",
       "properties": {
-        "environment": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "production"
-            },
-            {
-              "type": "string",
-              "const": "development"
-            }
-          ],
-          "type": "string",
-          "title": "Environment"
+        "siteId": {
+          "type": "number",
+          "title": "Site Id"
         }
       },
       "required": [
-        "environment"
+        "siteId"
       ],
-      "title": "deco-cx/live/matchers/MatchEnvironment.ts@Props"
+      "title": "deco-cx/live/matchers/MatchSite.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props": {
+      "type": "object",
+      "properties": {
+        "includes": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Includes"
+        },
+        "match": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Match"
+        }
+      },
+      "required": [],
+      "title": "deco-cx/live/matchers/MatchUserAgent.ts@Props"
     },
     "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Audience": {
       "type": "object",
@@ -5389,6 +5386,38 @@
         }
       }
     },
+    "Li9pc2xhbmRzL3VpL0xpbmsudHN4": {
+      "title": "./islands/ui/Link.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ui/Link.tsx"
+          ],
+          "default": "./islands/ui/Link.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL3VpL0xpbmtUby50c3g=": {
+      "title": "./islands/ui/LinkTo.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ui/LinkTo.tsx"
+          ],
+          "default": "./islands/ui/LinkTo.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL3VpL05hdmJhci50c3g=": {
       "title": "./islands/ui/Navbar.tsx",
       "type": "object",
@@ -5410,8 +5439,8 @@
         }
       }
     },
-    "Li9pc2xhbmRzL3VpL0xpbmsudHN4": {
-      "title": "./islands/ui/Link.tsx",
+    "Li9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g=": {
+      "title": "./islands/ui/ScrollBottom.tsx",
       "type": "object",
       "required": [
         "__resolveType"
@@ -5420,9 +5449,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "./islands/ui/Link.tsx"
+            "./islands/ui/ScrollBottom.tsx"
           ],
-          "default": "./islands/ui/Link.tsx"
+          "default": "./islands/ui/ScrollBottom.tsx"
         }
       }
     },
@@ -5444,80 +5473,6 @@
             "./islands/ui/ScrollTop.tsx"
           ],
           "default": "./islands/ui/ScrollTop.tsx"
-        }
-      }
-    },
-    "Li9pc2xhbmRzL3VpL0xpbmtUby50c3g=": {
-      "title": "./islands/ui/LinkTo.tsx",
-      "type": "object",
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "./islands/ui/LinkTo.tsx"
-          ],
-          "default": "./islands/ui/LinkTo.tsx"
-        }
-      }
-    },
-    "Li9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g=": {
-      "title": "./islands/ui/ScrollBottom.tsx",
-      "type": "object",
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "./islands/ui/ScrollBottom.tsx"
-          ],
-          "default": "./islands/ui/ScrollBottom.tsx"
-        }
-      }
-    },
-    "JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz": {
-      "title": "$live/handlers/routesSelection.ts",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/handlers/routesSelection.ts"
-          ],
-          "default": "$live/handlers/routesSelection.ts"
-        }
-      }
-    },
-    "JGxpdmUvaGFuZGxlcnMvcm91dGVyLnRz": {
-      "title": "$live/handlers/router.ts",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlci50cw==@RouterConfig"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/handlers/router.ts"
-          ],
-          "default": "$live/handlers/router.ts"
         }
       }
     },
@@ -5563,6 +5518,48 @@
         }
       }
     },
+    "JGxpdmUvaGFuZGxlcnMvcm91dGVyLnRz": {
+      "title": "$live/handlers/router.ts",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlci50cw==@RouterConfig"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/handlers/router.ts"
+          ],
+          "default": "$live/handlers/router.ts"
+        }
+      }
+    },
+    "JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz": {
+      "title": "$live/handlers/routesSelection.ts",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/handlers/routesSelection.ts"
+          ],
+          "default": "$live/handlers/routesSelection.ts"
+        }
+      }
+    },
     "JGxpdmUvcGFnZXMvTGl2ZVBhZ2UudHN4": {
       "title": "$live/pages/LivePage.tsx",
       "type": "object",
@@ -5581,6 +5578,132 @@
             "$live/pages/LivePage.tsx"
           ],
           "default": "$live/pages/LivePage.tsx"
+        }
+      }
+    },
+    "JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4": {
+      "title": "$live/sections/PageInclude.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/sections/PageInclude.tsx"
+          ],
+          "default": "$live/sections/PageInclude.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9BYm91dC50c3g=": {
+      "title": "deco-sites/portlabs/sections/About.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/About.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/About.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DaGFsbGVuZ2UudHN4": {
+      "title": "deco-sites/portlabs/sections/Challenge.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NoYWxsZW5nZS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Challenge.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Challenge.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DVEEudHN4": {
+      "title": "deco-sites/portlabs/sections/CTA.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NUQS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/CTA.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/CTA.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Gb290ZXIudHN4": {
+      "title": "deco-sites/portlabs/sections/Footer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0Zvb3Rlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Footer.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Footer.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==": {
+      "title": "deco-sites/portlabs/sections/Head.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Head.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Head.tsx"
         }
       }
     },
@@ -5605,12 +5728,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9OYXZiYXIudHN4": {
-      "title": "deco-sites/portlabs/sections/Navbar.tsx",
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvV2l0aEltYWdlLnRzeA==": {
+      "title": "deco-sites/portlabs/sections/HeroWithImage.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm9XaXRoSW1hZ2UudHN4@Props"
         }
       ],
       "required": [
@@ -5620,9 +5743,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/portlabs/sections/Navbar.tsx"
+            "deco-sites/portlabs/sections/HeroWithImage.tsx"
           ],
-          "default": "deco-sites/portlabs/sections/Navbar.tsx"
+          "default": "deco-sites/portlabs/sections/HeroWithImage.tsx"
         }
       }
     },
@@ -5668,12 +5791,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Gb290ZXIudHN4": {
-      "title": "deco-sites/portlabs/sections/Footer.tsx",
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9NYWluVGVzdGltb25pYWwudHN4": {
+      "title": "deco-sites/portlabs/sections/MainTestimonial.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL0Zvb3Rlci50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL01haW5UZXN0aW1vbmlhbC50c3g=@Props"
         }
       ],
       "required": [
@@ -5683,18 +5806,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/portlabs/sections/Footer.tsx"
+            "deco-sites/portlabs/sections/MainTestimonial.tsx"
           ],
-          "default": "deco-sites/portlabs/sections/Footer.tsx"
+          "default": "deco-sites/portlabs/sections/MainTestimonial.tsx"
         }
       }
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDIudHN4": {
-      "title": "deco-sites/portlabs/sections/Testimonial2.tsx",
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9OYXZiYXIudHN4": {
+      "title": "deco-sites/portlabs/sections/Navbar.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props"
         }
       ],
       "required": [
@@ -5704,114 +5827,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/portlabs/sections/Testimonial2.tsx"
+            "deco-sites/portlabs/sections/Navbar.tsx"
           ],
-          "default": "deco-sites/portlabs/sections/Testimonial2.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==": {
-      "title": "deco-sites/portlabs/sections/Head.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA==@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/Head.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/Head.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDMudHN4": {
-      "title": "deco-sites/portlabs/sections/Testimonial3.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMy50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/Testimonial3.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/Testimonial3.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvV2l0aEltYWdlLnRzeA==": {
-      "title": "deco-sites/portlabs/sections/HeroWithImage.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0hlcm9XaXRoSW1hZ2UudHN4@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/HeroWithImage.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/HeroWithImage.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4": {
-      "title": "deco-sites/portlabs/sections/Testimonial1.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMS50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/Testimonial1.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/Testimonial1.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DaGFsbGVuZ2UudHN4": {
-      "title": "deco-sites/portlabs/sections/Challenge.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NoYWxsZW5nZS50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/Challenge.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/Challenge.tsx"
+          "default": "deco-sites/portlabs/sections/Navbar.tsx"
         }
       }
     },
@@ -5836,27 +5854,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DVEEudHN4": {
-      "title": "deco-sites/portlabs/sections/CTA.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0NUQS50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/CTA.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/CTA.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4": {
       "title": "deco-sites/portlabs/sections/ScrollTop.tsx",
       "type": "object",
@@ -5875,27 +5872,6 @@
             "deco-sites/portlabs/sections/ScrollTop.tsx"
           ],
           "default": "deco-sites/portlabs/sections/ScrollTop.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9NYWluVGVzdGltb25pYWwudHN4": {
-      "title": "deco-sites/portlabs/sections/MainTestimonial.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL01haW5UZXN0aW1vbmlhbC50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/MainTestimonial.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/MainTestimonial.tsx"
         }
       }
     },
@@ -5962,27 +5938,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9BYm91dC50c3g=": {
-      "title": "deco-sites/portlabs/sections/About.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL0Fib3V0LnRzeA==@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/portlabs/sections/About.tsx"
-          ],
-          "default": "deco-sites/portlabs/sections/About.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TdW1tYXJ5LnRzeA==": {
       "title": "deco-sites/portlabs/sections/Summary.tsx",
       "type": "object",
@@ -6004,12 +5959,12 @@
         }
       }
     },
-    "JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4": {
-      "title": "$live/sections/PageInclude.tsx",
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4": {
+      "title": "deco-sites/portlabs/sections/Testimonial1.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMS50c3g=@Props"
         }
       ],
       "required": [
@@ -6019,9 +5974,67 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/sections/PageInclude.tsx"
+            "deco-sites/portlabs/sections/Testimonial1.tsx"
           ],
-          "default": "$live/sections/PageInclude.tsx"
+          "default": "deco-sites/portlabs/sections/Testimonial1.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDIudHN4": {
+      "title": "deco-sites/portlabs/sections/Testimonial2.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Testimonial2.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Testimonial2.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDMudHN4": {
+      "title": "deco-sites/portlabs/sections/Testimonial3.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/portlabs/sections/Testimonial3.tsx"
+          ],
+          "default": "deco-sites/portlabs/sections/Testimonial3.tsx"
+        }
+      }
+    },
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
+      "title": "$live/matchers/MatchAlways.ts",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/matchers/MatchAlways.ts"
+          ],
+          "default": "$live/matchers/MatchAlways.ts"
         }
       }
     },
@@ -6046,12 +6059,12 @@
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM=": {
-      "title": "$live/matchers/MatchUserAgent.ts",
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw==": {
+      "title": "$live/matchers/MatchEnvironment.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props"
         }
       ],
       "required": [
@@ -6061,30 +6074,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/matchers/MatchUserAgent.ts"
+            "$live/matchers/MatchEnvironment.ts"
           ],
-          "default": "$live/matchers/MatchUserAgent.ts"
-        }
-      }
-    },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz": {
-      "title": "$live/matchers/MatchSite.ts",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/matchers/MatchSite.ts"
-          ],
-          "default": "$live/matchers/MatchSite.ts"
+          "default": "$live/matchers/MatchEnvironment.ts"
         }
       }
     },
@@ -6130,12 +6122,12 @@
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw==": {
-      "title": "$live/matchers/MatchEnvironment.ts",
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz": {
+      "title": "$live/matchers/MatchSite.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props"
         }
       ],
       "required": [
@@ -6145,15 +6137,20 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/matchers/MatchEnvironment.ts"
+            "$live/matchers/MatchSite.ts"
           ],
-          "default": "$live/matchers/MatchEnvironment.ts"
+          "default": "$live/matchers/MatchSite.ts"
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
-      "title": "$live/matchers/MatchAlways.ts",
+    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM=": {
+      "title": "$live/matchers/MatchUserAgent.ts",
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props"
+        }
+      ],
       "required": [
         "__resolveType"
       ],
@@ -6161,9 +6158,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "$live/matchers/MatchAlways.ts"
+            "$live/matchers/MatchUserAgent.ts"
           ],
-          "default": "$live/matchers/MatchAlways.ts"
+          "default": "$live/matchers/MatchUserAgent.ts"
         }
       }
     },
@@ -6217,26 +6214,30 @@
           "type": "object",
           "additionalProperties": {
             "$ref": "#/definitions/Resolvable"
-          }
+          },
+          "description": "Configure your loaders global state."
         }
       },
       "required": [
         "state"
       ],
-      "title": "deco-cx/live/routes/_middleware.ts@MiddlewareConfig"
+      "title": "deco-cx/live/routes/_middleware.ts@MiddlewareConfig",
+      "description": "Global configurations for ./routes/_middleware.ts route"
     },
     "ZGVjby1jeC9saXZlL3JvdXRlcy9bLi4uY2F0Y2hhbGxdLnRzeA==@Entrypoint": {
       "type": "object",
       "properties": {
         "handler": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
+          "description": "configure how to handle requests.",
           "title": "Handler"
         }
       },
       "required": [
         "handler"
       ],
-      "title": "deco-cx/live/routes/[...catchall].tsx@Entrypoint"
+      "title": "deco-cx/live/routes/[...catchall].tsx@Entrypoint",
+      "description": "Site entrypoint, configure your audiences and routes."
     }
   },
   "root": {
@@ -6258,19 +6259,19 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL05hdmJhci50c3g="
-        },
-        {
           "$ref": "#/definitions/Li9pc2xhbmRzL3VpL0xpbmsudHN4"
-        },
-        {
-          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL3VpL0xpbmtUby50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL05hdmJhci50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g="
         }
       ]
     },
@@ -6281,16 +6282,16 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz"
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw=="
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM="
         },
         {
           "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcm91dGVyLnRz"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw=="
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM="
+          "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvcm91dGVzU2VsZWN0aW9uLnRz"
         }
       ]
     },
@@ -6312,10 +6313,28 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9BYm91dC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DaGFsbGVuZ2UudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DVEEudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Gb290ZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvLnRzeA=="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9OYXZiYXIudHN4"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvV2l0aEltYWdlLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IaWdobGlnaHRzV2l0aEljb25zLnRzeA=="
@@ -6324,37 +6343,16 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IaWdobGlnaHRzV2l0aE51bWJlcnMudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Gb290ZXIudHN4"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9NYWluVGVzdGltb25pYWwudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDIudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZWFkLnRzeA=="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDMudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9IZXJvV2l0aEltYWdlLnRzeA=="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DaGFsbGVuZ2UudHN4"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9OYXZiYXIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9QaG90by50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9DVEEudHN4"
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9NYWluVGVzdGltb25pYWwudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbi50c3g="
@@ -6366,13 +6364,16 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9Tb2x1dGlvbjMudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9BYm91dC50c3g="
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TdW1tYXJ5LnRzeA=="
         },
         {
-          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDEudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9UZXN0aW1vbmlhbDMudHN4"
         }
       ]
     },
@@ -6383,13 +6384,13 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM="
+        },
+        {
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hEYXRlLnRz"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM="
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz"
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw=="
         },
         {
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hNdWx0aS50cw=="
@@ -6398,10 +6399,10 @@
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hSYW5kb20udHM="
         },
         {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw=="
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz"
         },
         {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM="
+          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM="
         }
       ]
     },
@@ -6419,11 +6420,12 @@
         }
       ]
     },
-    "state": {
+    "entrypoint": {
       "type": "object",
       "required": [
         "./routes/_middleware.ts",
-        "./routes/[...catchall].tsx"
+        "./routes/[...catchall].tsx",
+        "./routes/index.tsx"
       ],
       "properties": {
         "./routes/_middleware.ts": {
@@ -6439,8 +6441,22 @@
               "$ref": "#/definitions/ZGVjby1jeC9saXZlL3JvdXRlcy9bLi4uY2F0Y2hhbGxdLnRzeA==@Entrypoint"
             }
           ]
+        },
+        "./routes/index.tsx": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL3JvdXRlcy9bLi4uY2F0Y2hhbGxdLnRzeA==@Entrypoint"
+            }
+          ]
         }
-      },
+      }
+    },
+    "state": {
+      "allOf": [
+        {
+          "$ref": "#/root/entrypoint"
+        }
+      ],
       "additionalProperties": {
         "anyOf": [
           {

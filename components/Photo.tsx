@@ -2,43 +2,38 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 
 export interface Props {
-  mobileImage?: LiveImage;
-  tabletImage?: LiveImage;
-  desktopImage?: LiveImage;
+  image?: LiveImage;
 }
 
 export default function ({
-  mobileImage =
-    "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/challenge-photo.png",
-  tabletImage =
-    "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/challenge-photo.png",
-  desktopImage =
+  image =
     "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/challenge-photo.png",
 }: Props) {
   return (
-    <section class="challenge-splendid-spoon h-[460px] w-100">
+    <section class="challenge-splendid-spoon h-[460px] xl:h-[620px] w-100">
       <Picture>
         <Source
-          src={mobileImage}
-          width={375}
-          height={460}
+          media="(max-width: 768px)"
+          src={image}
+          width={750}
+          height={620}
         />
         <Source
-          media="(min-width: 768px)"
-          src={tabletImage}
-          width={768}
-          height={460}
+          media="(min-width: 768px) and (max-width: 1440px)"
+          src={image}
+          width={1500}
+          height={620}
         />
         <Source
-          media="(min-width: 1200px)"
-          src={desktopImage}
-          width={768}
-          height={460}
+          media="(min-width: 1440px)"
+          src={image}
+          width={1920}
+          height={620}
         />
         <img
           class="object-cover h-full w-full"
           loading="lazy"
-          src={mobileImage}
+          src={image}
         />
       </Picture>
     </section>

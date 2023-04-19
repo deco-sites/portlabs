@@ -21,7 +21,7 @@ export default {
 
         // Mineral
         // "mineral-40": "#009699",
-        "mineral-60": "#007B7D",
+        "mineral-60": "#576975",
         // "mineral-70": "#005F61",
         "mineral-80": "#2E3942",
         // Teal
@@ -52,6 +52,25 @@ export default {
       fontFamily: {
         sans: ["freight-sans-pro", "sans-serif"],
         serif: ["ff-meta-serif-web-pro", "serif"],
+      },
+      fontSize: {
+        sm: "0.75rem",
+        base: "1rem",
+        lg: "1.25rem",
+        xl: "2rem",
+        "2xl": "2.4rem",
+        "3xl": "2rem",
+      },
+      lineHeight: {
+        sm: "0.75rem",
+        base: "1.5rem",
+        lg: "2.5rem",
+        xl: "1.5rem",
+        "2xl": "1.75rem",
+        "3xl": "2rem",
+      },
+      fontWeight: {
+        "extra-light": "350",
       },
       spacing: {
         15: "3.75rem",

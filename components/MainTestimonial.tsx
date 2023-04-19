@@ -29,7 +29,9 @@ export default function ({
     >
       <div class={`outcomes-testimonial bg-${backgroundColor}`}>
         <div class="outcomes-testimonial__content">
-          <p class={`text-${testimonialColor}`}>
+          <p
+            class={`text-${testimonialColor} text-base	md:text-2xl font-extra-light md:leading-lg`}
+          >
             {testimonial}
           </p>
           <p class={`topic-heading text-${authorColor}`}>{author}</p>
