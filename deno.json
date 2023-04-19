@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "start": "deno run -A --watch=sections/,static/,functions/ dev.ts",
+    "start": "deno run -A --watch=sections/,functions/ dev.ts",
+    "tailwindcss": "deno run -A npm:tailwindcss@3.3.1 -i ./tailwind.css -o ./static/main.css --minify",
     "component": "deno eval 'import \"$live/scripts/component.ts\"'",
     "check": "deno fmt && deno lint && deno check dev.ts main.ts"
   },
@@ -9,12 +10,18 @@
   },
   "lint": {
     "files": {
-      "exclude": ["static/"]
+      "exclude": [
+        "static/",
+        "README.md"
+      ]
     }
   },
   "fmt": {
     "files": {
-      "exclude": ["static/"]
+      "exclude": [
+        "static/",
+        "README.md"
+      ]
     }
   },
   "importMap": "./import_map.json",
