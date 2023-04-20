@@ -272,7 +272,7 @@ export default function HeadComponent({
                 n.queue=[];t=b.createElement(e);t.async=!0;
                 t.src=v;s=b.getElementsByTagName(e)[0];
                 s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
+                'http://localhost:8000/proxy?url=https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '${facebookPixelKey}');
                 fbq('track', 'PageView');
               `,

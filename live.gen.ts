@@ -5,8 +5,9 @@
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
-import * as $$$$0 from "./routes/api/[...catchall].tsx";
-import * as $$$$1 from "./routes/_app.tsx";
+import * as $$$$0 from "./routes/proxy.ts";
+import * as $$$$1 from "./routes/api/[...catchall].tsx";
+import * as $$$$2 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/ui/Navbar.tsx";
 import * as $$$$$1 from "./islands/ui/Link.tsx";
 import * as $$$$$2 from "./islands/ui/ScrollTop.tsx";
@@ -111,10 +112,10 @@ const manifest = {
     "deco-sites/std/functions/vtexWishlist.ts": i2$7,
   },
   "routes": {
-    "./routes/_app.tsx": $$$$1,
+    "./routes/_app.tsx": $$$$2,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/[...catchall].tsx": $live_catchall,
-    "./routes/api/[...catchall].tsx": $$$$0,
+    "./routes/api/[...catchall].tsx": $$$$1,
     "./routes/index.tsx": $live_catchall,
     "./routes/live/_meta.ts": $live_meta,
     "./routes/live/editorData.ts": $live_editorData,
@@ -122,6 +123,7 @@ const manifest = {
     "./routes/live/invoke/index.ts": $live_invoke,
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/live/workbench.ts": $live_workbench,
+    "./routes/proxy.ts": $$$$0,
   },
   "islands": {
     "./islands/ui/Link.tsx": $$$$$1,
