@@ -24,9 +24,7 @@ export default function ({
     <section
       class={`solution-splendid-spoon bg-${backgroundColor}`}
     >
-      <div
-        class="solution-splendid-spoon__row pb-0"
-      >
+      <div class="solution-splendid-spoon__row pb-0">
         <div class="solution-splendid-spoon__content">
           <div class="solution-splendid-spoon__text solution-splendid-spoon__text--marketing-team">
             <p class={`topic-heading text-${titleColor}`}>{title}</p>

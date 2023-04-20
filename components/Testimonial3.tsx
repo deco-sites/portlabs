@@ -37,12 +37,20 @@ export default function ({
       </div>
       <div
         class="testimonial-detail"
-        style={{ position: "relative", }}
+        style={{ position: "relative" }}
       >
-        <div class={`testimonial-detail__content bg-${testimonialBackgroundColor}`}>
+        <div
+          class={`testimonial-detail__content bg-${testimonialBackgroundColor}`}
+        >
           <div class="testimonial-detail__text">
-            <p class={`lg:text-lg lg:leading-2xl text-${testimonialColor}`}>{testimonial}</p>
-            <p class={`lg:text-lg lg:leading-2xl topic-heading text-${authorColor}`}>{author}</p>
+            <p class={`lg:text-lg lg:leading-2xl text-${testimonialColor}`}>
+              {testimonial}
+            </p>
+            <p
+              class={`lg:text-lg lg:leading-2xl topic-heading text-${authorColor}`}
+            >
+              {author}
+            </p>
             <p
               class={`lg:text-lg lg:leading-2xl smallest-paragraph text-${authorPositionColor}`}
             >

@@ -31,9 +31,7 @@ export default function ({
     <section
       class={`hero-cases bg-${backgroundColor} max-h-[800px] relative`}
     >
-      <div
-        class="hero-cases__content max-w-[573px] z-[3]"
-      >
+      <div class="hero-cases__content max-w-[573px] z-[3]">
         <p
           class={`topic-heading hero-cases__title text-${preTextColor}`}
         >
