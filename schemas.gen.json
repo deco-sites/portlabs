@@ -3404,6 +3404,13 @@
           ],
           "title": "Description"
         },
+        "keywords": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Keywords"
+        },
         "url": {
           "type": [
             "string",
@@ -3417,6 +3424,13 @@
             "null"
           ],
           "title": "Image Url"
+        },
+        "imageAlt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Image Alt"
         },
         "faviconUrl": {
           "type": [
@@ -3432,19 +3446,26 @@
           },
           "title": "Style Urls"
         },
-        "themeColor": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Theme Color"
-        },
         "includeNoIndex": {
           "type": [
             "boolean",
             "null"
           ],
           "title": "Include No Index"
+        },
+        "facebookPixelKey": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Facebook Pixel Key"
+        },
+        "gtmKey": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Gtm Key"
         }
       },
       "required": [
