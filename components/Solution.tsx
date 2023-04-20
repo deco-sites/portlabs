@@ -36,12 +36,14 @@ export default function ({
             <Source
               media="(max-width: 767px)"
               src={image}
+              fetchPriority="low"
               width={768}
               height={361}
             />
             <Source
               media="(min-width: 768px) and (max-width: 1200px)"
               src={image}
+              fetchPriority="low"
               width={1600}
               height={752}
             />
@@ -55,6 +57,7 @@ export default function ({
             <Source
               media="(min-width: 1200px)"
               src={desktopImage}
+              fetchPriority="low"
               width={559}
               height={900}
             />

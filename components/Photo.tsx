@@ -15,18 +15,21 @@ export default function ({
         <Source
           media="(max-width: 768px)"
           src={image}
+          fetchPriority="high"
           width={750}
           height={620}
         />
         <Source
           media="(min-width: 768px) and (max-width: 1440px)"
           src={image}
+          fetchPriority="high"
           width={1500}
           height={620}
         />
         <Source
           media="(min-width: 1440px)"
           src={image}
+          fetchPriority="high"
           width={1920}
           height={620}
         />

@@ -48,18 +48,21 @@ export default function ({
           <Source
             media="(max-width: 768px)"
             src={image}
+            fetchPriority="low"
             width={1000}
             height={700}
           />
           <Source
             media="(max-width: 1440px)"
             src={image}
+            fetchPriority="low"
             width={1440}
             height={700}
           />
           <Source
             media="(min-width: 1440px)"
             src={image}
+            fetchPriority="low"
             width={1000}
             height={500}
           />
