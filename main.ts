@@ -17,6 +17,6 @@ await start($live(manifest, site), {
     twindPlugin({
       ...twindConfig,
       selfURL: new URL("./twind.config.ts", import.meta.url).href,
-    })
+    }),
   ],
 });

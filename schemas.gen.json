@@ -4001,10 +4001,6 @@
         "image": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
-        },
-        "retinaImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Retina Image"
         }
       },
       "required": [],
@@ -5068,9 +5064,9 @@
           "type": "string",
           "title": "Background Color"
         },
-        "mobileImage": {
+        "image": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Mobile Image"
+          "title": "Image"
         },
         "desktopImage": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
@@ -5336,10 +5332,7 @@
           "title": "Background Color"
         },
         "image": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
         },
         "title": {
@@ -7044,7 +7037,7 @@
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Rlc3RpbW9uaWFsMy50c3g=@Props": {
       "type": "object",
       "properties": {
-        "foregroundColor": {
+        "dividerColor": {
           "anyOf": [
             {
               "type": "string",
@@ -7136,7 +7129,7 @@
             }
           ],
           "type": "string",
-          "title": "Foreground Color"
+          "title": "Divider Color"
         },
         "backgroundColor": {
           "anyOf": [
@@ -7308,6 +7301,100 @@
           ],
           "type": "string",
           "title": "Testimonial Color"
+        },
+        "testimonialBackgroundColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-10"
+            },
+            {
+              "type": "string",
+              "const": "coral-30"
+            },
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-30"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-10"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-80"
+            },
+            {
+              "type": "string",
+              "const": "teal-10"
+            },
+            {
+              "type": "string",
+              "const": "teal-30"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Testimonial Background Color"
         },
         "author": {
           "type": [

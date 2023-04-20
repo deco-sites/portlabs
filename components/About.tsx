@@ -70,17 +70,7 @@ export default function ({
           />
         </Picture>
       </div>
-      {
-        /*<div class="about-splendid-spoon__img-wrapper md:h-[600px]">
-        <span
-          class="about-splendid-spoon__img bg-bottom md:bg-bottom"
-          style={{ backgroundImage: `url(${image})` }}
-        >
-          &nbsp;
-        </span>
-        </div>
-       */
-      }
+
       <div class="about-splendid-spoon__content">
         <div class="about-splendid-spoon__text">
           <h2 class={`text-${titleColor}`}>{title}</h2>
@@ -89,8 +79,7 @@ export default function ({
           {/* TODO: Refactor the links */}
           {includesLink && (
             <a
-              class={`link-nav !text-mineral-80 after:!bg-${linkColor} hover:!text-mustard-10`}
-              style={{ marginTop: "2rem" }}
+              class={`link-nav text-mineral-80 after:bg-${linkColor} hover:text-mustard-10 mt-8`}
               href={linkHref}
               target={linkOpensInANewTab ? "_blank" : "_self"}
             >

@@ -6,7 +6,7 @@ import { Color, PrimarySecondaryAndTertiaryColor } from "$start/utils/types.ts";
 
 export interface Props {
   backgroundColor?: Color;
-  mobileImage?: LiveImage;
+  image?: LiveImage;
   desktopImage?: LiveImage;
   title?: string;
   titleColor?: PrimarySecondaryAndTertiaryColor;
@@ -17,7 +17,7 @@ export interface Props {
 
 export default function ({
   backgroundColor = "coral-40",
-  mobileImage =
+  image =
     "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/photo-solution.png",
   desktopImage =
     "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/photo-solution.png",
@@ -31,24 +31,37 @@ export default function ({
   return (
     <section class={`solution-splendid-spoon bg-${backgroundColor}`}>
       <div class="solution-splendid-spoon__row pt-0">
-        <div class="solution-splendid-spoon__image">
-          <Picture class="solution-splendid-spoon__first-img h-[480px] md:h-[720px] lg:h-[960px]">
+        <div class="solution-splendid-spoon__image xl:max-w-[40%]">
+          <Picture class="solution-splendid-spoon__first-img 2lg:hidden mb-0 bg-none h-[280px] md:h-[520px] lg:h-[480px]">
             <Source
-              media="(max-width: 1920px)"
-              src={mobileImage}
-              width={650}
-              height={650}
+              media="(max-width: 767px)"
+              src={image}
+              width={768}
+              height={361}
             />
             <Source
-              media="(min-width: 1920px)"
-              src={desktopImage}
-              width={1200}
-              height={700}
+              media="(min-width: 768px) and (max-width: 1200px)"
+              src={image}
+              width={1600}
+              height={752}
             />
             <img
-              class="d-none d-xl-block object-cover h-full w-full"
+              class="object-cover object-left-bottom 2xl:object-center-top h-full w-full rounded-br-[80px] md:rounded-br-[160px]"
               loading="lazy"
-              src={mobileImage}
+              src={image}
+            />
+          </Picture>
+          <Picture class="solution-splendid-spoon__first-img hidden 2lg:block mb-0 bg-none h-[900px]">
+            <Source
+              media="(min-width: 1200px)"
+              src={desktopImage}
+              width={559}
+              height={900}
+            />
+            <img
+              class="object-cover object-center-top h-full w-full md:rounded-br-[160px]"
+              loading="lazy"
+              src={desktopImage}
             />
           </Picture>
         </div>

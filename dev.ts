@@ -3,7 +3,9 @@ import dev from "$live/dev.ts";
 import liveManifest from "$live/live.gen.ts";
 import liveStdManifest from "deco-sites/std/live.gen.ts";
 
-await dev(import.meta.url, "./main.ts", { imports: {
-  "$live": liveManifest,
-  "deco-sites/std": liveStdManifest,
-}, });
+await dev(import.meta.url, "./main.ts", {
+  imports: {
+    "$live": liveManifest,
+    "deco-sites/std": liveStdManifest,
+  },
+});

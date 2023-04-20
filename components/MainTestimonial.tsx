@@ -24,13 +24,12 @@ export default function ({
 }: Props) {
   return (
     <section
-      class={`outcomes-splendid-spoon bg-${foregroundColor}`}
-      style={{ paddingTop: 0 }}
+      class={`outcomes-splendid-spoon bg-${foregroundColor} pt-0`}
     >
       <div class={`outcomes-testimonial bg-${backgroundColor}`}>
         <div class="outcomes-testimonial__content">
           <p
-            class={`text-${testimonialColor} text-base	md:text-2xl font-extra-light md:leading-lg`}
+            class={`text-${testimonialColor} text-base md:text-2lg font-extra-light md:leading-10`}
           >
             {testimonial}
           </p>

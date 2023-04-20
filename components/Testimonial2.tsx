@@ -37,8 +37,10 @@ export default function ({
             maxWidth: "100%",
           }}
         >
-          <div class="testimonial-detail__text xl:!max-w-[66%] 2xl:!max-w-[50%]">
-            <p class={`text-${testimonialColor}`}>{testimonial}</p>
+          <div class="testimonial-detail__text xl:max-w-[66%] 2xl:max-w-[50%]">
+            <p
+              class={`mb-0 text-${testimonialColor} text-base md:text-2lg font-extra-light md:leading-10 pb-4 lg:pb-8`}
+            >{testimonial}</p>
             <p class={`topic-heading ${authorColor}`}>{author}</p>
             <p
               class={`smallest-paragraph text-${authorPositionColor}`}

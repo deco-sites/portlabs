@@ -1,9 +1,11 @@
 import type { HTML } from "deco-sites/std/components/types.ts";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import { Color, PrimarySecondaryAndTertiaryColor } from "$start/utils/types.ts";
 
 export interface Props {
   backgroundColor?: Color;
-  image?: string;
+  image?: LiveImage;
   title?: string;
   titleColor?: PrimarySecondaryAndTertiaryColor;
   text?: HTML;
@@ -23,8 +25,7 @@ export default function ({
       class={`solution-splendid-spoon bg-${backgroundColor}`}
     >
       <div
-        class="solution-splendid-spoon__row"
-        style={{ paddingBottom: 0 }}
+        class="solution-splendid-spoon__row pb-0"
       >
         <div class="solution-splendid-spoon__content">
           <div class="solution-splendid-spoon__text solution-splendid-spoon__text--marketing-team">
