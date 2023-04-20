@@ -54,6 +54,9 @@ export default function HeadComponent({
       <meta name="theme-color" content="#003232"></meta>
       <meta name="msapplication-TileColor" content="#003232"></meta>
 
+      <link rel="preconnect" href="https://labcodes.com.br" />
+      <link rel="dns-prefetch" href="https://labcodes.com.br" />
+
       {includeNoIndex && <meta name="robots" content="noindex" />}
       {styleUrls?.map((styleUrl: string) => (
         <link rel="stylesheet" href={asset(styleUrl)}></link>
