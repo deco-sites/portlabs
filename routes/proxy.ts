@@ -3,7 +3,8 @@ import { Handlers } from "$fresh/server.ts";
 // Adicione aqui os scripts que você deseja proxiar
 const ALLOWLIST_URLS = [
   "https://connect.facebook.net/en_US/fbevents.js",
-  "https://www.facebook.com/tr?id=196893035003333&ev=PageView&noscript=1"
+  "https://www.facebook.com/tr?id=196893035003333&ev=PageView&noscript=1",
+  "https://connect.facebook.net/signals/config/196893035003333?v=2.9.102&r=stable",
 ];
 
 export const handler: Handlers = {
