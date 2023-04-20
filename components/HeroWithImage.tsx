@@ -54,8 +54,9 @@ export default function ({
             src={image}
             media="(max-width: 1023px)"
             fetchPriority="low"
-            width={1}
-            height={1}
+            width={54}
+            height={32}
+            {...{ "q": 30, "bl": 10 }}
           />
           <Source
             media="(min-width: 1024px) and (max-width: 1440px)"
