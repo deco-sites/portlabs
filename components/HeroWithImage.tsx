@@ -49,19 +49,27 @@ export default function ({
           class="hero-cases__img h-700 max-h-[800px] w-75 position-absolute right-0 bottom-0"
           preload
         >
+          {/* `width={1} height={1}` is a tricky to avoid download the backward-compatibility image on mobile */}
           <Source
             src={image}
-            media="(max-width: 1199px)"
+            media="(max-width: 1023px)"
             fetchPriority="low"
             width={1}
             height={1}
           />
           <Source
-            media="(min-width: 1200px) and (max-width: 1919px)"
+            media="(min-width: 1024px) and (max-width: 1440px)"
             fetchPriority="high"
             src={image}
-            width={975}
-            height={650}
+            width={1080}
+            height={655}
+          />
+          <Source
+            media="(min-width: 1440px) and (max-width: 1919px)"
+            fetchPriority="high"
+            src={image}
+            width={1500}
+            height={1000}
           />
           <Source
             media="(min-width: 1920px)"
