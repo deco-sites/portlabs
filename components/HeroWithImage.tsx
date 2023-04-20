@@ -63,7 +63,7 @@ export default function ({
           />
           <img
             class="d-none d-xl-block object-contain object-left-bottom h-full w-full"
-            loading="eager"
+            loading="lazy"
             src={image}
             width={1500}
             height={1000}
