@@ -57,6 +57,9 @@ export default function HeadComponent({
       <link rel="preconnect" href="https://labcodes.com.br" />
       <link rel="dns-prefetch" href="https://labcodes.com.br" />
 
+      <link rel="preconnect" href="https://p.typekit.net" />
+      <link rel="dns-prefetch" href="https://p.typekit.net" />
+
       {includeNoIndex && <meta name="robots" content="noindex" />}
       {styleUrls?.map((styleUrl: string) => (
         <link rel="stylesheet" href={asset(styleUrl)}></link>
