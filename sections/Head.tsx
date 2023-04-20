@@ -62,7 +62,10 @@ export default function HeadComponent({
 
       {includeNoIndex && <meta name="robots" content="noindex" />}
       {styleUrls?.map((styleUrl: string) => (
-        <link rel="stylesheet" href={asset(styleUrl)}></link>
+        <>
+          <link rel="preload" as="style" href={asset(styleUrl)}></link>
+          <link rel="stylesheet" href={asset(styleUrl)}></link>
+        </>
       ))}
 
       <style
