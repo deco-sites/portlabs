@@ -286,7 +286,7 @@ export default function HeadComponent({
                   height="1"
                   width="1"
                   style="display:none"
-                  src="https://www.facebook.com/tr?id=${facebookPixelKey}&ev=PageView&noscript=1"
+                  src="https://pages.labcodes.com.br/proxy?url=https://www.facebook.com/tr?id=${facebookPixelKey}&ev=PageView&noscript=1"
                 />
               `,
             }}
