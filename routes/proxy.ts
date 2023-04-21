@@ -5,6 +5,10 @@ const ALLOWLIST_URLS = [
   "https://connect.facebook.net/en_US/fbevents.js",
   "https://www.facebook.com/tr?id=196893035003333&ev=PageView&noscript=1",
   "https://connect.facebook.net/signals/config/196893035003333?v=2.9.102&r=stable",
+  "https://www.googletagmanager.com/gtm.js",
+  "https://www.google-analytics.com/analytics.js",
+  "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+  "https://px.ads.linkedin.com/collect/?pid=1609042&fmt=gif",
 ];
 
 export const handler: Handlers = {
