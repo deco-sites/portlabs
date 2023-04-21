@@ -3466,6 +3466,27 @@
             "null"
           ],
           "title": "Gtm Key"
+        },
+        "googleAnalyticsKey": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Google Analytics Key"
+        },
+        "linkedinInsightTagKey": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Linkedin Insight Tag Key"
+        },
+        "leadfeederTrackerKey": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Leadfeeder Tracker Key"
         }
       },
       "required": [

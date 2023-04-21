@@ -12,6 +12,9 @@ export interface Props {
   includeNoIndex?: boolean;
   facebookPixelKey?: string;
   gtmKey?: string;
+  googleAnalyticsKey?: string;
+  linkedinInsightTagKey?: string;
+  leadfeederTrackerKey?: string;
 }
 
 export default function HeadComponent({
@@ -28,6 +31,9 @@ export default function HeadComponent({
   includeNoIndex = true,
   facebookPixelKey = "",
   gtmKey = "",
+  googleAnalyticsKey = "",
+  linkedinInsightTagKey = "",
+  leadfeederTrackerKey = "",
 }: Props) {
   return (
     <Head>
@@ -312,13 +318,77 @@ export default function HeadComponent({
         </script>
       )}
 
+      {googleAnalyticsKey && (
+        <script
+          type="text/partytown"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+              ga('create', '${googleAnalyticsKey}', 'auto');
+              ga('send', 'pageview');
+            `
+          }}
+        >
+        </script>
+      )}
+
+      {linkedinInsightTagKey && (
+        <>
+          <script defer type="text/partytown"
+          dangerouslySetInnerHTML={{
+            __html: `
+              _linkedin_partner_id = "${linkedinInsightTagKey}";
+              window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+              window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+            `
+          }}>
+          </script>
+          <script defer type="text/partytown"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){var s = document.getElementsByTagName("script")[0];
+              var b = document.createElement("script");
+              b.type = "text/javascript";b.async = true;
+              b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+              s.parentNode.insertBefore(b, s);})();
+            `
+          }}>
+          </script>
+          <noscript dangerouslySetInnerHTML={{
+            __html: `
+              <img
+                height="1"
+                width="1"
+                style="display:none;"
+                alt=""
+                src='https://px.ads.linkedin.com/collect/?pid=${linkedinInsightTagKey}&fmt=gif'
+              />
+            `
+          }}>
+          </noscript>
+        </>
+      )}
+
+      {leadfeederTrackerKey && (
+        <script type="text/partytown" dangerouslySetInnerHTML={{
+          __html: `
+            (function () { window.ldfdr = window.ldfdr || {}; (function (d, s, ss, fs) { fs = d.getElementsByTagName(s)[0]; function ce(src) { var cs = d.createElement(s); cs.src = src; setTimeout(function () { fs.parentNode.insertBefore(cs, fs) }, 1); } ce(ss); })(document, 'script', 'https://sc.lfeeder.com/lftracker_v1_${leadfeederTrackerKey}.js'); })();
+          `
+        }}>
+        </script>
+      )}
+
       {
         /*
         TODO: Wrong but it works for now.
         Eventually we will convert this to preact.
         */
       }
-      <script async src="/js/header.js" />
+      <script type="text/partytown" async src="/js/header.js" />
     </Head>
   );
 }
