@@ -6332,7 +6332,7 @@
           "type": "string",
           "title": "Technologies Icons Color"
         },
-        "technologiesIcons": {
+        "icons": {
           "type": "array",
           "items": {
             "type": "object",
@@ -6371,7 +6371,7 @@
               "icon"
             ]
           },
-          "title": "Technologies Icons"
+          "title": "Icons"
         }
       },
       "required": [],
