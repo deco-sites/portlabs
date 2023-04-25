@@ -6360,13 +6360,15 @@
                 "title": "Icon"
               },
               "alt": {
-                "type": "string",
+                "type": [
+                  "string",
+                  "null"
+                ],
                 "title": "Alt"
               }
             },
             "required": [
-              "icon",
-              "alt"
+              "icon"
             ]
           },
           "title": "Technologies Icons"

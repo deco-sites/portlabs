@@ -18,7 +18,7 @@ export interface Props {
   technologiesIconsColor?: Color;
   technologiesIcons?: Array<{
     icon: Icon;
-    alt: string;
+    alt?: string;
   }>;
 }
 
