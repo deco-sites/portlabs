@@ -16,9 +16,9 @@ export interface Props {
   technologiesTitle?: string;
   technologiesTitleColor?: Color;
   technologiesIconsColor?: Color;
-  icons?: Array<{
+  TechnologiesIcons?: Array<{
     icon: Icon;
-    alt?: string;
+    tooltipText: string;
   }>;
 }
 
@@ -40,22 +40,22 @@ export default function ({
   technologiesTitle = "technologies",
   technologiesTitleColor = "coral-60",
   technologiesIconsColor = "coral-40",
-  icons = [
+  TechnologiesIcons = [
     {
       icon: "ReactIcon",
-      alt: "React",
+      tooltipText: "React",
     },
     {
       icon: "PythonIcon",
-      alt: "Python",
+      tooltipText: "Python",
     },
     {
       icon: "DjangoIcon",
-      alt: "Django",
+      tooltipText: "Django",
     },
     {
       icon: "JavascriptIcon",
-      alt: "Javascript",
+      tooltipText: "Javascript",
     },
   ],
 }: Props) {
@@ -84,10 +84,10 @@ export default function ({
                 {technologiesTitle}
               </p>
               <div class="summary-splendid-spoon__tech-icons flex-wrap">
-                {icons.map(({ icon, alt }) => (
+                {TechnologiesIcons.map(({ icon, tooltipText }) => (
                   <div class="custom-tooltip">
                     {GenericIcon(icon, technologiesIconsColor)}
-                    <span>{alt}</span>
+                    <span>{tooltipText}</span>
                   </div>
                 ))}
               </div>
