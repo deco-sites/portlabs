@@ -16,7 +16,7 @@ export interface Props {
   technologiesTitle?: string;
   technologiesTitleColor?: Color;
   technologiesIconsColor?: Color;
-  technologies2?: Array<{
+  technologiesIcons?: Array<{
     icon: Icon;
     alt: string;
   }>;
@@ -40,7 +40,7 @@ export default function ({
   technologiesTitle = "technologies",
   technologiesTitleColor = "coral-60",
   technologiesIconsColor = "coral-40",
-  technologies2 = [
+  technologiesIcons = [
     {
       icon: "ReactIcon",
       alt: "React",
@@ -84,7 +84,7 @@ export default function ({
                 {technologiesTitle}
               </p>
               <div class="summary-splendid-spoon__tech-icons flex-wrap">
-                {technologies2.map(({ icon, alt }) => (
+                {technologiesIcons.map(({ icon, alt }) => (
                   <div class="custom-tooltip">
                     {GenericIcon(icon, technologiesIconsColor)}
                     <span>{alt}</span>
