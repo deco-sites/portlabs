@@ -4256,7 +4256,7 @@
           "type": "string",
           "title": "Background Color"
         },
-        "highlightsTextsColor": {
+        "textsColor": {
           "anyOf": [
             {
               "type": "string",
@@ -4324,105 +4324,112 @@
             }
           ],
           "type": "string",
-          "title": "Highlights Texts Color"
+          "title": "Texts Color"
         },
-        "highlightsTexts": {
+        "iconsColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "coral-40"
+            },
+            {
+              "type": "string",
+              "const": "coral-60"
+            },
+            {
+              "type": "string",
+              "const": "coral-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-10"
+            },
+            {
+              "type": "string",
+              "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-60"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "purple-40"
+            },
+            {
+              "type": "string",
+              "const": "purple-60"
+            },
+            {
+              "type": "string",
+              "const": "purple-70"
+            },
+            {
+              "type": "string",
+              "const": "teal-40"
+            },
+            {
+              "type": "string",
+              "const": "teal-60"
+            },
+            {
+              "type": "string",
+              "const": "teal-70"
+            },
+            {
+              "type": "string",
+              "const": "mineral-60"
+            },
+            {
+              "type": "string",
+              "const": "mineral-80"
+            },
+            {
+              "type": "string",
+              "const": "white-100"
+            }
+          ],
+          "type": "string",
+          "title": "Icons Color"
+        },
+        "highlights": {
           "type": "array",
           "items": {
-            "type": "string"
-          },
-          "title": "Highlights Texts"
-        },
-        "highlightsIcons": {
-          "type": "array",
-          "items": {
-            "anyOf": [
-              {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "receipt_sparkles"
+                  },
+                  {
+                    "type": "string",
+                    "const": "clock"
+                  },
+                  {
+                    "type": "string",
+                    "const": "inprivate_account"
+                  }
+                ],
                 "type": "string",
-                "const": "receipt_sparkles"
+                "title": "Icon"
               },
-              {
+              "text": {
                 "type": "string",
-                "const": "clock"
-              },
-              {
-                "type": "string",
-                "const": "inprivate_account"
+                "title": "Text"
               }
-            ],
-            "type": "string"
+            },
+            "required": [
+              "icon",
+              "text"
+            ]
           },
-          "title": "Highlights Icons"
-        },
-        "highlightsIconsColor": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "coral-40"
-            },
-            {
-              "type": "string",
-              "const": "coral-60"
-            },
-            {
-              "type": "string",
-              "const": "coral-70"
-            },
-            {
-              "type": "string",
-              "const": "mustard-10"
-            },
-            {
-              "type": "string",
-              "const": "mustard-40"
-            },
-            {
-              "type": "string",
-              "const": "mustard-60"
-            },
-            {
-              "type": "string",
-              "const": "mustard-70"
-            },
-            {
-              "type": "string",
-              "const": "purple-40"
-            },
-            {
-              "type": "string",
-              "const": "purple-60"
-            },
-            {
-              "type": "string",
-              "const": "purple-70"
-            },
-            {
-              "type": "string",
-              "const": "teal-40"
-            },
-            {
-              "type": "string",
-              "const": "teal-60"
-            },
-            {
-              "type": "string",
-              "const": "teal-70"
-            },
-            {
-              "type": "string",
-              "const": "mineral-60"
-            },
-            {
-              "type": "string",
-              "const": "mineral-80"
-            },
-            {
-              "type": "string",
-              "const": "white-100"
-            }
-          ],
-          "type": "string",
-          "title": "Highlights Icons Color"
+          "title": "Highlights"
         }
       },
       "required": [],
