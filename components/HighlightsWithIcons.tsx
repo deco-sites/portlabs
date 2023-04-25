@@ -49,7 +49,7 @@ export default function ({
               />
             </div>
             <p
-              class={`text-center text-xs mb-0 text-${highlightsTextsColor}`}
+              class={`text-center text-sm leading-sm md:text-base md:leading-base mb-0 text-${highlightsTextsColor}`}
             >
               {highlightsTexts[index]}
             </p>

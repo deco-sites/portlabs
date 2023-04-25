@@ -48,7 +48,7 @@ export default function ({
             {includesCta && (
               <a
                 href={ctaLink}
-                class={`button button--mustard bg-${ctaColor} text-purple-80`}
+                class={`button button--mustard bg-${ctaColor} sm:ml-16 text-purple-80`}
                 target={ctaTargetBlank ? "_blank" : "_self"}
                 title={ctaTitle}
               >

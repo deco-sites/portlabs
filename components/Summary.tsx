@@ -51,12 +51,12 @@ export default function ({
       <div class={`summary-splendid-spoon__text ${backgroundColor}`}>
         <div class="summary-splendid-spoon__wrapper">
           <div
-            class={`summary-splendid-spoon__challenge-text text-${servicesTitleColor}`}
+            class={`summary-splendid-spoon__challenge-text md:pr-10 2xl:pr-16 text-${servicesTitleColor}`}
           >
             <p>{text}</p>
           </div>
           <div class="summary-splendid-spoon__group">
-            <div class="summary-splendid-spoon__services">
+            <div class="summary-splendid-spoon__services md:pr-10 2xl:pr-16">
               <p class={`topic-heading text-${servicesTitleColor}`}>
                 {servicesTitle}
               </p>
