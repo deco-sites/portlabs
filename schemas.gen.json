@@ -6335,25 +6335,39 @@
         "technologies": {
           "type": "array",
           "items": {
-            "anyOf": [
-              {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "ReactIcon"
+                  },
+                  {
+                    "type": "string",
+                    "const": "PythonIcon"
+                  },
+                  {
+                    "type": "string",
+                    "const": "JavascriptIcon"
+                  },
+                  {
+                    "type": "string",
+                    "const": "DjangoIcon"
+                  }
+                ],
                 "type": "string",
-                "const": "ReactIcon"
+                "title": "Icon"
               },
-              {
+              "alt": {
                 "type": "string",
-                "const": "PythonIcon"
-              },
-              {
-                "type": "string",
-                "const": "JavascriptIcon"
-              },
-              {
-                "type": "string",
-                "const": "DjangoIcon"
+                "title": "Alt"
               }
-            ],
-            "type": "string"
+            },
+            "required": [
+              "icon",
+              "alt"
+            ]
           },
           "title": "Technologies"
         }

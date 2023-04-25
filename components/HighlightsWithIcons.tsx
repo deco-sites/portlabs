@@ -6,17 +6,32 @@ export interface Props {
   backgroundColor?: Color;
   textsColor?: PrimarySecondaryAndTertiaryColor;
   iconsColor?: PrimarySecondaryAndTertiaryColor;
-  highlights?: {
+  highlights?: Array<{
     icon: AvailableFluentIcon;
     text: string;
-  }[];
+  }>;
 }
 
 export default function ({
   backgroundColor = "coral-70",
   textsColor = "mineral-80",
   iconsColor = "mineral-80",
-  highlights = [],
+  highlights = [
+    {
+      icon: "receipt_sparkles",
+      text: "Deliver a new product Mete a Colher could sell to their clients.",
+    },
+    {
+      icon: "clock",
+      text:
+        "Implement a faster screening process for social workers to help victims of harassment.",
+    },
+    {
+      icon: "inprivate_account",
+      text:
+        "Guarantee a safe space for women to report harassment while having their privacy respected.",
+    },
+  ],
 }: Props) {
   const highlightsCount = highlights.length;
 
