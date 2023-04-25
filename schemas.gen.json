@@ -6332,44 +6332,30 @@
           "type": "string",
           "title": "Technologies Icons Color"
         },
-        "TechnologiesIcons": {
+        "technologies": {
           "type": "array",
           "items": {
-            "type": "object",
-            "properties": {
-              "icon": {
-                "anyOf": [
-                  {
-                    "type": "string",
-                    "const": "ReactIcon"
-                  },
-                  {
-                    "type": "string",
-                    "const": "PythonIcon"
-                  },
-                  {
-                    "type": "string",
-                    "const": "JavascriptIcon"
-                  },
-                  {
-                    "type": "string",
-                    "const": "DjangoIcon"
-                  }
-                ],
+            "anyOf": [
+              {
                 "type": "string",
-                "title": "Icon"
+                "const": "ReactIcon"
               },
-              "tooltipText": {
+              {
                 "type": "string",
-                "title": "Tooltip Text"
+                "const": "PythonIcon"
+              },
+              {
+                "type": "string",
+                "const": "JavascriptIcon"
+              },
+              {
+                "type": "string",
+                "const": "DjangoIcon"
               }
-            },
-            "required": [
-              "icon",
-              "tooltipText"
-            ]
+            ],
+            "type": "string"
           },
-          "title": " Technologies Icons"
+          "title": "Technologies"
         }
       },
       "required": [],
