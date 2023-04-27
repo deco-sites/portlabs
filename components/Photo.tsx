@@ -10,7 +10,7 @@ export interface Props {
 }
 
 export default function ({
-  altText = "",
+  altText = "Photo image.",
   mobileImage =
     "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/challenge-photo.png",
   tabletImage =
