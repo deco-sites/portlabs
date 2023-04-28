@@ -2421,27 +2421,26 @@
       ],
       "title": "deco-cx/live/handlers/router.ts@RouterConfig"
     },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
-      "$ref": "#/root/flags",
-      "title": "Flag"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag"
-      },
-      "title": "Flag[]"
-    },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig": {
       "type": "object",
       "properties": {
-        "flags": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]",
-          "title": "Flags"
+        "audiences": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/JGxpdmUvZmxhZ3MvYXVkaWVuY2UudHM="
+              },
+              {
+                "$ref": "#/definitions/JGxpdmUvZmxhZ3MvZXZlcnlvbmUudHM="
+              }
+            ]
+          },
+          "title": "Audiences"
         }
       },
       "required": [
-        "flags"
+        "audiences"
       ],
       "title": "deco-cx/live/handlers/routesSelection.ts@SelectionConfig"
     },
@@ -2462,6 +2461,10 @@
         "name": {
           "type": "string",
           "title": "Name"
+        },
+        "layout": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
+          "title": "Layout"
         },
         "sections": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
@@ -2486,6 +2489,113 @@
         "page"
       ],
       "title": "deco-cx/live/sections/PageInclude.tsx@Props"
+    },
+    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1Nsb3QudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Enforces the slot to be fulfilled.",
+          "title": "Required"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "const": "content"
+                },
+                {
+                  "type": "string",
+                  "const": "footer"
+                },
+                {
+                  "type": "string",
+                  "const": "header"
+                },
+                {
+                  "type": "string",
+                  "const": "analytics"
+                },
+                {
+                  "type": "string",
+                  "const": "design-system"
+                },
+                {
+                  "type": "string",
+                  "const": "SEO"
+                }
+              ],
+              "type": "string"
+            }
+          ],
+          "type": "string",
+          "description": "The name of the slot.",
+          "default": "content",
+          "title": "Name"
+        }
+      },
+      "required": [],
+      "title": "deco-cx/live/sections/Slot.tsx@Props"
+    },
+    "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1VzZVNsb3QudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "const": "content"
+                },
+                {
+                  "type": "string",
+                  "const": "footer"
+                },
+                {
+                  "type": "string",
+                  "const": "header"
+                },
+                {
+                  "type": "string",
+                  "const": "analytics"
+                },
+                {
+                  "type": "string",
+                  "const": "design-system"
+                },
+                {
+                  "type": "string",
+                  "const": "SEO"
+                }
+              ],
+              "type": "string"
+            }
+          ],
+          "type": "string",
+          "title": "Name"
+        },
+        "sections": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
+          "title": "Sections"
+        }
+      },
+      "required": [
+        "name",
+        "sections"
+      ],
+      "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
@@ -8633,6 +8743,48 @@
         }
       }
     },
+    "JGxpdmUvc2VjdGlvbnMvU2xvdC50c3g=": {
+      "title": "$live/sections/Slot.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1Nsb3QudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/sections/Slot.tsx"
+          ],
+          "default": "$live/sections/Slot.tsx"
+        }
+      }
+    },
+    "JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g=": {
+      "title": "$live/sections/UseSlot.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3NlY3Rpb25zL1VzZVNsb3QudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/sections/UseSlot.tsx"
+          ],
+          "default": "$live/sections/UseSlot.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9BYm91dC50c3g=": {
       "title": "deco-sites/portlabs/sections/About.tsx",
       "type": "object",
@@ -9611,6 +9763,12 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9BYm91dC50c3g="
