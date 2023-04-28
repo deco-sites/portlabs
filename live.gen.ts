@@ -5,37 +5,34 @@
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
-import * as $$$$0 from "./routes/404.tsx";
-import * as $$$$1 from "./routes/proxy.ts";
-import * as $$$$2 from "./routes/api/[...catchall].tsx";
-import * as $$$$3 from "./routes/_500.tsx";
-import * as $$$$4 from "./routes/_404.tsx";
-import * as $$$$5 from "./routes/_app.tsx";
+import * as $$$$0 from "./routes/proxy.ts";
+import * as $$$$1 from "./routes/api/[...catchall].tsx";
+import * as $$$$2 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/ui/Navbar.tsx";
-import * as $$$$$1 from "./islands/ui/Link.tsx";
-import * as $$$$$2 from "./islands/ui/ScrollTop.tsx";
-import * as $$$$$3 from "./islands/ui/LinkTo.tsx";
-import * as $$$$$4 from "./islands/ui/ScrollBottom.tsx";
-import * as $$$$$$$$0 from "./sections/Hero.tsx";
-import * as $$$$$$$$1 from "./sections/Navbar.tsx";
-import * as $$$$$$$$2 from "./sections/HighlightsWithIcons.tsx";
-import * as $$$$$$$$3 from "./sections/HighlightsWithNumbers.tsx";
-import * as $$$$$$$$4 from "./sections/Footer.tsx";
-import * as $$$$$$$$5 from "./sections/Testimonial2.tsx";
-import * as $$$$$$$$6 from "./sections/Head.tsx";
-import * as $$$$$$$$7 from "./sections/Testimonial3.tsx";
-import * as $$$$$$$$8 from "./sections/HeroWithImage.tsx";
+import * as $$$$$1 from "./islands/ui/ScrollBottom.tsx";
+import * as $$$$$2 from "./islands/ui/LinkTo.tsx";
+import * as $$$$$3 from "./islands/ui/Link.tsx";
+import * as $$$$$4 from "./islands/ui/ScrollTop.tsx";
+import * as $$$$$$$$0 from "./sections/Testimonial3.tsx";
+import * as $$$$$$$$1 from "./sections/Head.tsx";
+import * as $$$$$$$$2 from "./sections/About.tsx";
+import * as $$$$$$$$3 from "./sections/Solution2.tsx";
+import * as $$$$$$$$4 from "./sections/Testimonial2.tsx";
+import * as $$$$$$$$5 from "./sections/Navbar.tsx";
+import * as $$$$$$$$6 from "./sections/Photo.tsx";
+import * as $$$$$$$$7 from "./sections/CTA.tsx";
+import * as $$$$$$$$8 from "./sections/MainTestimonial.tsx";
 import * as $$$$$$$$9 from "./sections/Testimonial1.tsx";
-import * as $$$$$$$$10 from "./sections/Challenge.tsx";
-import * as $$$$$$$$11 from "./sections/Photo.tsx";
-import * as $$$$$$$$12 from "./sections/CTA.tsx";
+import * as $$$$$$$$10 from "./sections/Solution3.tsx";
+import * as $$$$$$$$11 from "./sections/Solution.tsx";
+import * as $$$$$$$$12 from "./sections/Summary.tsx";
 import * as $$$$$$$$13 from "./sections/ScrollTop.tsx";
-import * as $$$$$$$$14 from "./sections/MainTestimonial.tsx";
-import * as $$$$$$$$15 from "./sections/Solution.tsx";
-import * as $$$$$$$$16 from "./sections/Solution2.tsx";
-import * as $$$$$$$$17 from "./sections/Solution3.tsx";
-import * as $$$$$$$$18 from "./sections/About.tsx";
-import * as $$$$$$$$19 from "./sections/Summary.tsx";
+import * as $$$$$$$$14 from "./sections/HeroWithImage.tsx";
+import * as $$$$$$$$15 from "./sections/Footer.tsx";
+import * as $$$$$$$$16 from "./sections/Challenge.tsx";
+import * as $$$$$$$$17 from "./sections/Hero.tsx";
+import * as $$$$$$$$18 from "./sections/HighlightsWithNumbers.tsx";
+import * as $$$$$$$$19 from "./sections/HighlightsWithIcons.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -117,13 +114,10 @@ const manifest = {
     "deco-sites/std/functions/vtexWishlist.ts": i2$17,
   },
   "routes": {
-    "./routes/_404.tsx": $$$$4,
-    "./routes/_500.tsx": $$$$3,
-    "./routes/_app.tsx": $$$$5,
+    "./routes/_app.tsx": $$$$2,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/[...catchall].tsx": $live_catchall,
-    "./routes/404.tsx": $$$$0,
-    "./routes/api/[...catchall].tsx": $$$$2,
+    "./routes/api/[...catchall].tsx": $$$$1,
     "./routes/index.tsx": $live_catchall,
     "./routes/live/_meta.ts": $live_meta,
     "./routes/live/editorData.ts": $live_editorData,
@@ -131,39 +125,39 @@ const manifest = {
     "./routes/live/invoke/index.ts": $live_invoke,
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/live/workbench.ts": $live_workbench,
-    "./routes/proxy.ts": $$$$1,
+    "./routes/proxy.ts": $$$$0,
   },
   "islands": {
-    "./islands/ui/Link.tsx": $$$$$1,
-    "./islands/ui/LinkTo.tsx": $$$$$3,
+    "./islands/ui/Link.tsx": $$$$$3,
+    "./islands/ui/LinkTo.tsx": $$$$$2,
     "./islands/ui/Navbar.tsx": $$$$$0,
-    "./islands/ui/ScrollBottom.tsx": $$$$$4,
-    "./islands/ui/ScrollTop.tsx": $$$$$2,
+    "./islands/ui/ScrollBottom.tsx": $$$$$1,
+    "./islands/ui/ScrollTop.tsx": $$$$$4,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$0,
     "$live/sections/Slot.tsx": i2$$$1,
     "$live/sections/UseSlot.tsx": i2$$$2,
-    "deco-sites/portlabs/sections/About.tsx": $$$$$$$$18,
-    "deco-sites/portlabs/sections/Challenge.tsx": $$$$$$$$10,
-    "deco-sites/portlabs/sections/CTA.tsx": $$$$$$$$12,
-    "deco-sites/portlabs/sections/Footer.tsx": $$$$$$$$4,
-    "deco-sites/portlabs/sections/Head.tsx": $$$$$$$$6,
-    "deco-sites/portlabs/sections/Hero.tsx": $$$$$$$$0,
-    "deco-sites/portlabs/sections/HeroWithImage.tsx": $$$$$$$$8,
-    "deco-sites/portlabs/sections/HighlightsWithIcons.tsx": $$$$$$$$2,
-    "deco-sites/portlabs/sections/HighlightsWithNumbers.tsx": $$$$$$$$3,
-    "deco-sites/portlabs/sections/MainTestimonial.tsx": $$$$$$$$14,
-    "deco-sites/portlabs/sections/Navbar.tsx": $$$$$$$$1,
-    "deco-sites/portlabs/sections/Photo.tsx": $$$$$$$$11,
+    "deco-sites/portlabs/sections/About.tsx": $$$$$$$$2,
+    "deco-sites/portlabs/sections/Challenge.tsx": $$$$$$$$16,
+    "deco-sites/portlabs/sections/CTA.tsx": $$$$$$$$7,
+    "deco-sites/portlabs/sections/Footer.tsx": $$$$$$$$15,
+    "deco-sites/portlabs/sections/Head.tsx": $$$$$$$$1,
+    "deco-sites/portlabs/sections/Hero.tsx": $$$$$$$$17,
+    "deco-sites/portlabs/sections/HeroWithImage.tsx": $$$$$$$$14,
+    "deco-sites/portlabs/sections/HighlightsWithIcons.tsx": $$$$$$$$19,
+    "deco-sites/portlabs/sections/HighlightsWithNumbers.tsx": $$$$$$$$18,
+    "deco-sites/portlabs/sections/MainTestimonial.tsx": $$$$$$$$8,
+    "deco-sites/portlabs/sections/Navbar.tsx": $$$$$$$$5,
+    "deco-sites/portlabs/sections/Photo.tsx": $$$$$$$$6,
     "deco-sites/portlabs/sections/ScrollTop.tsx": $$$$$$$$13,
-    "deco-sites/portlabs/sections/Solution.tsx": $$$$$$$$15,
-    "deco-sites/portlabs/sections/Solution2.tsx": $$$$$$$$16,
-    "deco-sites/portlabs/sections/Solution3.tsx": $$$$$$$$17,
-    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$19,
+    "deco-sites/portlabs/sections/Solution.tsx": $$$$$$$$11,
+    "deco-sites/portlabs/sections/Solution2.tsx": $$$$$$$$3,
+    "deco-sites/portlabs/sections/Solution3.tsx": $$$$$$$$10,
+    "deco-sites/portlabs/sections/Summary.tsx": $$$$$$$$12,
     "deco-sites/portlabs/sections/Testimonial1.tsx": $$$$$$$$9,
-    "deco-sites/portlabs/sections/Testimonial2.tsx": $$$$$$$$5,
-    "deco-sites/portlabs/sections/Testimonial3.tsx": $$$$$$$$7,
+    "deco-sites/portlabs/sections/Testimonial2.tsx": $$$$$$$$4,
+    "deco-sites/portlabs/sections/Testimonial3.tsx": $$$$$$$$0,
     "deco-sites/std/sections/Analytics.tsx": i2$$$3,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$4,
     "deco-sites/std/sections/configShopify.global.tsx": i2$$$5,
