@@ -43,7 +43,7 @@ export default function ({
     <section
       class={`about-splendid-spoon lg:justify-between	lg:flex-row-reverse bg-${backgroundColor}`}
     >
-      <div class="h-[280px] sm:h-[450px] md:h-[520px] pl-7 xl:pl-32">
+      <div class="h-[326px] md:h-[399px] 2lg:h-[448px] pl-7 xl:pl-32">
         <Picture>
           <Source
             media="(max-width: 767.9px)"
@@ -67,7 +67,7 @@ export default function ({
             height={500}
           />
           <img
-            class="object-cover h-full md:h-[400px] 2lg:h-[448px] w-full rounded-bl-[80px] xl:rounded-bl-[160px]"
+            class="object-cover h-full w-full rounded-bl-[80px] xl:rounded-bl-[160px]"
             loading="lazy"
             src={image}
           />
