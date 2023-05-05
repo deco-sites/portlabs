@@ -59,7 +59,7 @@ export default function ({
               />
             </div>
             <p
-              class={`text-center text-sm leading-sm md:text-base md:leading-base mb-0 text-${textsColor}`}
+              class={`text-center text-[14px] leading-sm md:text-base md:leading-base mb-0 text-${textsColor}`}
             >
               {text}
             </p>

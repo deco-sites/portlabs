@@ -46,18 +46,18 @@ export default function ({
       <div class="h-[280px] sm:h-[450px] md:h-[520px] pl-7 xl:pl-32">
         <Picture>
           <Source
-            media="(max-width: 768px)"
+            media="(max-width: 767.9px)"
             src={image}
             fetchPriority="low"
             width={1000}
             height={700}
           />
           <Source
-            media="(max-width: 1440px)"
+            media="(min-width: 768px) and (max-width: 1440px)"
             src={image}
             fetchPriority="low"
             width={1440}
-            height={700}
+            height={800}
           />
           <Source
             media="(min-width: 1440px)"
@@ -67,7 +67,7 @@ export default function ({
             height={500}
           />
           <img
-            class="object-cover h-full w-full rounded-bl-[80px]"
+            class="object-cover h-full md:h-[400px] 2lg:h-[448px] w-full rounded-bl-[80px] xl:rounded-bl-[160px]"
             loading="lazy"
             src={image}
           />

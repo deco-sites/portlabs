@@ -55,7 +55,7 @@ export default {
         serif: ["ff-meta-serif-web-pro", "serif"],
       },
       fontSize: {
-        sm: "0.75rem",
+        sm: "0.875rem",
         base: "1rem",
         lg: "1.25rem",
         "2lg": "1.75rem",
@@ -64,8 +64,8 @@ export default {
         "3xl": "2rem",
       },
       lineHeight: {
-        sm: "0.75rem",
-        base: "1.5rem",
+        sm: "0.875rem",
+        base: "1rem",
         lg: "2.5rem",
         xl: "1.5rem",
         "2xl": "1.75rem",
