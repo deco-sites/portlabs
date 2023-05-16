@@ -1,5 +1,5 @@
 import Link from "$start/islands/ui/Link.tsx";
-import { useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 
 export interface Props {
   title: string;
@@ -16,6 +16,10 @@ export interface Props {
 }
 
 export default function Navbar(props: Props) {
+  const [ctaButtonColor, setStaButtonColor] = useState(
+    props.color === "mustard" ? "purple" : "mustard",
+  );
+
   let headerColorWithRebrandClasses = `header-color__${props.color}`;
   let buttonColor = "mustard";
   let headerTitleColor = "mustard-10";
@@ -43,14 +47,8 @@ export default function Navbar(props: Props) {
       const headerSecundaryMenuList = document.querySelector(
         ".secundary_menu_list",
       );
-      const headerPrimaryCTAButton = document.querySelector(
-        "#primary-cta-button",
-      );
-      const shouldSwitchToMustard = headerPrimaryCTAButton?.classList.contains(
-        "button--purple",
-      );
 
-      if (!header || !headerPrimaryMenuList || !headerPrimaryCTAButton) {
+      if (!header || !headerPrimaryMenuList) {
         return null;
       }
 
@@ -70,11 +68,11 @@ export default function Navbar(props: Props) {
           headerSecundaryMenuList.classList.remove("hidden");
         }
 
-        if (shouldSwitchToMustard) {
-          headerPrimaryCTAButton.classList.remove("button--purple");
-          headerPrimaryCTAButton.classList.add("button--mustard");
+        if (props.color === "mustard") {
+          setStaButtonColor("mustard");
         }
       } else {
+        console.log("caiu no else");
         header.classList.remove("header-color__main-color");
 
         headerHero.forEach((el) => {
@@ -90,9 +88,8 @@ export default function Navbar(props: Props) {
           headerSecundaryMenuList.classList.add("hidden");
         }
 
-        if (shouldSwitchToMustard) {
-          headerPrimaryCTAButton.classList.remove("button--mustard");
-          headerPrimaryCTAButton.classList.add("button--purple");
+        if (props.color === "mustard") {
+          setStaButtonColor("purple");
         }
       }
     };
@@ -303,7 +300,7 @@ export default function Navbar(props: Props) {
 
         <div class="header__cta">
           <Link
-            class={`button button--${buttonColor}`}
+            class={`button button--${ctaButtonColor}`}
             id="primary-cta-button"
             href="/contact"
             title="Go to contact page."
