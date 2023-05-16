@@ -36,7 +36,7 @@ window.onscroll = function() {
   const headerSecundaryMenuList = document.querySelector('.secundary_menu_list');
   const headerPrimaryCTAButton = document.querySelector('#primary-cta-button');
   const shouldSwitchToMustard = headerPrimaryCTAButton.classList.contains("button--purple");
-  const headerSecundaryCTAButton = document.querySelector('#secundary-cta-button');
+
 
   if (scrollWebkit > windowHeight || scrollSafari > windowHeight) {
     header.classList.add("header-color__main-color");
