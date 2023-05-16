@@ -392,14 +392,6 @@ export default function HeadComponent({
         >
         </script>
       )}
-
-      {
-        /*
-        TODO: Wrong but it works for now.
-        Eventually we will convert this to preact.
-        */
-      }
-      <script type="text/partytown" async src="/js/header.js" />
     </Head>
   );
 }

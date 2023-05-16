@@ -1,4 +1,5 @@
 import Link from "$start/islands/ui/Link.tsx";
+import { useEffect } from "preact/hooks";
 
 export interface Props {
   title: string;
@@ -26,6 +27,81 @@ export default function Navbar(props: Props) {
     buttonColor = "purple";
     headerIconsColor = "purple";
   }
+
+  useEffect(() => {
+    window.onscroll = function () {
+      const scrollWebkit = document.documentElement.scrollTop;
+      const scrollSafari = document.body.scrollTop;
+      const windowHeight = window.screen.height - 36;
+
+      const header = document.querySelector(".header");
+      const headerHero = document.querySelectorAll(".header__hero");
+      const headerContent = document.querySelectorAll(".header__content");
+      const headerPrimaryMenuList = document.querySelector(
+        ".primary_menu_list",
+      );
+      const headerSecundaryMenuList = document.querySelector(
+        ".secundary_menu_list",
+      );
+      const headerPrimaryCTAButton = document.querySelector(
+        "#primary-cta-button",
+      );
+      const shouldSwitchToMustard = headerPrimaryCTAButton?.classList.contains(
+        "button--purple",
+      );
+
+      if (!header || !headerPrimaryMenuList || !headerPrimaryCTAButton) {
+        return null;
+      }
+
+      if (scrollWebkit > windowHeight || scrollSafari > windowHeight) {
+        header.classList.add("header-color__main-color");
+
+        headerHero.forEach((el) => {
+          el.classList.add("hidden");
+        });
+
+        headerContent.forEach((el) => {
+          el.classList.remove("hidden");
+        });
+
+        if (headerSecundaryMenuList) {
+          headerPrimaryMenuList.classList.add("hidden");
+          headerSecundaryMenuList.classList.remove("hidden");
+        }
+
+        if (shouldSwitchToMustard) {
+          headerPrimaryCTAButton.classList.remove("button--purple");
+          headerPrimaryCTAButton.classList.add("button--mustard");
+        }
+      } else {
+        header.classList.remove("header-color__main-color");
+
+        headerHero.forEach((el) => {
+          el.classList.remove("hidden");
+        });
+
+        headerContent.forEach((el) => {
+          el.classList.add("hidden");
+        });
+
+        if (headerSecundaryMenuList) {
+          headerPrimaryMenuList.classList.remove("hidden");
+          headerSecundaryMenuList.classList.add("hidden");
+        }
+
+        if (shouldSwitchToMustard) {
+          headerPrimaryCTAButton.classList.remove("button--mustard");
+          headerPrimaryCTAButton.classList.add("button--purple");
+        }
+      }
+    };
+  }, []);
+
+  const handleHamburgerButtonClick = () => {
+    document.querySelector("#menu")?.classList.toggle("is-active");
+    document.querySelector("body")?.classList.toggle("menu-is-active");
+  };
 
   return (
     <>
@@ -92,6 +168,7 @@ export default function Navbar(props: Props) {
             id="header-hamburger"
             class="header__hamburger--link"
             title="Open header menu"
+            onClick={handleHamburgerButtonClick}
           >
             <figure>
               <img
@@ -249,6 +326,7 @@ export default function Navbar(props: Props) {
               id="menu-expanded__close"
               type="button"
               title="Close header menu"
+              onClick={handleHamburgerButtonClick}
             >
               <img
                 class="btn-close"
