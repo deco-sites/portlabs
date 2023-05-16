@@ -14,8 +14,6 @@ export interface Props {
   secondary_color: string;
 }
 
-const menuExpandedCustomizedClasses = "d-flex justify-content-end";
-
 export default function Navbar(props: Props) {
   let headerColorWithRebrandClasses = `header-color__${props.color}`;
   let buttonColor = "mustard";
@@ -23,7 +21,7 @@ export default function Navbar(props: Props) {
   let headerIconsColor = "yellow";
 
   if (props.color === "mustard") {
-    headerColorWithRebrandClasses = "bg-mustard-40";
+    headerColorWithRebrandClasses = "header-color__yellow";
     headerTitleColor = "purple-80";
     buttonColor = "purple";
     headerIconsColor = "purple";
@@ -73,7 +71,7 @@ export default function Navbar(props: Props) {
                 alt="Labcodes logo symbol"
               />
               <figcaption>
-                <p class={`header__logo--title ${headerTitleColor}`}>
+                <p class={`header__logo--title text-${headerTitleColor}`}>
                   {props.title}
                 </p>
               </figcaption>
@@ -81,7 +79,7 @@ export default function Navbar(props: Props) {
             <figure class="large-desktop-visible">
               <img
                 class="header__logo--image"
-                src={`/img/logo-marca-${headerIconsColor}.svg`}
+                src={`/img/logo-marca-yellow.svg`}
                 alt="Labcodes logo mark"
               />
             </figure>
@@ -229,6 +227,7 @@ export default function Navbar(props: Props) {
         <div class="header__cta">
           <Link
             class={`button button--${buttonColor}`}
+            id="primary-cta-button"
             href="/contact"
             title="Go to contact page."
           >

@@ -35,6 +35,7 @@ window.onscroll = function() {
   const headerPrimaryMenuList = document.querySelector('.primary_menu_list');
   const headerSecundaryMenuList = document.querySelector('.secundary_menu_list');
   const headerPrimaryCTAButton = document.querySelector('#primary-cta-button');
+  const shouldSwitchToMustard = headerPrimaryCTAButton.classList.contains("button--purple");
   const headerSecundaryCTAButton = document.querySelector('#secundary-cta-button');
 
   if (scrollWebkit > windowHeight || scrollSafari > windowHeight) {
@@ -53,9 +54,9 @@ window.onscroll = function() {
       headerSecundaryMenuList.classList.remove("hidden");
     }
 
-    if (headerPrimaryCTAButton) {
-      headerPrimaryCTAButton.classList.add("hidden");
-      headerSecundaryCTAButton.classList.remove("hidden");
+    if (shouldSwitchToMustard) {
+      headerPrimaryCTAButton.classList.remove("button--purple");
+      headerPrimaryCTAButton.classList.add("button--mustard");
     }
   } else {
     header.classList.remove("header-color__main-color");
@@ -73,9 +74,9 @@ window.onscroll = function() {
       headerSecundaryMenuList.classList.add("hidden");
     }
 
-    if (headerPrimaryCTAButton) {
-      headerPrimaryCTAButton.classList.remove("hidden");
-      headerSecundaryCTAButton.classList.add("hidden");
+    if (shouldSwitchToMustard) {
+      headerPrimaryCTAButton.classList.remove("button--mustard");
+      headerPrimaryCTAButton.classList.add("button--purple");
     }
   }
 };
