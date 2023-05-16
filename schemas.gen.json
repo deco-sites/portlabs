@@ -2838,6 +2838,14 @@
             },
             {
               "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-80"
+            },
+            {
+              "type": "string",
               "const": "white-100"
             }
           ],
@@ -3341,6 +3349,14 @@
             {
               "type": "string",
               "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-80"
             },
             {
               "type": "string",
@@ -3911,6 +3927,14 @@
             },
             {
               "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-80"
+            },
+            {
+              "type": "string",
               "const": "white-100"
             }
           ],
@@ -4057,6 +4081,14 @@
             {
               "type": "string",
               "const": "mustard-40"
+            },
+            {
+              "type": "string",
+              "const": "mustard-70"
+            },
+            {
+              "type": "string",
+              "const": "mustard-80"
             },
             {
               "type": "string",
@@ -6350,6 +6382,10 @@
               {
                 "type": "string",
                 "const": "DjangoIcon"
+              },
+              {
+                "type": "string",
+                "const": "FigmaIcon"
               }
             ],
             "type": "string"

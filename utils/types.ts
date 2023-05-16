@@ -32,6 +32,8 @@ export type PrimaryColor =
   | "mineral-80"
   | "mustard-30"
   | "mustard-40"
+  | "mustard-70"
+  | "mustard-80"
   | "white-100";
 
 export type PrimarySecondaryAndTertiaryColor =
@@ -56,4 +58,5 @@ export type Icon =
   | "ReactIcon"
   | "PythonIcon"
   | "JavascriptIcon"
-  | "DjangoIcon";
+  | "DjangoIcon"
+  | "FigmaIcon";

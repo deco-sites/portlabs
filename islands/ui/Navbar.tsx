@@ -14,14 +14,24 @@ export interface Props {
   secondary_color: string;
 }
 
-const headerHamburgerCustomizedClassses =
-  "d-flex d-xl-none justify-content-end";
 const menuExpandedCustomizedClasses = "d-flex justify-content-end";
 
 export default function Navbar(props: Props) {
+  let headerColorWithRebrandClasses = `header-color__${props.color}`;
+  let buttonColor = "mustard";
+  let headerTitleColor = "mustard-10";
+  let headerIconsColor = "yellow";
+
+  if (props.color === "mustard") {
+    headerColorWithRebrandClasses = "bg-mustard-40";
+    headerTitleColor = "purple-80";
+    buttonColor = "purple";
+    headerIconsColor = "purple";
+  }
+
   return (
     <>
-      <header class={`header header-color__${props.color}`}>
+      <header class={`header ${headerColorWithRebrandClasses}`}>
         <div class="header__logo">
           <Link
             id="header-hero-logo"
@@ -32,17 +42,19 @@ export default function Navbar(props: Props) {
             <figure class="mobile-ipad-visible">
               <img
                 class="header__logo--image"
-                src="/img/logo-symbol-yellow.svg"
+                src={`/img/logo-symbol-${headerIconsColor}.svg`}
                 alt="Labcodes logo symbol"
               />
               <figcaption>
-                <p class="header__logo--title yellow">{props.title}</p>
+                <p class={`header__logo--title text-${headerTitleColor}`}>
+                  {props.title}
+                </p>
               </figcaption>
             </figure>
             <figure class="large-desktop-visible">
               <img
                 class="header__logo--image"
-                src="/img/logo-marca-yellow.svg"
+                src={`/img/logo-marca-${headerIconsColor}.svg`}
                 alt="Labcodes logo mark"
               />
             </figure>
@@ -57,24 +69,26 @@ export default function Navbar(props: Props) {
             <figure class="mobile-ipad-visible">
               <img
                 class="header__logo--image"
-                src="/img/logo-symbol-yellow.svg"
+                src={`/img/logo-symbol-${headerIconsColor}.svg`}
                 alt="Labcodes logo symbol"
               />
               <figcaption>
-                <p class="header__logo--title yellow">{props.title}</p>
+                <p class={`header__logo--title ${headerTitleColor}`}>
+                  {props.title}
+                </p>
               </figcaption>
             </figure>
             <figure class="large-desktop-visible">
               <img
                 class="header__logo--image"
-                src="/img/logo-marca-yellow.svg"
+                src={`/img/logo-marca-${headerIconsColor}.svg`}
                 alt="Labcodes logo mark"
               />
             </figure>
           </Link>
         </div>
 
-        <div class={`header__hamburger ${headerHamburgerCustomizedClassses}`}>
+        <div class="header__hamburger d-flex d-xl-none justify-content-end">
           <a
             type="button"
             id="header-hamburger"
@@ -84,12 +98,12 @@ export default function Navbar(props: Props) {
             <figure>
               <img
                 class="header__hamburger--image header__hero"
-                src="/img/hamburger-yellow.svg"
+                src={`/img/hamburger-${headerIconsColor}.svg`}
                 alt="hamburger button menu"
               />
               <img
                 class="header__hamburger--image header__content hidden"
-                src="/img/hamburger-yellow.svg"
+                src={`/img/hamburger-${headerIconsColor}.svg`}
                 alt="hamburger button menu"
               />
             </figure>
@@ -214,11 +228,11 @@ export default function Navbar(props: Props) {
 
         <div class="header__cta">
           <Link
-            class="button button--mustard"
+            class={`button button--${buttonColor}`}
             href="/contact"
             title="Go to contact page."
           >
-            get an estimate
+            Talk to an expert
           </Link>
         </div>
       </header>
@@ -226,9 +240,12 @@ export default function Navbar(props: Props) {
       <nav id="menu" class="menu-expanded">
         <div class="menu-expanded__header">
           <div class="menu-expanded__logo">
-            <img src="/img/logo-marca-yellow.svg" alt="Labcodes logo mark" />
+            <img
+              src={`/img/logo-marca-yellow.svg`}
+              alt="Labcodes logo mark"
+            />
           </div>
-          <div class={`menu-expanded__close ${menuExpandedCustomizedClasses}`}>
+          <div class="menu-expanded__close d-flex justify-content-end">
             <a
               id="menu-expanded__close"
               type="button"
