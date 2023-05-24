@@ -43,7 +43,7 @@ export default function ({
             >
               {testimonial}
             </p>
-            <p class={`topic-heading ${authorColor}`}>{author}</p>
+            <p class={`topic-heading text-${authorColor}`}>{author}</p>
             <p
               class={`smallest-paragraph text-${authorPositionColor}`}
             >
