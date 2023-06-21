@@ -42,6 +42,7 @@ export default function ({
     "PythonIcon",
     "DjangoIcon",
     "JavascriptIcon",
+    "AWSIcon",
   ],
 }: Props) {
   return (

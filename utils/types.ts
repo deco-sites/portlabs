@@ -59,4 +59,5 @@ export type Icon =
   | "PythonIcon"
   | "JavascriptIcon"
   | "DjangoIcon"
-  | "FigmaIcon";
+  | "FigmaIcon"
+  | "AWSIcon";
