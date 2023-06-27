@@ -52,21 +52,35 @@ export default function ({
           </Picture>
           <Picture class="solution-splendid-spoon__first-img hidden 2lg:block mb-0 self-auto">
             <Source
-              media="(min-width: 1200px)"
+              media="(min-width: 1200px) and (max-width:1920px)"
               src={desktopImage}
               fetchPriority="low"
               width={559}
               height={500}
             />
             <img
-              class=" w-full object-cover md:rounded-br-[160px]"
+              class="w-auto self-center bg-none md:rounded-br-[160px]"
+              loading="lazy"
+              src={desktopImage}
+            />
+          </Picture>
+          <Picture class="solution-splendid-spoon__first-img hidden 2lg:object-cover mb-0">
+            <Source
+              media="(min-width: 1921px)"
+              src={desktopImage}
+              fetchPriority="low"
+              width={1000}
+              height={900}
+            />
+            <img
+              class="w-auto h-auto object-fit bg-none md:rounded-br-[160px]"
               loading="lazy"
               src={desktopImage}
             />
           </Picture>
         </div>
-        <div class="solution-splendid-spoon__content">
-          <div class="solution-splendid-spoon__text pt-16 pb-14 solution-splendid-spoon__text--solution">
+        <div class="solution-splendid-spoon__content pt-16 pb-14 ">
+          <div class="solution-splendid-spoon__text solution-splendid-spoon__text--solution">
             <h2 class={`text-${titleColor}`}>{title}</h2>
             <p class={`topic-heading text-${subtitleColor}`}>{subtitle}</p>
 
