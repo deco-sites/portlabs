@@ -11008,6 +11008,34 @@
               {
                 "type": "string",
                 "const": "FigmaIcon"
+              },
+              {
+                "type": "string",
+                "const": "AWSIcon"
+              },
+              {
+                "type": "string",
+                "const": "FastAPIIcon"
+              },
+              {
+                "type": "string",
+                "const": "CypressIcon"
+              },
+              {
+                "type": "string",
+                "const": "MicrosoftIdentityIcon"
+              },
+              {
+                "type": "string",
+                "const": "MicrosoftAzureIcon"
+              },
+              {
+                "type": "string",
+                "const": "NewRelicIcon"
+              },
+              {
+                "type": "string",
+                "const": "NestJSIcon"
               }
             ],
             "type": "string"

@@ -2,8 +2,8 @@
   "imports": {
     "deco-sites/portlabs/": "./",
     "$start/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.9.29/",
-    "$live/": "https://denopkg.com/deco-cx/live@1.9.17/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.11.1/",
+    "$live/": "https://denopkg.com/deco-cx/live@1.17.2/",
     "$fresh/": "https://deno.land/x/fresh@1.1.6/",
     "preact": "https://esm.sh/preact@10.15.1",
     "preact/": "https://esm.sh/preact@10.15.1/",

@@ -22,7 +22,8 @@ export interface Props {
 export default function ({
   backgroundColor = "white-100",
   foregroundColor = "coral-70",
-  text = "Our challenge was to scale and optimize Splendid Spoon’s core e-commerce platform to uphold more users and allow greater flexibility in offering new products. Besides, we also implemented the demands of the marketing team to increase the conversion of new users.",
+  text =
+    "Our challenge was to scale and optimize Splendid Spoon’s core e-commerce platform to uphold more users and allow greater flexibility in offering new products. Besides, we also implemented the demands of the marketing team to increase the conversion of new users.",
   servicesTitle = "what we did",
   servicesTitleColor = "mineral-80",
   servicesColor = "coral-60",
@@ -50,7 +51,8 @@ export default function ({
       <div class={`summary-splendid-spoon__text ${backgroundColor}`}>
         <div class="summary-splendid-spoon__wrapper">
           <div
-            class={`summary-splendid-spoon__challenge-text md:pr-10 2xl:pr-16 text-${servicesTitleColor}`}>
+            class={`summary-splendid-spoon__challenge-text md:pr-10 2xl:pr-16 text-${servicesTitleColor}`}
+          >
             <p>{text}</p>
           </div>
           <div class="summary-splendid-spoon__group">
@@ -59,9 +61,7 @@ export default function ({
                 {servicesTitle}
               </p>
               <ul class={`list-disc text-${servicesColor}`}>
-                {services.map((service) => (
-                  <li>{service}</li>
-                ))}
+                {services.map((service) => <li>{service}</li>)}
               </ul>
             </div>
             <div class="summary-splendid-spoon__technologies">
