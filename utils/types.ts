@@ -60,4 +60,10 @@ export type Icon =
   | "JavascriptIcon"
   | "DjangoIcon"
   | "FigmaIcon"
-  | "AWSIcon";
+  | "AWSIcon"
+  | "FastAPIIcon"
+  | "CypressIcon"
+  | "MicrosoftIdentityIcon"
+  | "MicrosoftAzureIcon"
+  | "NewRelicIcon"
+  | "NestJSIcon";
