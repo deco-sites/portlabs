@@ -73,7 +73,7 @@ export default function ({
               height={900}
             />
             <img
-              class="w-auto h-auto object-fit bg-none md:rounded-br-[160px]"
+              class="w-auto h-auto object-fit bg-none rounded-br-[160px]"
               loading="lazy"
               src={desktopImage}
             />
