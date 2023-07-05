@@ -66,9 +66,9 @@
               "deco-sites/std/loaders/vtex/proxy.ts",
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
-              "./islands/ui/Link.tsx",
+              "./islands/Link.tsx",
+              "./islands/Navbar.tsx",
               "./islands/ui/LinkTo.tsx",
-              "./islands/ui/Navbar.tsx",
               "./islands/ui/ScrollBottom.tsx",
               "./islands/ui/ScrollTop.tsx",
               "$live/handlers/devPage.ts",
@@ -7363,7 +7363,7 @@
       ],
       "title": "deco-sites/std/packs/vtex/loaders/wishlist.ts@Props"
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL05hdmJhci50c3g=@Props": {
       "type": "object",
       "properties": {
         "title": {
@@ -7386,7 +7386,7 @@
         "color",
         "secondary_color"
       ],
-      "title": "deco-sites/portlabs/islands/ui/Navbar.tsx@Props"
+      "title": "deco-sites/portlabs/islands/Navbar.tsx@Props"
     },
     "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props": {
       "type": "object",
@@ -14645,7 +14645,7 @@
       ],
       "title": "deco-cx/live/actions/workflows/cancel.ts@Props"
     },
-    "ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@05a2cc66449ee3cc43ad1783938e3940&Metadata": {
+    "ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@922a64c7ae05c6ecf72f25fa681e42d6&Metadata": {
       "allOf": [
         {
           "type": "object",
@@ -14663,9 +14663,9 @@
           "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@Metadata"
         }
       ],
-      "title": "05a2cc66449ee3cc43ad1783938e3940&Metadata"
+      "title": "922a64c7ae05c6ecf72f25fa681e42d6&Metadata"
     },
-    "ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest+Arg+05a2cc66449ee3cc43ad1783938e3940&Metadata": {
+    "ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest+Arg+922a64c7ae05c6ecf72f25fa681e42d6&Metadata": {
       "type": "object",
       "properties": {
         "results": {
@@ -14676,7 +14676,7 @@
           "title": "Execution Id"
         },
         "metadata": {
-          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@05a2cc66449ee3cc43ad1783938e3940&Metadata",
+          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@922a64c7ae05c6ecf72f25fa681e42d6&Metadata",
           "title": "Metadata"
         }
       },
@@ -14685,7 +14685,7 @@
         "executionId",
         "metadata"
       ],
-      "title": "deco-cx/durable/handler.ts@RunRequest+Arg+05a2cc66449ee3cc43ad1783938e3940&Metadata"
+      "title": "deco-cx/durable/handler.ts@RunRequest+Arg+922a64c7ae05c6ecf72f25fa681e42d6&Metadata"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3NpZ25hbC50cw==@Props": {
       "type": "object",
@@ -16350,8 +16350,8 @@
         }
       }
     },
-    "Li9pc2xhbmRzL3VpL0xpbmsudHN4": {
-      "title": "./islands/ui/Link.tsx",
+    "Li9pc2xhbmRzL0xpbmsudHN4": {
+      "title": "./islands/Link.tsx",
       "type": "object",
       "required": [
         "__resolveType"
@@ -16360,9 +16360,30 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "./islands/ui/Link.tsx"
+            "./islands/Link.tsx"
           ],
-          "default": "./islands/ui/Link.tsx"
+          "default": "./islands/Link.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL05hdmJhci50c3g=": {
+      "title": "./islands/Navbar.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL05hdmJhci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Navbar.tsx"
+          ],
+          "default": "./islands/Navbar.tsx"
         }
       }
     },
@@ -16379,27 +16400,6 @@
             "./islands/ui/LinkTo.tsx"
           ],
           "default": "./islands/ui/LinkTo.tsx"
-        }
-      }
-    },
-    "Li9pc2xhbmRzL3VpL05hdmJhci50c3g=": {
-      "title": "./islands/ui/Navbar.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "./islands/ui/Navbar.tsx"
-          ],
-          "default": "./islands/ui/Navbar.tsx"
         }
       }
     },
@@ -16943,7 +16943,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL3VpL05hdmJhci50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9pc2xhbmRzL05hdmJhci50c3g=@Props"
         }
       ],
       "required": [
@@ -17700,7 +17700,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest+Arg+05a2cc66449ee3cc43ad1783938e3940&Metadata"
+          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest+Arg+922a64c7ae05c6ecf72f25fa681e42d6&Metadata"
         }
       ],
       "required": [
@@ -18296,13 +18296,13 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL0xpbmsudHN4"
+          "$ref": "#/definitions/Li9pc2xhbmRzL0xpbmsudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL05hdmJhci50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL3VpL0xpbmtUby50c3g="
-        },
-        {
-          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL05hdmJhci50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g="

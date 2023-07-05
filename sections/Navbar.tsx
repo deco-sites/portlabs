@@ -1,1 +1,1 @@
-export { default } from "$start/islands/ui/Navbar.tsx";
+export { default } from "$start/islands/Navbar.tsx";

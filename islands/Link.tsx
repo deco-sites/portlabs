@@ -21,7 +21,7 @@ export default function (props: Props) {
   // and removing the subdomain from the hostname to redirect to the correct place.
   useEffect(() => {
     let hostname = window.location.origin.replace(PAGES_SUBDOMAIN, "");
-
+    console.log("o hostname=", hostname);
     // We are in localhost?
     if (
       ["localhost", "127.0.0.1", "::1", ""].includes(window.location.hostname)
@@ -41,8 +41,7 @@ export default function (props: Props) {
         title: props.title,
       }}
       class={props.class}
-      href={linkTo}
-    >
+      href={linkTo}>
       {props.children}
     </a>
   );
