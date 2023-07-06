@@ -1,4 +1,4 @@
-import ScrollTop from "$start/islands/ui/ScrollTop.tsx";
+import ScrollTop from "$start/islands/ScrollTop.tsx";
 import Link from "../../islands/Link.tsx";
 
 export interface Props {

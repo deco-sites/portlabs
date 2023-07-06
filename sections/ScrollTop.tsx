@@ -1,1 +1,1 @@
-export { default } from "$start/islands/ui/ScrollTop.tsx";
+export { default } from "$start/islands/ScrollTop.tsx";

@@ -252,7 +252,7 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/work"
-                title="Go to how we work page.">
+                title="Go to work page.">
                 Work
               </Link>
             </li>
@@ -260,7 +260,7 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/work"
-                title="Go to how we work page.">
+                title="Go to our process page.">
                 Our process
               </Link>
             </li>

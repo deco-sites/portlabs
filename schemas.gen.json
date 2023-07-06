@@ -67,10 +67,10 @@
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
               "./islands/Link.tsx",
+              "./islands/LinkTo.tsx",
               "./islands/Navbar.tsx",
-              "./islands/ui/LinkTo.tsx",
-              "./islands/ui/ScrollBottom.tsx",
-              "./islands/ui/ScrollTop.tsx",
+              "./islands/ScrollBottom.tsx",
+              "./islands/ScrollTop.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -7388,7 +7388,7 @@
       ],
       "title": "deco-sites/portlabs/islands/Navbar.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props": {
+    "ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Njcm9sbFRvcC50c3g=@Props": {
       "type": "object",
       "properties": {
         "isActive": {
@@ -7400,7 +7400,7 @@
         }
       },
       "required": [],
-      "title": "deco-sites/portlabs/components/ui/ScrollTop.tsx@Props"
+      "title": "deco-sites/portlabs/components/ScrollTop.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig": {
       "type": "object",
@@ -16366,6 +16366,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0xpbmtUby50c3g=": {
+      "title": "./islands/LinkTo.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/LinkTo.tsx"
+          ],
+          "default": "./islands/LinkTo.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL05hdmJhci50c3g=": {
       "title": "./islands/Navbar.tsx",
       "type": "object",
@@ -16387,8 +16403,8 @@
         }
       }
     },
-    "Li9pc2xhbmRzL3VpL0xpbmtUby50c3g=": {
-      "title": "./islands/ui/LinkTo.tsx",
+    "Li9pc2xhbmRzL1Njcm9sbEJvdHRvbS50c3g=": {
+      "title": "./islands/ScrollBottom.tsx",
       "type": "object",
       "required": [
         "__resolveType"
@@ -16397,34 +16413,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "./islands/ui/LinkTo.tsx"
+            "./islands/ScrollBottom.tsx"
           ],
-          "default": "./islands/ui/LinkTo.tsx"
+          "default": "./islands/ScrollBottom.tsx"
         }
       }
     },
-    "Li9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g=": {
-      "title": "./islands/ui/ScrollBottom.tsx",
-      "type": "object",
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "./islands/ui/ScrollBottom.tsx"
-          ],
-          "default": "./islands/ui/ScrollBottom.tsx"
-        }
-      }
-    },
-    "Li9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g=": {
-      "title": "./islands/ui/ScrollTop.tsx",
+    "Li9pc2xhbmRzL1Njcm9sbFRvcC50c3g=": {
+      "title": "./islands/ScrollTop.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL1Njcm9sbFRvcC50c3g=@Props"
         }
       ],
       "required": [
@@ -16434,9 +16434,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "./islands/ui/ScrollTop.tsx"
+            "./islands/ScrollTop.tsx"
           ],
-          "default": "./islands/ui/ScrollTop.tsx"
+          "default": "./islands/ScrollTop.tsx"
         }
       }
     },
@@ -16983,11 +16983,6 @@
     "ZGVjby1zaXRlcy9wb3J0bGFicy9zZWN0aW9ucy9TY3JvbGxUb3AudHN4": {
       "title": "deco-sites/portlabs/sections/ScrollTop.tsx",
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9wb3J0bGFicy9jb21wb25lbnRzL3VpL1Njcm9sbFRvcC50c3g=@Props"
-        }
-      ],
       "required": [
         "__resolveType"
       ],
@@ -18299,16 +18294,16 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0xpbmsudHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0xpbmtUby50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL05hdmJhci50c3g="
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL0xpbmtUby50c3g="
+          "$ref": "#/definitions/Li9pc2xhbmRzL1Njcm9sbEJvdHRvbS50c3g="
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL1Njcm9sbEJvdHRvbS50c3g="
-        },
-        {
-          "$ref": "#/definitions/Li9pc2xhbmRzL3VpL1Njcm9sbFRvcC50c3g="
+          "$ref": "#/definitions/Li9pc2xhbmRzL1Njcm9sbFRvcC50c3g="
         }
       ]
     },

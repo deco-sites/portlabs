@@ -1,6 +1,6 @@
 import { asset } from "$fresh/runtime.ts";
 
-import ScrollBottom from "$start/islands/ui/ScrollBottom.tsx";
+import ScrollBottom from "$start/islands/ScrollBottom.tsx";
 import {
   Color,
   PrimaryColor,
@@ -26,29 +26,21 @@ export default function ({
   preText = "Splendid Spoon",
   preTextColor = "white-100",
   includesScrollToBottom = true,
-  image =
-    "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
+  image = "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
 }: Props) {
   return (
-    <section
-      class={`hero-cases bg-${backgroundColor} max-h-[800px] relative`}
-    >
+    <section class={`hero-cases bg-${backgroundColor} max-h-[800px] relative`}>
       <div class="hero-cases__content max-w-[573px] z-[3]">
-        <p
-          class={`topic-heading hero-cases__title text-${preTextColor}`}
-        >
+        <p class={`topic-heading hero-cases__title text-${preTextColor}`}>
           {preText}
         </p>
-        <h1 class={`hero-cases__subtitle text-${titleColor}`}>
-          {title}
-        </h1>
+        <h1 class={`hero-cases__subtitle text-${titleColor}`}>{title}</h1>
       </div>
 
       {image && (
         <Picture
           class="hero-cases__img h-700 max-h-[800px] w-75 position-absolute right-0 bottom-0"
-          preload
-        >
+          preload>
           {/* `width={1} height={1}` is a tricky to avoid download the backward-compatibility image on mobile */}
           <Source
             src={image}
@@ -56,7 +48,7 @@ export default function ({
             fetchPriority="low"
             width={54}
             height={32}
-            {...{ "q": 30, "bl": 10 }}
+            {...{ q: 30, bl: 10 }}
           />
           <Source
             media="(min-width: 1024px) and (max-width: 1440px)"

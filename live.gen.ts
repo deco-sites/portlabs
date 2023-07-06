@@ -7,11 +7,11 @@ import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$1 from "./routes/api/[...catchall].tsx";
 import * as $$$$2 from "./routes/proxy.ts";
-import * as $$$$$0 from "./islands/ui/ScrollTop.tsx";
-import * as $$$$$1 from "./islands/ui/ScrollBottom.tsx";
-import * as $$$$$2 from "./islands/ui/LinkTo.tsx";
-import * as $$$$$3 from "./islands/Link.tsx";
-import * as $$$$$4 from "./islands/Navbar.tsx";
+import * as $$$$$0 from "./islands/ScrollTop.tsx";
+import * as $$$$$1 from "./islands/ScrollBottom.tsx";
+import * as $$$$$2 from "./islands/Link.tsx";
+import * as $$$$$3 from "./islands/Navbar.tsx";
+import * as $$$$$4 from "./islands/LinkTo.tsx";
 import * as $$$$$$$$0 from "./sections/ScrollTop.tsx";
 import * as $$$$$$$$1 from "./sections/MainTestimonial.tsx";
 import * as $$$$$$$$2 from "./sections/Hero.tsx";
@@ -205,11 +205,11 @@ const manifest = {
     "./routes/proxy.ts": $$$$2,
   },
   "islands": {
-    "./islands/Link.tsx": $$$$$3,
-    "./islands/Navbar.tsx": $$$$$4,
-    "./islands/ui/LinkTo.tsx": $$$$$2,
-    "./islands/ui/ScrollBottom.tsx": $$$$$1,
-    "./islands/ui/ScrollTop.tsx": $$$$$0,
+    "./islands/Link.tsx": $$$$$2,
+    "./islands/LinkTo.tsx": $$$$$4,
+    "./islands/Navbar.tsx": $$$$$3,
+    "./islands/ScrollBottom.tsx": $$$$$1,
+    "./islands/ScrollTop.tsx": $$$$$0,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
