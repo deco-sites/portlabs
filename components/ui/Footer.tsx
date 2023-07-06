@@ -33,7 +33,8 @@ export default function Footer(props: Props) {
               <Link
                 id="footer-cta-button"
                 href={ctaLink}
-                class="button button--coral">
+                class="button button--coral"
+              >
                 {ctaText}
               </Link>
             </div>
@@ -51,7 +52,8 @@ export default function Footer(props: Props) {
                     class="social-midia-icon twitter"
                     target="_blank"
                     rel="noopener"
-                    title="Go to Labcodes Twitter profile">
+                    title="Go to Labcodes Twitter profile"
+                  >
                     &nbsp;
                   </a>
                 </li>
@@ -61,7 +63,8 @@ export default function Footer(props: Props) {
                     class="social-midia-icon instagram"
                     target="_blank"
                     rel="noopener"
-                    title="Go to Labcodes Instagram profile">
+                    title="Go to Labcodes Instagram profile"
+                  >
                     &nbsp;
                   </a>
                 </li>
@@ -71,7 +74,8 @@ export default function Footer(props: Props) {
                     class="social-midia-icon linkedin"
                     target="_blank"
                     rel="noopener"
-                    title="Go to Labcodes LinkedIn profile">
+                    title="Go to Labcodes LinkedIn profile"
+                  >
                     &nbsp;
                   </a>
                 </li>
@@ -100,7 +104,8 @@ export default function Footer(props: Props) {
                   href="http://manguez.al/"
                   target="_blank"
                   rel="noopener"
-                  title="Go to Manguezal page">
+                  title="Go to Manguezal page"
+                >
                   <img src="/img/logo-manguezal.svg" alt="Manguezal logo" />
                 </a>
               </div>
