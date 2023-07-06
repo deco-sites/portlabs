@@ -17,7 +17,7 @@ export interface Props {
 
 export default function Navbar(props: Props) {
   const [ctaButtonColor, setStaButtonColor] = useState(
-    props.color === "mustard" ? "purple" : "mustard"
+    props.color === "mustard" ? "purple" : "mustard",
   );
 
   let headerColorWithRebrandClasses = `header-color__${props.color}`;
@@ -42,10 +42,11 @@ export default function Navbar(props: Props) {
       const header = document.querySelector(".header");
       const headerHero = document.querySelectorAll(".header__hero");
       const headerContent = document.querySelectorAll(".header__content");
-      const headerPrimaryMenuList =
-        document.querySelector(".primary_menu_list");
+      const headerPrimaryMenuList = document.querySelector(
+        ".primary_menu_list",
+      );
       const headerSecundaryMenuList = document.querySelector(
-        ".secundary_menu_list"
+        ".secundary_menu_list",
       );
 
       if (!header || !headerPrimaryMenuList) {
@@ -108,7 +109,8 @@ export default function Navbar(props: Props) {
             id="header-hero-logo"
             href="/"
             class="header__hero header__logo--link"
-            title="Go to home page">
+            title="Go to home page"
+          >
             <figure class="mobile-ipad-visible">
               <img
                 class="header__logo--image"
@@ -134,7 +136,8 @@ export default function Navbar(props: Props) {
             id="header-content-logo"
             href="/"
             class="header__content header__logo--link hidden"
-            title="Go to home page">
+            title="Go to home page"
+          >
             <figure class="mobile-ipad-visible">
               <img
                 class="header__logo--image"
@@ -163,7 +166,8 @@ export default function Navbar(props: Props) {
             id="header-hamburger"
             class="header__hamburger--link"
             title="Open header menu"
-            onClick={handleHamburgerButtonClick}>
+            onClick={handleHamburgerButtonClick}
+          >
             <figure>
               <img
                 class="header__hamburger--image header__hero"
@@ -185,7 +189,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.color}`}
                 href="/services"
-                title="Go to services page.">
+                title="Go to services page."
+              >
                 Services
               </Link>
             </li>
@@ -193,7 +198,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.color}`}
                 href="/work"
-                title="Go to how we work page.">
+                title="Go to how we work page."
+              >
                 Work
               </Link>
             </li>
@@ -201,7 +207,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.color}`}
                 href="/process"
-                title="Go to how we process page.">
+                title="Go to how we process page."
+              >
                 Our process
               </Link>
             </li>
@@ -209,7 +216,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.color}`}
                 href="/about"
-                title="Go to about us page.">
+                title="Go to about us page."
+              >
                 About us
               </Link>
             </li>
@@ -217,7 +225,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.color}`}
                 href="/careers"
-                title="Go to careers page.">
+                title="Go to careers page."
+              >
                 Careers
               </Link>
             </li>
@@ -225,7 +234,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.color}`}
                 href="/contact"
-                title="Go to contact page.">
+                title="Go to contact page."
+              >
                 Contact
               </Link>
             </li>
@@ -233,7 +243,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.color}`}
                 href="/blog"
-                title="Go to our blog page.">
+                title="Go to our blog page."
+              >
                 Blog
               </Link>
             </li>
@@ -244,7 +255,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/services"
-                title="Go to services page.">
+                title="Go to services page."
+              >
                 Services
               </Link>
             </li>
@@ -252,7 +264,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/work"
-                title="Go to work page.">
+                title="Go to work page."
+              >
                 Work
               </Link>
             </li>
@@ -260,7 +273,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/work"
-                title="Go to our process page.">
+                title="Go to our process page."
+              >
                 Our process
               </Link>
             </li>
@@ -268,7 +282,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/about"
-                title="Go to about us page.">
+                title="Go to about us page."
+              >
                 About us
               </Link>
             </li>
@@ -276,7 +291,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/careers"
-                title="Go to careers page.">
+                title="Go to careers page."
+              >
                 Careers
               </Link>
             </li>
@@ -284,7 +300,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/contact"
-                title="Go to contact page.">
+                title="Go to contact page."
+              >
                 Contact
               </Link>
             </li>
@@ -292,7 +309,8 @@ export default function Navbar(props: Props) {
               <Link
                 class={`link-nav link-nav--header-${props.secondary_color}`}
                 href="/blog"
-                title="Go to our blog page.">
+                title="Go to our blog page."
+              >
                 Blog
               </Link>
             </li>
@@ -304,7 +322,8 @@ export default function Navbar(props: Props) {
             class={`button button--${ctaButtonColor}`}
             id="primary-cta-button"
             href="/contact"
-            title="Go to contact page.">
+            title="Go to contact page."
+          >
             Talk to an expert
           </Link>
         </div>
@@ -320,7 +339,8 @@ export default function Navbar(props: Props) {
               id="menu-expanded__close"
               type="button"
               title="Close header menu"
-              onClick={handleHamburgerButtonClick}>
+              onClick={handleHamburgerButtonClick}
+            >
               <img
                 class="btn-close"
                 src="/img/close-button.svg"
@@ -336,7 +356,8 @@ export default function Navbar(props: Props) {
               <Link
                 class="link-nav link-nav--touch-menu"
                 href="/"
-                title="Go to home page.">
+                title="Go to home page."
+              >
                 Home
               </Link>
             </li>
@@ -344,7 +365,8 @@ export default function Navbar(props: Props) {
               <Link
                 class="link-nav link-nav--touch-menu"
                 href="/services"
-                title="Go to services page.">
+                title="Go to services page."
+              >
                 Services
               </Link>
             </li>
@@ -352,7 +374,8 @@ export default function Navbar(props: Props) {
               <Link
                 class="link-nav link-nav--touch-menu"
                 href="/process"
-                title="Go to how we work page.">
+                title="Go to how we work page."
+              >
                 How we work
               </Link>
             </li>
@@ -360,7 +383,8 @@ export default function Navbar(props: Props) {
               <Link
                 class="link-nav link-nav--touch-menu"
                 href="/about"
-                title="Go to about us page.">
+                title="Go to about us page."
+              >
                 About us
               </Link>
             </li>
@@ -368,7 +392,8 @@ export default function Navbar(props: Props) {
               <Link
                 class="link-nav link-nav--touch-menu"
                 href="/contact"
-                title="Go to contact page.">
+                title="Go to contact page."
+              >
                 Contact
               </Link>
             </li>
@@ -376,7 +401,8 @@ export default function Navbar(props: Props) {
               <Link
                 class="link-nav link-nav--touch-menu"
                 href="/careers"
-                title="Go to careers page.">
+                title="Go to careers page."
+              >
                 Careers
               </Link>
             </li>
@@ -384,7 +410,8 @@ export default function Navbar(props: Props) {
               <Link
                 class="link-nav link-nav--touch-menu"
                 href="/blog"
-                title="Go to our blog page.">
+                title="Go to our blog page."
+              >
                 Blog
               </Link>
             </li>

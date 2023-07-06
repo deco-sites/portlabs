@@ -41,7 +41,8 @@ export default function (props: Props) {
         title: props.title,
       }}
       class={props.class}
-      href={linkTo}>
+      href={linkTo}
+    >
       {props.children}
     </a>
   );

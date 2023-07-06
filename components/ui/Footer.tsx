@@ -40,10 +40,9 @@ export default function Footer(props: Props) {
           </div>
         </div>
       </div>
-
       <div class="footer-signature">
-        <div class="footer-links">
-          <div class="footer-newsletter-wrapper">
+        <div class="footer-signature__item">
+          <section class="newsletter-wrapper mb-1">
             <div class="footer-newsletter">
               <ul class="social-midia-icons">
                 <li>
@@ -78,9 +77,7 @@ export default function Footer(props: Props) {
                 </li>
               </ul>
             </div>
-          </div>{" "}
-        </div>
-        <div class="footer-signature__item">
+          </section>{" "}
           <div class="footer-signature__icons">
             <img src="/img/cc.svg" alt="cc" />
             <img src="/img/group.svg" alt="by" />
@@ -110,7 +107,6 @@ export default function Footer(props: Props) {
             </div>
           </div>
         </div>
-
         <div class="footer-signature__item">
           <div class="footer-signature__contact">
             <div class="footer-signature__address">

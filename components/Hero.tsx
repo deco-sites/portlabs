@@ -23,7 +23,8 @@ const Hero = (props: Props) => {
   const {
     backgroundColor = "coral-40",
     title = "We create custom digital experiences",
-    description = "With a human-centered and holistic approach, we design and code web products that fit your needs",
+    description =
+      "With a human-centered and holistic approach, we design and code web products that fit your needs",
     includesScrollToBottom = false,
     includesCta = false,
     ctaText = "find out more",
@@ -40,7 +41,8 @@ const Hero = (props: Props) => {
           <a
             href={ctaLink}
             class={`hero__button button ${ctaColor}`}
-            target={ctaTargetBlank ? "_blank" : "_self"}>
+            target={ctaTargetBlank ? "_blank" : "_self"}
+          >
             {ctaText}
           </a>
         )}

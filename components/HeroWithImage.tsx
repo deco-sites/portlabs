@@ -26,7 +26,8 @@ export default function ({
   preText = "Splendid Spoon",
   preTextColor = "white-100",
   includesScrollToBottom = true,
-  image = "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
+  image =
+    "https://labcodes.com.br/static/core/imgs/cases/splendid/hero-img.png",
 }: Props) {
   return (
     <section class={`hero-cases bg-${backgroundColor} max-h-[800px] relative`}>
@@ -40,7 +41,8 @@ export default function ({
       {image && (
         <Picture
           class="hero-cases__img h-700 max-h-[800px] w-75 position-absolute right-0 bottom-0"
-          preload>
+          preload
+        >
           {/* `width={1} height={1}` is a tricky to avoid download the backward-compatibility image on mobile */}
           <Source
             src={image}
