@@ -21,8 +21,8 @@ export default function (props: Props) {
   };
 
   const onScroll = () => {
-    const bHeight = document.documentElement.scrollTop ||
-      document.body.scrollTop;
+    const bHeight =
+      document.documentElement.scrollTop || document.body.scrollTop;
     const distanceBetweenButtonAndSection = 160;
 
     if (bHeight >= distanceBetweenButtonAndSection) {
@@ -30,6 +30,7 @@ export default function (props: Props) {
     } else {
       scrollIsActive.value = false;
     }
+    center;
   };
 
   useEffect(() => {
@@ -41,8 +42,7 @@ export default function (props: Props) {
       id="scroll-up"
       ref={ref}
       class={`scroll-indicator ${scrollIsActive.value && "is-active"}`}
-      onClick={onClick}
-    >
+      onClick={onClick}>
       <button class="button_scroll" onClick={onClick}>
         <img src="/img/arrow.svg" alt="Arrow Illustration" />
       </button>
