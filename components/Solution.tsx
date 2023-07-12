@@ -17,21 +17,17 @@ export interface Props {
 
 export default function ({
   backgroundColor = "coral-40",
-  image =
-    "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/photo-solution.png",
-  desktopImage =
-    "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/photo-solution.png",
+  image = "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/photo-solution.png",
+  desktopImage = "https://labcodes.com.br/static/bundles/assets/src/imgs/cases/splendid/photo-solution.png",
   title = "Solution",
   titleColor = "mineral-80",
   subtitle = "A FASTER, SLICKER, AND MORE FLEXIBLE SOFTWARE",
   subtitleColor = "mineral-80",
-  text =
-    "<p>Explicação do que é o projeto e quem é o cliente. E se essas poucas mulheres existem é porque, segundo alguns criativos homens, é importante ter uma visão feminina. Óbvio, quem iria pensar em campanhas de Dia das Mães ou de empoderamento feminino? Criativa só serve para pensar nisso mesmo. Ah, e para outras coisas também: como deixar a criação “mais bonita”, ouvir piadinha sobre feminismo e ser subestimada.</p>",
+  text = "<p>Explicação do que é o projeto e quem é o cliente. E se essas poucas mulheres existem é porque, segundo alguns criativos homens, é importante ter uma visão feminina. Óbvio, quem iria pensar em campanhas de Dia das Mães ou de empoderamento feminino? Criativa só serve para pensar nisso mesmo. Ah, e para outras coisas também: como deixar a criação “mais bonita”, ouvir piadinha sobre feminismo e ser subestimada.</p>",
 }) {
   return (
     <section
-      class={`solution-splendid-spoon box-border lg:h-[492px] xl:h-24 lg:pb-24 bg-${backgroundColor}`}
-    >
+      class={`solution-splendid-spoon box-border lg:pb-24 bg-${backgroundColor}`}>
       <div class="solution-splendid-spoon__row pt-0">
         <div class="solution-splendid-spoon__image xl:max-w-[40%]">
           <Picture class="solution-splendid-spoon__first-img 2lg:hidden mb-0 bg-none h-[280px] md:h-[520px] lg:h-[480px]">
@@ -70,7 +66,7 @@ export default function ({
             />
           </Picture>
         </div>
-        <div class="solution-splendid-spoon__content pt-12 lg:max-h-[500px]">
+        <div class="solution-splendid-spoon__content pt-12 lg:max-h-[800px]">
           <div class="solution-splendid-spoon__text solution-splendid-spoon__text--solution">
             <h2 class={`text-${titleColor}`}>{title}</h2>
             <p class={`topic-heading text-${subtitleColor}`}>{subtitle}</p>
