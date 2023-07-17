@@ -20,7 +20,7 @@ export default function ({
   textColor = "mineral-80",
 }: Props) {
   return (
-    <section class={`challenge-loadsmart bg-${backgroundColor}`}>
+    <section class={`challenge-loadsmart lg:py-3 bg-${backgroundColor}`}>
       <div class="challenge-loadsmart__content">
         <div class="challenge-loadsmart__text">
           <div class="challenge-loadsmart__title">
