@@ -52,7 +52,7 @@ export default function ({
           height={536}
         />
         <img
-          class="object-cover 2xl:object-contain object-center h-full w-full"
+          class="object-cover object-center w-full h-full 2xl:max-h-full"
           loading="lazy"
           alt={altText}
           src={ultrawideImage}
